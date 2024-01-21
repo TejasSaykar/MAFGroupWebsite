@@ -5,7 +5,7 @@ import { FaArrowRight } from "react-icons/fa6"
 
 const Contact = () => {
     return (
-        <Layout title={"Contact | WPP"} description={"This is the contact page"}>
+        <Layout title={"Contact | MAF"} description={"This is the contact page"}>
             <div className='mt-[4rem] w-full'>
                 <div className="relative top w-full">
                     <img src="/img/contactBg.jpg" alt="" />

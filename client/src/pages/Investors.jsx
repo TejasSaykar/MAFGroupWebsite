@@ -3,7 +3,7 @@ import Layout from '../components/Layout'
 
 const Investors = () => {
   return (
-    <Layout>
+    <Layout title={"Investors | MAF"}>
       <div className='mt-[4rem]'>
         Investors Page
       </div>

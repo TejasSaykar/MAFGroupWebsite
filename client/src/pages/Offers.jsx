@@ -3,7 +3,7 @@ import Layout from '../components/Layout'
 
 const Offers = () => {
   return (
-    <Layout>
+    <Layout title={"Offers | MAF"}>
       <div className='mt-[4rem]'>
         offer
       </div>
