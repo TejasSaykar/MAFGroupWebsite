@@ -8,6 +8,25 @@
 }
 
 
-.hover{
+.hover {
     text-shadow: white 14px -24px 20px;
+}
+
+.outline {
+    color: white; /* Unfortunately you can't use transparent here … */
+    text-shadow:
+	   -1px -1px 0 #000,  
+		1px -1px 0 #000,
+		-1px 1px 0 #000,
+		 1px 1px 0 #000
+}
+
+/* Real outline for modern browsers */
+@supports((text-stroke: 4px black) or (-webkit-text-stroke: 2px black)) {
+    .outline {
+        color: transparent;
+        -webkit-text-stroke: 2px white;
+		text-stroke: 4px black;
+        text-shadow: none;
+    }
 }

@@ -7,15 +7,15 @@ const Services = () => {
       <div className="mt-[4rem] w-full">
         {/* TOP SECTION */}
 
-        <div className="relative w-full h-[60vh] top">
+        <div className="relative w-full h-[70vh] top">
           <img
-            src="/img/serviceImg.jpg"
+            src="/img/analytics.jpg"
             className="w-full h-full object-cover"
             alt=""
           />
           <div class="absolute inset-0 bottom-0 bg-black opacity-40"></div>
-          <div class="absolute w-full inset-0 bottom-0 flex flex-col items-center text-white px-16">
-            <h1 className="py-10 text-5xl font-bold text-[#f054f5]" style={{fontFamily: "sans-serif"}}>
+          <div class="absolute w-full inset-0 bottom-0 flex flex-col items-center justify-center text-white px-16">
+            <h1 className="pb-10 text-5xl font-bold text-[#f054f5]" style={{fontFamily: "sans-serif"}}>
               Data Analytics
             </h1>
             <p className="text-2xl font-thin text-gray-300">

@@ -10,9 +10,10 @@ const About = () => {
   return (
     <Layout title={"About | MAF"} description={"This is the about page"}>
       <div className="mt-[4rem] w-full">
-        <div className="relative top gradiant w-full">
-          <img src="/img/aboutBg.png" alt="" />
-          <div className="absolute top-[7rem] px-16 text-white flex justify-between items-center gap-28">
+        <div className="relative top gradiant w-full h-[90vh]">
+          <img src="/img/about.jpg" className="w-full object-cover bg-center bg-cover h-full" alt="" />
+          <div className="absolute inset-0 bottom-0 bg-black opacity-50"></div>
+          <div className="absolute inset-0 top-[2rem] px-16 text-white flex justify-between items-center gap-28">
             <div className="left w-full">
               <h2 className="text-5xl font-bold capitalize">
                 We are your transformation journey partner
@@ -39,11 +40,11 @@ const About = () => {
         {/* First */}
 
         <div className="first w-full mt-10">
-          <div className="w-[80%] m-auto">
-            <img src="/img/aboutBg.png" className="" alt="" />
+          <div className="w-full">
+            {/* <img src="/img/aboutBg.png" className="object-cover" alt="" /> */}
           </div>
 
-          <div className="w-1/2 m-auto my-6">
+          <div className="w-1/2 m-auto my-16">
             <h2 className="text-3xl font-semibold">
               <span className="text-2xl text-purple-500 font-bold">"</span>{" "}
               Setup your business for unparalleled success by navigating complex
@@ -64,7 +65,7 @@ const About = () => {
         <div className="second w-full mt-10">
           <div className="w-full flex px-14 items-start justify-center gap-20">
             <div className="left h-auto my-auto">
-              <img src="/img/homeImg4.jpg" alt="" className="object-cover" />
+              <img src="/img/Digitization.jpg" alt="" className="object-cover" />
             </div>
             <div className="right flex flex-col gap-8 w-full my-auto">
               <h1 className="text-4xl font-bold text-[#071b52]">
@@ -136,7 +137,7 @@ const About = () => {
 
         {/* Fourth */}
 
-        <div className="second w-full mt-20 bg-green-50">
+        <div className="second w-full mt-20">
           <div className="w-full flex px-14 items-start justify-center gap-20">
             <div className="right flex flex-col gap-8 my-auto">
               <h1 className="text-4xl font-bold text-[#071b52]">
@@ -154,7 +155,7 @@ const About = () => {
               </span>
             </div>
             <div className="left w-full h-auto">
-              <img src="/img/homeImg3.jpg" alt="" className="aspect-square object-cover" />
+              <img src="/img/Automation-mastery.jpg" alt="" className="object-cover" />
             </div>
           </div>
         </div>
@@ -203,7 +204,7 @@ const About = () => {
         <div className="second w-full mt-10">
           <div className="w-full flex px-14 items-start justify-center gap-20">
             <div className="left w-full h-auto my-auto">
-              <img src="/img/homeImg4.jpg" alt="" className="aspect-square object-cover" />
+              <img src="/img/Data.jpg" alt="" className="object-cover" />
             </div>
             <div className="right flex flex-col gap-8">
               <h1 className="text-4xl font-bold text-[#071b52]">
@@ -272,7 +273,7 @@ const About = () => {
 
         {/* Eighth */}
 
-        <div className="second w-full mt-20 bg-green-50">
+        <div className="second w-full mt-2">
           <div className="w-full flex px-14 items-start justify-center gap-20">
             <div className="right flex flex-col gap-8">
               <h1 className="text-4xl font-bold text-[#071b52]">
@@ -299,7 +300,7 @@ const About = () => {
               </span>
             </div>
             <div className="left w-full h-full my-auto">
-              <img src="/img/homeImg3.jpg" className="aspect-square object-cover" alt="" />
+              <img src="/img/Digital-transformation.jpg" className="object-cover" alt="" />
             </div>
           </div>
         </div>

@@ -4,9 +4,12 @@ import { FaArrowRight } from "react-icons/fa6";
 import Layout from "../components/Layout";
 import { FaLongArrowAltDown } from "react-icons/fa";
 import { FaTags } from "react-icons/fa";
+import { useNavigate } from "react-router-dom";
 
 const Home = () => {
   const [scrollY, setScrollY] = useState(0);
+
+  const navigate = useNavigate();
 
   useEffect(() => {
     const handleScroll = () => {
@@ -36,28 +39,32 @@ const Home = () => {
         description={"This is the home page"}
         className="w-full h-screen"
       >
-        <div className="gradiant relative top">
-          <div className="relative">
-            <img className="" src="/img/homeBg.png" alt="" />
+        <div className="gradiant relative top w-full">
+          <div className="relative w-full">
             <img
-              className="absolute top-36 h-[150px] left-28"
-              style={imgStyle}
-              src="/img/homeBg3.png"
+              src="/img/homeBk3.jpg"
+              className="w-full object-cover"
               alt=""
             />
             <img
-              className="absolute top-[34rem] left-28"
-              src="/img/homeBg2.png"
+              className="absolute top-36 h-[400px] left-28"
+              style={imgStyle}
+              src="/img/ball.png"
+              alt=""
+            />
+            <img
+              className="absolute top-[2rem] right-60"
+              src="/img/ball1.png"
               alt=""
               style={imgStyle}
             />
             <img
-              className="absolute top-[18rem] h-[150px] right-40"
+              className="absolute top-[7rem] h-[500px] -left-10"
               style={imgStyle}
-              src="/img/homeBg1.png"
+              src="/img/ball2.png"
               alt=""
             />
-            <img
+            {/* <img
               className="absolute top-[30rem] h-[150px] right-[20rem]"
               style={imgStyle}
               src="/img/homeBg3.png"
@@ -79,15 +86,18 @@ const Home = () => {
               className="absolute top-[30rem] right-40"
               src="/img/homeBg6.png"
               alt=""
-            />
+            /> */}
           </div>
           <div className="absolute top-36 flex flex-col items-center justify-center w-full">
             <div className="flex flex-col gap-5 text-6xl text-white font-bold">
-              <h1 className="text-center" style={{ fontFamily: "sans-serif" }}>
-                WE ARE THE CREATIVE
+              <h1
+                className="text-center outline"
+                style={{ fontFamily: "sans-serif" }}
+              >
+                We Are <span className="text-white">Your Transformation</span>
               </h1>
-              <h1 className="text-center" style={{ fontFamily: "sans-serif" }}>
-                TRANSFORMATION COMPANY
+              <h1 className="text-center outline" style={{ fontFamily: "sans-serif" }}>
+               <span className="text-white">Journey</span> Partner
               </h1>
             </div>
             <div className="w-1/3 text-white text-center mt-10 text-xl">
@@ -97,7 +107,10 @@ const Home = () => {
               </h3>
             </div>
             <div className="my-8">
-              <button className="px-6 py-3 ring-2 ring-sky-600 rounded-full text-white hover:underline">
+              <button
+                onClick={() => navigate("/about")}
+                className="px-6 py-3 ring-2 ring-sky-600 rounded-full text-white hover:underline"
+              >
                 Learn more about MAF
               </button>
             </div>
@@ -109,7 +122,7 @@ const Home = () => {
 
         {/* Middle One */}
 
-        <div className="middle1 mt-20">
+        {/* <div className="middle1 mt-20">
           <div className="relative w-[70%] m-auto flex justify-between px-10 gap-10">
             <h2 className="absolute font-bold -rotate-90 -left-8 top-4 text-xl text-[#071b52]">
               WORK
@@ -117,23 +130,24 @@ const Home = () => {
             <div className="left w-1/2 cursor-pointer">
               <div className="flex flex-col w-full">
                 <img
-                  src="/img/homeImg1.jpg"
+                  src="/img/work-1(2).jpg"
                   className="w-full h-auto bg-cover object-cover bg-center"
                   alt=""
                 />
                 <h2 className="text-xl font-bold my-3 hover:underline text-[#071b52]">
-                  Ogilvy & Wavemaker: Cadbury Dairy Milk’s Proud Sponsors of the
-                  Ground Staff
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod
+                  tenetur autem ea vel sed? Dolorem sequi
                 </h2>
                 <p className="text-gray-600">
-                  Celebrating the work of unnoticed heroes
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed
+                  iste fuga cum?
                 </p>
               </div>
             </div>
             <div className="right w-1/2 cursor-pointer">
               <div className="flex flex-col w-full">
                 <img
-                  src="/img/homeImg2.jpg"
+                  src="/img/work-2.jpg"
                   className="w-full h-auto bg-cover object-cover bg-center"
                   alt=""
                 />
@@ -146,28 +160,28 @@ const Home = () => {
               </div>
             </div>
           </div>
-        </div>
+        </div> */}
 
         {/* Middle Two */}
 
-        <div className="middle2 mt-20">
+        {/* <div className="middle2 mt-20">
           <div className="relative w-[70%] m-auto px-10">
             <h2 className="absolute font-bold -rotate-90 -left-8 top-16 text-xl text-[#071b52]">
-              WPP iQ
+              MAF iQ
             </h2>
             <div className="top flex gap-3 items-center justify-end mb-3">
               <p className="text-sky-400 text-lg">
                 <FaArrowRight />
               </p>
               <h2 className="text-md text-gray-600 font-semibold">
-                Read more on WPP iQ
+                Read more on MAF iQ
               </h2>
             </div>
             <div className="bottom w-full flex gap-4 items-srart justify-center">
               <div className="left w-full">
                 <div className="w-full">
                   <img
-                    src="/img/homeImg3.jpg"
+                    src="/img/iq1.jpg"
                     className="aspect-square object-cover"
                     alt=""
                   />
@@ -183,7 +197,7 @@ const Home = () => {
               <div className="middle w-full">
                 <div className="w-full">
                   <img
-                    src="/img/homeImg4.jpg"
+                    src="/img/iq2.jpg"
                     className="aspect-square object-cover"
                     alt=""
                   />
@@ -199,7 +213,7 @@ const Home = () => {
               <div className="right w-full">
                 <div className="w-full">
                   <img
-                    src="/img/homeImg5.jpg"
+                    src="/img/iq3.jpg"
                     className="aspect-square object-cover"
                     alt=""
                   />
@@ -215,17 +229,17 @@ const Home = () => {
               </div>
             </div>
           </div>
-        </div>
+        </div> */}
 
         {/* Middle Three */}
 
-        <div className="w-full mt-20">
+        {/* <div className="w-full mt-20">
           <div className="relative w-[75%] m-auto h-[80vh] px-16">
             <h2 className="absolute -left-12 top-16 -rotate-90 text-xl font-bold text-[#071b52]">
               SUSTAINABILITY
             </h2>
             <img
-              src="/img/homeImg6.jpg"
+              src="/img/sust.jpg"
               className="w-full bg-center h-[94%] bg-cover object-cover"
               alt=""
             />
@@ -246,7 +260,7 @@ const Home = () => {
               </h2>
             </div>
           </div>
-        </div>
+        </div> */}
 
         {/* Middle Four */}
 
@@ -268,7 +282,7 @@ const Home = () => {
                 alt=""
               />
               <h2 className="text-xl font-bold my-3 hover:underline text-[#071b52]">
-                WPP acquires sonic branding agency amp
+                Lorem ipsum dolor sit amet consectetur adipisicing.
               </h2>
             </div>
             <div className="two w-full">
@@ -278,16 +292,13 @@ const Home = () => {
                 alt=""
               />
               <h2 className="text-xl font-bold my-3 hover:underline text-[#071b52]">
-                WPP welcomes KKR as strategic partner in FGS Global
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
               </h2>
               <p
                 className="text-md text-gray-500"
                 style={{ lineHeight: "32px" }}
               >
-                WPP today announces that leading global investment firm KKR has
-                made a growth investment in FGS Global, the strategic advisory
-                and communications consultancy in which WPP is a majority
-                shareholder.
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quos nemo sequi asperiores? Lorem ipsum dolor sit amet consectetur.
               </p>
             </div>
             <div className="three w-full">
@@ -297,7 +308,7 @@ const Home = () => {
                 alt=""
               />
               <h2 className="text-xl font-bold my-3 hover:underline text-[#071b52]">
-                WPP India Foundation wins CSR Foundation of the Year
+                Lorem, ipsum dolor sit amet consectetur adipisicing.
               </h2>
             </div>
             <div className="four w-full">
@@ -307,8 +318,7 @@ const Home = () => {
                 alt=""
               />
               <h2 className="text-xl font-bold my-3 hover:underline text-[#071b52]">
-                WPP acquires remaining stake in MediaCom Communications in India
-                from Sam Balsara and Lara Balsara Vajifdar
+                Lorem ipsum dolor adipisicing elit. Et id expedita officiis!
               </h2>
             </div>
           </div>

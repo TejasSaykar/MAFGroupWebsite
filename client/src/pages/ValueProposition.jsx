@@ -8,11 +8,11 @@ const ValueProposition = () => {
       <div className="mt-[4rem] w-full">
         <div className="relative w-full h-[67vh] top">
           <img
-            src="/img/about1.jpg"
+            src="/img/proposition.jpg"
             className="w-full h-full bg-center bg-cover object-cover"
             alt=""
           />
-          <div class="absolute inset-0 bottom-0 bg-black opacity-50"></div>
+          <div class="absolute inset-0 bottom-0 bg-black opacity-60"></div>
           <div class="absolute w-full inset-0 bottom-0 flex items-center justify-between text-white px-16">
             <div className="left w-[50%]">
               <h2 className="text-5xl font-bold mt-40 cursor-pointer" style={{fontFamily: "sans-serif"}}>
@@ -33,7 +33,7 @@ const ValueProposition = () => {
         <div className="w-full mt-20">
           <div className="px-14 flex gap-5 w-full">
             <div className="left w-full">
-              <img src="/img/about_1.webp" alt="" className="w-full aspect-video object-cover" />
+              <img src="/img/footprint.jpg" alt="" className="w-full aspect-video object-cover" />
             </div>
             <div className="right w-full flex flex-col gap-5 h-auto my-auto">
               <h1 style={{fontFamily: "sans-serif"}} className="text-4xl text-[#071b52] font-bold">
@@ -60,7 +60,7 @@ const ValueProposition = () => {
         <div className="w-full mt-24">
           <div className="px-14 flex gap-5 w-full">
             <div className="left w-full order-2">
-              <img src="/img/about_2.webp" alt="" className="w-full aspect-video object-cover" />
+              <img src="/img/Agile.jpg" alt="" className="w-full aspect-video object-cover" />
             </div>
             <div className="right w-full flex flex-col gap-5 h-auto my-auto order-1">
               <h1 style={{fontFamily: "sans-serif"}} className="text-4xl text-[#071b52] font-bold">
@@ -85,7 +85,7 @@ const ValueProposition = () => {
         <div className="w-full mt-24">
           <div className="px-14 flex gap-5 w-full">
             <div className="left w-full order-1">
-              <img src="/img/about_3.jpg" alt="" className="w-full aspect-video object-cover" />
+              <img src="/img/strategy.jpg" alt="" className="w-full aspect-video object-cover" />
             </div>
             <div className="right w-full flex flex-col gap-5 h-auto my-auto order-2">
               <h1 style={{fontFamily: "sans-serif"}} className="text-4xl text-[#071b52] font-bold">
@@ -111,7 +111,7 @@ const ValueProposition = () => {
         <div className="w-full mt-24">
           <div className="px-14 flex gap-5 w-full">
             <div className="left w-full order-2">
-              <img src="/img/about_4.jpg" alt="" className="w-full aspect-video object-cover" />
+              <img src="/img/growth.jpg" alt="" className="w-full aspect-video object-cover" />
             </div>
             <div className="right w-full flex flex-col gap-5 h-auto my-auto order-1">
               <h1 style={{fontFamily: "sans-serif"}} className="text-4xl text-[#071b52] font-bold">
