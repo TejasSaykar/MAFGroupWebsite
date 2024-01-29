@@ -27,10 +27,21 @@ import CS4 from "./pages/CS4";
 import CS5 from "./pages/CS5";
 import CS6 from "./pages/CS6";
 import Partners from "./pages/partners";
+import CS7 from "./pages/CS7";
+import Carrier from "./pages/Carrier";
+import Culture from "./pages/Culture";
+import T_C from "./pages/T&C";
+import Cookies from "./pages/Cookies";
+import Blog1 from "./pages/Blog1";
+import Blog2 from "./pages/Blog2";
+import Blog3 from "./pages/Blog3";
+import Blog4 from "./pages/Blog4";
+import ScrollToTop from "./components/ScrollToTop";
 
 function App() {
   return (
     <>
+      <ScrollToTop />
       <Routes>
         {/* Home Route */}
         <Route path="/" element={<Home />} />
@@ -56,15 +67,32 @@ function App() {
         <Route path="/manufacturing" element={<Manufacturing />} />
 
         {/* Our Work */}
-        <Route path="/our-work" element={<Ourwork/>} />
-        <Route path="/case2" element={<CS2/>} />
-        <Route path="/case3" element={<CS3/>} />
-        <Route path="/case4" element={<CS4/>} />
-        <Route path="/case5" element={<CS5/>} />
-        <Route path="/case6" element={<CS6/>} />
+        <Route path="/our-work" element={<Ourwork />} />
+        <Route path="/case2" element={<CS2 />} />
+        <Route path="/case3" element={<CS3 />} />
+        <Route path="/case4" element={<CS4 />} />
+        <Route path="/case5" element={<CS5 />} />
+        <Route path="/case6" element={<CS6 />} />
+        <Route path="/case7" element={<CS7 />} />
 
         {/* Our Partners */}
-        <Route path="/partners" element={<Partners/>} />
+        <Route path="/partners" element={<Partners />} />
+
+        {/* Poeple */}
+        <Route path="/avenues" element={<Carrier />} />
+        <Route path="/culture" element={<Culture />} />
+
+        {/* Blogs */}
+        <Route path="/blog1" element={<Blog1 />} />
+        <Route path="/blog2" element={<Blog2 />} />
+        <Route path="/blog3" element={<Blog3 />} />
+        <Route path="/blog4" element={<Blog4 />} />
+
+        {/* Terms and Conditions */}
+        <Route path="/tc" element={<T_C />} />
+
+        {/* Cookies */}
+        <Route path="/cookies" element={<Cookies />} />
 
         <Route path="/media" element={<Media />} />
         <Route path="/offer" element={<Offers />} />

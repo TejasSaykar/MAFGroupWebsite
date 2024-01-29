@@ -2,8 +2,10 @@ import React from 'react'
 import Navbar from './Navbar'
 import Footer from './Footer'
 import { Helmet } from 'react-helmet'
+import { useTheme } from './Themeprovider'
 
 const Layout = ({ children, description, keyword, author, title }) => {
+    const {theme} = useTheme();
     return (
         <>
             <Helmet>
@@ -14,7 +16,7 @@ const Layout = ({ children, description, keyword, author, title }) => {
                 <title>{ title }</title>
             </Helmet>
             <div>
-                <header className='fixed top-0 z-10 w-full bg-white shadow-md'>
+                <header className={`fixed top-0 z-10 w-full bg-white shadow-md dark:shadow-gray-700`}>
                     <Navbar />
                 </header>
                 <main className='h-full'>{ children }</main>

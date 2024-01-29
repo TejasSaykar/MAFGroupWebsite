@@ -3,20 +3,22 @@ import Layout from "../components/Layout";
 
 const Industries = () => {
   return (
-    <Layout>
+    <Layout title={"MAF | Industries"}>
       <div className="w-full mt-[4rem]">
-        <div className="relative w-full h-[70vh]">
+        <div className="relative w-full h-[60vh] md:h-[70vh]">
           <img
-            src="/img/banking.webp"
+            src="/img/banking.jpg"
             className="w-full h-full object-cover"
             alt=""
           />
-          <div class="absolute inset-0 bottom-0 bg-black opacity-30"></div>
-          <div class="absolute w-full inset-0 bottom-0 flex items-center justify-between text-white px-16"></div>
+          <div class="absolute inset-0 bottom-0 bg-black opacity-60"></div>
+          <div class="absolute w-full inset-0 bottom-0 flex items-center justify-center text-white px-16">
+            <h2 className="text-5xl text-center font-bold">Banking</h2>
+          </div>
         </div>
 
-        <div className="w-full mt-10 px-20 flex flex-col gap-16">
-          <div className="w-[80%] m-auto flex">
+        <div className="w-full mt-10 px-8 sm:px-20 xl:px-20 flex flex-col gap-16">
+          <div className="flex-col md:flex-row items-center xl:w-[80%] m-auto flex gap-4 md:gap-0">
             <div className="w-full my-auto mx-20 ring-1 ring-red-200 rounded-sm items-end flex">
               <img
                 src="/img/bank1.avif"
@@ -36,15 +38,15 @@ const Industries = () => {
             </div>
           </div>
 
-          <div className="w-[80%] m-auto flex pl-20">
-            <div className="w-full my-auto mx-10 flex order-2">
+          <div className="flex-col md:flex-row items-center xl:w-[80%] m-auto flex gap-4 xl:pl-20">
+            <div className="w-full my-auto mx-10 flex order-1 md:order-2">
               <img
                 src="/img/bank2.avif"
-                className="aspect-video object-cover"
+                className="aspect-video object-cover w-full"
                 alt=""
               />
             </div>
-            <div className="w-full my-auto">
+            <div className="w-full my-auto order-2 md:order-1">
               <p className="text-lg font-light">
                 So, banking industry players who want to sustain their position
                 must act now. Being digital and offering better online service
@@ -55,8 +57,8 @@ const Industries = () => {
             </div>
           </div>
 
-          <div className="w-[80%] m-auto flex">
-            <div className="w-full my-auto mx-20 flex">
+          <div className="flex-col md:flex-row xl:w-[80%] gap-4 md:gap-10 m-auto flex">
+            <div className="w-full my-auto xl:mx-20 flex">
               <img
                 src="/img/bank3.webp"
                 className="aspect-video object-cover"

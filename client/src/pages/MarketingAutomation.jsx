@@ -4,18 +4,23 @@ import { FaCheck } from "react-icons/fa";
 
 const MarketingAutomation = () => {
   return (
-    <Layout>
+    <Layout title={"MAF | Marketing Automation"}>
       <div className="mt-[4rem] w-full">
-        <div className="relative w-full h-[70vh] top">
+        <div className="relative w-full h-screen md:h-[70vh] top">
           <img
-            src="/img/automation.jpg"
+            src="/img/ma1.jpg"
             className="w-full h-full object-cover"
             alt=""
           />
-          <div class="absolute inset-0 bottom-0 bg-black opacity-45"></div>
-          <div class="absolute w-full inset-0 bottom-0 flex flex-col items-center pt-20  justify-start text-white">
-            <h1 className="text-5xl font-bold" style={{fontFamily: "sans-serif"}}>Marketing Automation</h1>
-            <p className="px-16 py-6 text-lg font-light">
+          <div class="absolute inset-0 bottom-0 bg-black opacity-65 md:opacity-65"></div>
+          <div class="absolute w-full inset-0 bottom-0 flex flex-col items-center pt-8 md:pt-20  justify-start px-5 md:px-0 text-white">
+            <h1
+              className="text-4xl text-start md:text-start md:text-5xl font-bold"
+              style={{ fontFamily: "sans-serif" }}
+            >
+              Marketing Automation
+            </h1>
+            <p className="md:px-16 py-6 text-lg md:text-lg font-light">
               With time, organizations are learning the importance of using
               technology to market their business, explore new markets and
               ensure minimal manual intervention. <br /> More than 55% of B2B
@@ -29,13 +34,16 @@ const MarketingAutomation = () => {
         </div>
 
         <div className="mt-14 w-full">
-          <h2 className="text-center text-2xl font-bold text-[#071b52] mb-8" style={{fontFamily: "sans-serif"}}>
+          <h2
+            className="text-center px-2 text-xl md:text-2xl font-bold text-[#071b52] dark:text-rose-600 mb-8"
+            style={{ fontFamily: "sans-serif" }}
+          >
             What Marketing Automation Services Do We Offer?
           </h2>
-          <div className="w-full flex gap-3 px-6">
-            <div className="one hover:shadow-lg w-full flex flex-col">
-              <img src="/img/seo.jpg" alt="" />
-              <h2 className="text-xl mt-1 p-1 font-semibold text-[#071b52]">
+          <div className="w-full flex-col md:flex-row flex gap-3 px-6">
+            <div className="one shadow-lg dark:shadow-gray-700 w-full flex flex-col">
+              <img src="/img/seo1.png" alt="" />
+              <h2 className="text-xl mt-1 p-1 font-semibold text-[#071b52] dark:text-rose-600">
                 Search Engine Optimization – SEO Services
               </h2>
               <p className="my-1 p-1 text-lg font-thin">
@@ -44,9 +52,9 @@ const MarketingAutomation = () => {
               </p>
             </div>
 
-            <div className="two hover:shadow-lg w-full">
-              <img src="/img/google.jpg" alt="" />
-              <h2 className="text-xl mt-1 p-1 font-semibold text-[#071b52]">
+            <div className="two shadow-lg dark:shadow-gray-700 w-full">
+              <img src="/img/google1.png" alt="" />
+              <h2 className="text-xl mt-1 p-1 font-semibold text-[#071b52] dark:text-rose-600">
                 Google Ads Management – PPC Services
               </h2>
               <p className="my-1 p-1 text-lg font-thin">
@@ -57,9 +65,9 @@ const MarketingAutomation = () => {
               </p>
             </div>
 
-            <div className="three hover:shadow-lg w-full">
-              <img src="/img/socialMedia.jpg" alt="" />
-              <h2 className="text-xl mt-1 p-1 font-semibold text-[#071b52]">
+            <div className="three shadow-lg dark:shadow-gray-700 w-full">
+              <img src="/img/ma2.png" alt="" />
+              <h2 className="text-xl mt-1 p-1 font-semibold text-[#071b52] dark:text-rose-600">
                 Social Media Marketing
               </h2>
               <p className="my-1 p-1 text-lg font-thin">
@@ -69,9 +77,9 @@ const MarketingAutomation = () => {
               </p>
             </div>
 
-            <div className="four hover:shadow-lg w-full">
+            <div className="four shadow-lg dark:shadow-gray-700 w-full">
               <img src="/img/email.png" alt="" />
-              <h2 className="text-xl mt-1 p-1 font-semibold text-[#071b52]">
+              <h2 className="text-xl mt-1 p-1 font-semibold text-[#071b52] dark:text-rose-600">
                 Email Marketing
               </h2>
               <p className="my-1 p-1 text-lg font-thin">
@@ -81,10 +89,14 @@ const MarketingAutomation = () => {
             </div>
           </div>
 
-          <div className="w-full flex gap-3 px-6 mt-14">
-            <div className="one hover:shadow-lg w-full flex flex-col">
-              <img src="/img/advertising.jpg" className="aspect-video" alt="" />
-              <h2 className="text-xl mt-1 p-1 font-semibold text-[#071b52]">
+          <div className="hidden w-full md:flex gap-3 px-6 mt-14">
+            <div className="one shadow-lg dark:shadow-gray-700 w-full flex flex-col">
+              <img
+                src="/img/ma3.png"
+                className="aspect-video object-cover"
+                alt=""
+              />
+              <h2 className="text-xl mt-1 p-1 font-semibold text-[#071b52] dark:text-rose-600">
                 Targeted Online Advertising & Remarketing
               </h2>
               <p className="my-1 p-1 text-lg font-thin">
@@ -94,13 +106,13 @@ const MarketingAutomation = () => {
               </p>
             </div>
 
-            <div className="two hover:shadow-lg w-full">
+            <div className="two shadow-lg dark:shadow-gray-700 w-full">
               <img
-                src="/img/contentMarketing.jpg"
-                className="aspect-video"
+                src="/img/ma4.png"
+                className="aspect-video object-cover"
                 alt=""
               />
-              <h2 className="text-xl mt-1 p-1 font-semibold text-[#071b52]">
+              <h2 className="text-xl mt-1 p-1 font-semibold text-[#071b52] dark:text-rose-600">
                 Content Marketing
               </h2>
               <p className="my-1 p-1 text-lg font-thin">
@@ -110,13 +122,13 @@ const MarketingAutomation = () => {
               </p>
             </div>
 
-            <div className="three hover:shadow-lg w-full">
+            <div className="three shadow-lg dark:shadow-gray-700 w-full">
               <img
-                src="/img/inboundMarketing.webp"
-                className="aspect-video"
+                src="/img/ma5.png"
+                className="aspect-video object-cover"
                 alt=""
               />
-              <h2 className="text-xl mt-1 p-1 font-semibold text-[#071b52]">
+              <h2 className="text-xl mt-1 p-1 font-semibold text-[#071b52] dark:text-rose-600">
                 Inbound Marketing
               </h2>
               <p className="my-1 p-1 text-lg font-thin">
@@ -127,9 +139,13 @@ const MarketingAutomation = () => {
               </p>
             </div>
 
-            <div className="four hover:shadow-lg w-full">
-              <img src="/img/marketing.jpg" className="aspect-video" alt="" />
-              <h2 className="text-xl mt-1 p-1 font-semibold text-[#071b52]">
+            <div className="four shadow-lg dark:shadow-gray-700 w-full">
+              <img
+                src="/img/ma6.png"
+                className="aspect-video object-cover"
+                alt=""
+              />
+              <h2 className="text-xl mt-1 p-1 font-semibold text-[#071b52] dark:text-rose-600">
                 Marketing Strategy
               </h2>
               <p className="my-1 p-1 text-lg font-thin">
@@ -140,14 +156,14 @@ const MarketingAutomation = () => {
             </div>
           </div>
 
-          <div className="w-full flex gap-6 px-6 mt-14">
-            <div className="one hover:shadow-lg w-full flex flex-col">
+          <div className="w-full flex-col md:flex-row flex gap-6 px-6 mt-14">
+            <div className="one shadow-lg dark:shadow-gray-700 w-full flex flex-col">
               <img
-                src="/img/automation.jpg"
+                src="/img/ma7.png"
                 className="aspect-video object-cover"
                 alt=""
               />
-              <h2 className="text-xl mt-1 p-1 font-semibold text-[#071b52]">
+              <h2 className="text-xl mt-1 p-1 font-semibold text-[#071b52] dark:text-rose-600">
                 Marketing Automation
               </h2>
               <p className="my-1 p-1 text-lg font-thin">
@@ -156,13 +172,13 @@ const MarketingAutomation = () => {
               </p>
             </div>
 
-            <div className="two hover:shadow-lg w-full">
+            <div className="two shadow-lg dark:shadow-gray-700 w-full">
               <img
-                src="/img/sales.jpg"
+                src="/img/sales1.png"
                 className="aspect-video object-cover"
                 alt=""
               />
-              <h2 className="text-xl mt-1 p-1 font-semibold text-[#071b52]">
+              <h2 className="text-xl mt-1 p-1 font-semibold text-[#071b52] dark:text-rose-600">
                 Sales Strategy & Training
               </h2>
               <p className="my-1 p-1 text-lg font-thin">
@@ -171,13 +187,13 @@ const MarketingAutomation = () => {
               </p>
             </div>
 
-            <div className="three hover:shadow-lg w-full">
+            <div className="block three shadow-lg dark:shadow-gray-700 w-full">
               <img
-                src="/img/crm.png"
+                src="/img/ma8.png"
                 className="aspect-video object-cover"
                 alt=""
               />
-              <h2 className="text-xl mt-1 p-1 font-semibold text-[#071b52]">
+              <h2 className="text-xl mt-1 p-1 font-semibold text-[#071b52] dark:text-rose-600">
                 CRM Set Up, Training &Optimization
               </h2>
               <p className="my-1 p-1 text-lg font-thin">
@@ -188,8 +204,8 @@ const MarketingAutomation = () => {
             </div>
           </div>
 
-          <div className="flex w-[50%] m-auto items-start justify-center flex-col gap-4 mt-14 pl-[10%]">
-            <h2 className="text-2xl font-bold text-[#071b52]">
+          {/* <div className="flex w-full px-3 lg:w-[50%] m-auto items-center lg:items-start justify-center flex-col gap-4 mt-14 md:pl-[10%]">
+            <h2 className="text-2xl font-bold text-[#071b52] dark:text-rose-600">
               What Will We Set Up for You?
             </h2>
             <h4 className="text-xl">We automate the following for you : </h4>
@@ -216,7 +232,7 @@ const MarketingAutomation = () => {
                 <FaCheck className="text-green-600" /> Prioritizing the most valuable prospects
               </li>
             </ol>
-          </div>
+          </div> */}
         </div>
       </div>
     </Layout>

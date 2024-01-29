@@ -1,97 +1,86 @@
-import React from 'react'
-import Layout from "../components/Layout"
-import { FaArrowRight } from "react-icons/fa6"
+import React from "react";
+import Layout from "../components/Layout";
 
 
 const Contact = () => {
-    return (
-        <Layout title={"Contact | MAF"} description={"This is the contact page"}>
-            <div className='mt-[4rem] w-full'>
-                <div className="relative top w-full">
-                    <img src="/img/contactBg.jpg" alt="" />
-                    <div className='absolute top-24 text-white px-20'>
-                        <div className="top mb-3">
-                            <h1 className='text-5xl font-bold text-[#d724f2]'>WPP PLC</h1>
-                        </div>
-                        <div className='w-full flex justify-between gap-32'>
-                            <div className="left flex flex-col gap-4 w-full">
-                                <h2 className='text-2xl font-light'>Sea Containers</h2>
-                                <p className='text-2xl font-light'>18 Upper Ground
-                                    London, SE1 9GL
-                                    Tel: +44 (0)20 7282 4600
-                                </p>
-                                <span className='flex gap-2 items-center'>
-                                    <FaArrowRight />
-                                    <h4 className='font-light'>Email</h4>
-                                </span>
-                            </div>
-                            <div className="middle w-full flex flex-col gap-4">
-                                <h2 className='font-bold'>OUR COMPANIES</h2>
-                                <p className='text-2xl font-light'>Details for WPP’s agency networks and other operations.</p>
-                                <span className='flex gap-2 items-center'>
-                                    <FaArrowRight />
-                                    <h4 className='font-light'>Find out more</h4>
-                                </span>
-                            </div>
-                            <div className="right w-full flex flex-col gap-4">
-                                <h1 className='font-bold'>NEW BUSINESS ENQUIRIES</h1>
-                                <p className='text-2xl font-light'>Contact the WPP new business team for further details of our services.</p>
-                                <span className='flex gap-2 items-center'>
-                                    <FaArrowRight />
-                                    <h4 className='font-light'>Email</h4>
-                                </span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div className='w-full mt-10'>
-                    <div className='w-[80%] m-auto flex gap-10'>
-                        <div className="left w-full">
-                            <h2 className='text-3xl font-light'>Contact us for comments or information on WPP financial policies or statements.</h2>
-                            <span className='flex gap-2 text-sm items-center mt-4 font-thin'>
-                                <FaArrowRight className='font-thin' />
-                                <h4 className='text-sm'>Email: investor@wpp.com</h4>
-                            </span>
-                        </div>
-                        <div className="middle w-full">
-                            <h2 className='text-3xl font-bold text-[#071b52]'>Tom Waldron</h2>
-                            <p className='text-2xl mt-3 font-light'>Group Director, Investor Relations (London)</p>
-                        </div>
-                        <div className="right w-full">
-                            <h2 className='text-3xl font-bold text-[#071b52]'>Anthony Hamilton</h2>
-                            <p className='text-2xl mt-3 font-light'>Director, Investor Relations (London)</p>
-                        </div>
-                    </div>
-                </div>
-
-                <div className='w-full mt-5'>
-                    <div className='flex w-[80%] m-auto items-start justify-center gap-5'>
-                        <div className='left w-full'>
-                            <h2 className='text-3xl font-light'>For questions about your shareholding, including changes of address, lost share certificates, share transfers etc, contact:</h2>
-                        </div>
-                        <div className='w-full'>
-                            <h2 className='w-1/2 m-auto font-light text-xl'>13 Castle Street
-                                St Helier
-                                Jersey
-                                JE1 1ES
-                                T : +44 (0)370 707 1411
-                            </h2>
-                        </div>
-                        <div className='w-full'>
-                            <h2 className='text-3xl font-bold text-[#071b52]'>WPP registered office</h2>
-                            <p className='w-1/2 text-xl font-light mt-3'>22 Grenville Street
-                                St Helier
-                                Jersey
-                                JE4 8PX
-                            </p>
-                        </div>
-                    </div>
-                </div>
-
+  return (
+    <Layout title={"Contact | MAF"} description={"This is the contact page"}>
+      <div className="mt-[4rem] w-full">
+        <div className="relative top w-full">
+          <div className="relative w-full h-[90vh] md:h-[60vh]">
+            <img
+              src="/img/contactBg1.jpg"
+              className="w-full h-full object-cover bg-center bg-cover"
+              alt=""
+            />
+            <div className="absolute bottom-0 inset-0 bg-black opacity-60"></div>
+          </div>
+          <div className="absolute top-10 md:top-28 text-white px-5 md:px-20">
+            <div className="w-full flex-col md:flex-row flex md:justify-between md:gap-32">
+              <div className="left w-full mt-7">
+                <h2 className="text-3xl font-semibold">UK Address</h2>
+                <p className="text-xl my-2 md:mt-5 font-light">
+                  1st Floor, Building 2 Croxley Business Park, Watford, United
+                  Kingdom, WD18 8YA -
+                </p>
+              </div>
+              <div className="right w-full mt-7">
+                <h2 className="text-3xl font-semibold">India Address</h2>
+                <p className="text-xl mt-2 md:mt-5 font-light">
+                  Krishe Sapphire, Hitech City Rd, Hyderabad, Telangana 500081,
+                  India +1800 789-4567
+                </p>
+              </div>
+              <div className="w-full mt-7">
+                <h2 className="text-3xl font-semibold">Email Address</h2>
+                <p className="text-xl mt-2 md:mt-5 font-light">
+                  service@mafgroup.com
+                </p>
+              </div>
             </div>
-        </Layout>
-    )
-}
+          </div>
+        </div>
 
-export default Contact
+        <div className="w-full flex items-center justify-center mt-5">
+          <div className="shadow-lg bg-gray-100 rounded-lg flex flex-col gap-5 p-4 w-full mx-3 md:mx-0 md:w-[60vw]">
+            <h2 className="text-3xl font-bold text-center">Contact Us</h2>
+            <div className="flex w-full flex-col md:flex-row gap-4">
+              <div className="flex w-full flex-col gap-1">
+                <label htmlFor="" className="text-base font-semibold">Username : </label>
+                <input className="py-1 md:py-2 rounded-sm ring-2 ring-gray-600" type="text" />
+              </div>
+              <div className="flex w-full flex-col gap-1">
+                <label htmlFor="" className="text-base font-semibold">Email : </label>
+                <input className="py-1 md:py-2 rounded-sm ring-2 ring-gray-600" type="email" />
+              </div>
+            </div>
+
+            <div className="flex flex-col md:flex-row gap-4 w-full">
+              <div className="flex w-full flex-col gap-1">
+                <label htmlFor="" className="text-base font-semibold">Phone : </label>
+                <input className="py-1 md:py-2 rounded-sm ring-2 ring-gray-600" type="text" />
+              </div>
+              <div className="flex w-full flex-col gap-1">
+                <label htmlFor="" className="text-base font-semibold">Message : </label>
+                <textarea
+                  className="rounded-sm px-2 ring-2 ring-gray-600 placeholder:text-gray-600"
+                  cols="30"
+                  rows="2"
+                  placeholder="Enter message here..."
+                ></textarea>
+              </div>
+            </div>
+
+            <div className="w-10">
+              <button className="px-4 py-2 bg-[#071b52] rounded-lg text-white">
+                Submit
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </Layout>
+  );
+};
+
+export default Contact;

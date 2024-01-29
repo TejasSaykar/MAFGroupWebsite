@@ -3,14 +3,14 @@ import Layout from "../components/Layout";
 
 const CS5 = () => {
   return (
-    <Layout>
+    <Layout title={"MAF | Work"}>
       <div className="mt-[4rem] w-full">
-        <div className="w-[70%] m-auto flex flex-col gap-8 pt-5">
-          <h1 className="text-4xl font-bold text-[#071b52]">
+        <div className="w-[90%] lg:w-[70%] m-auto flex flex-col gap-8 pt-5">
+          <h1 className="text-3xl sm:text-4xl font-bold text-[#071b52] dark:text-rose-600">
             Successful migration for a successful digital transformation
           </h1>
           <div className="flex flex-col gap-5">
-            <h2 className="text-2xl font-medium text-[#071b52]">
+            <h2 className="text-2xl font-medium text-[#071b52] dark:text-rose-600">
               Problem Statement:
             </h2>
             <p className="text-xl font-light">
@@ -22,20 +22,28 @@ const CS5 = () => {
             </p>
           </div>
           <div className="flex flex-col gap-5">
-            <h2 className="text-2xl font-medium text-[#071b52]">
+            <h2 className="text-2xl font-medium text-[#071b52] dark:text-rose-600">
               Our Solution:
             </h2>
-            <p className="text-xl font-light">
-              We helped them navigate through uncharted territory by carefully
-              migrating from Magento 2 to Salesforce Commerce Cloud (SFCC) and
-              Salesforce Marketing Cloud (SFMC) to embrace the dynamic
-              capabilities of Salesforce.
-            </p>
-            <p className="text-xl font-light">
-              In addition to managing the Salesforce platform, we additionally
-              crafted bespoke applications that catered to their organizational
-              needs while working in perfect harmony between the SFCC and SFMC.
-            </p>
+            <div className="flex flex-col gap-4 md:flex-row items-center">
+              <div className="w-full order-2 md:order-1">
+                <p className="text-xl font-light">
+                  We helped them navigate through uncharted territory by
+                  carefully migrating from Magento 2 to Salesforce Commerce
+                  Cloud (SFCC) and Salesforce Marketing Cloud (SFMC) to embrace
+                  the dynamic capabilities of Salesforce.
+                </p>
+                <p className="text-xl font-light">
+                  In addition to managing the Salesforce platform, we
+                  additionally crafted bespoke applications that catered to
+                  their organizational needs while working in perfect harmony
+                  between the SFCC and SFMC.
+                </p>
+              </div>
+              <div className="w-full order-1 md:order-2">
+                <img src="/img/success.png" alt="" />
+              </div>
+            </div>
 
             <p className="text-xl font-light">
               We additionally ventured into data convergence, by connecting

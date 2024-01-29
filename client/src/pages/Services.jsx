@@ -3,22 +3,25 @@ import Layout from "../components/Layout";
 
 const Services = () => {
   return (
-    <Layout>
+    <Layout title={"MAF | Data Analytics"}>
       <div className="mt-[4rem] w-full">
         {/* TOP SECTION */}
 
-        <div className="relative w-full h-[70vh] top">
+        <div className="relative h-[90vh] w-full sm:h-[70vh] top">
           <img
-            src="/img/analytics.jpg"
+            src="/img/data1.jpg"
             className="w-full h-full object-cover"
             alt=""
           />
-          <div class="absolute inset-0 bottom-0 bg-black opacity-40"></div>
-          <div class="absolute w-full inset-0 bottom-0 flex flex-col items-center justify-center text-white px-16">
-            <h1 className="pb-10 text-5xl font-bold text-[#f054f5]" style={{fontFamily: "sans-serif"}}>
+          <div class="absolute inset-0 bottom-0 bg-black opacity-50"></div>
+          <div class="absolute w-full inset-0 bottom-0 flex flex-col md:items-center md:justify-center pt-12 gap-5 text-white px-5 lg:px-16">
+            <h1
+              className="text-4xl lg:pb-5 lg:text-5xl font-bold"
+              style={{ fontFamily: "sans-serif" }}
+            >
               Data Analytics
             </h1>
-            <p className="text-2xl font-thin text-gray-300">
+            <p className="text-lg  md:text-start lg:text-2xl font-light">
               Companies have more data than before but less time to utilize it
               They need help in using data and analytics to transform how they
               use data MAF Group helps with data assets, data governance and
@@ -34,18 +37,18 @@ const Services = () => {
         {/* HERO SECTION */}
 
         <div className="w-full mt-8">
-          <div className="w-[80vw] m-auto px-20 flex flex-col items-center justify-center">
-            <h1 className="text-4xl font-bold mb-5 text-[#071b52]">
+          <div className="w-full md:w-[80vw] m-auto px-5 md:px-20 flex flex-col items-center justify-center">
+            <h1 className="text-4xl font-bold mb-5 text-[#071b52] dark:text-rose-600">
               Our Expertise
             </h1>
-            <div className="w-full flex justify-center items-start gap-5">
-              <div className="left w-full flex flex-col gap-4 transition-transform hover:-translate-y-2 hover:shadow-lg">
+            <div className="w-full flex-col md:flex-row flex justify-center items-start gap-5">
+              <div className="left w-full flex flex-col gap-2 md:gap-4 transition-transform hover:-translate-y-2 hover:shadow-lg dark:shadow-slate-700">
                 <img
-                  src="/img/dataImg.jpg"
+                  src="/img/data2.png"
                   className="aspect-video object-cover"
                   alt="Data Analytics"
                 />
-                <h2 className="text-2xl px-2 text-[#071b52] font-semibold">
+                <h2 className="text-2xl px-2 text-[#071b52] dark:text-rose-600 font-semibold">
                   Data Analytics
                 </h2>
                 <p className="text-lg px-2 font-thin">
@@ -58,13 +61,13 @@ const Services = () => {
                   ensure effective operations without outside assistance.
                 </p>
               </div>
-              <div className="right w-full flex flex-col gap-4 transition-transform hover:-translate-y-2 hover:shadow-md">
+              <div className="right w-full flex flex-col gap-2 md:gap-4 transition-transform hover:-translate-y-2 hover:shadow-md dark:shadow-slate-700">
                 <img
-                  src="/img/realTimeData.jpg"
+                  src="/img/data3.png"
                   className="h-auto aspect-video object-cover"
                   alt="Real Time Data Analytics"
                 />
-                <h2 className="text-2xl p-2 text-[#071b52] font-semibold">
+                <h2 className="text-2xl p-2 text-[#071b52] dark:text-rose-600 font-semibold">
                   Real-Time Analytics
                 </h2>
                 <p className="text-lg p-2 font-light">
@@ -80,14 +83,14 @@ const Services = () => {
             </div>
 
             <div className="mt-10">
-              <div className="w-full flex justify-center items-start gap-5">
-                <div className="left w-full flex flex-col gap-4 transition-transform hover:-translate-y-2 hover:shadow-lg">
+              <div className="w-full flex-col md:flex-row flex justify-center items-start gap-5">
+                <div className="left w-full flex flex-col gap-2 md:gap-4 transition-transform hover:-translate-y-2 hover:shadow-lg dark:shadow-slate-700">
                   <img
-                    src="/img/NLP.webp"
+                    src="/img/data4.png"
                     className="aspect-video object-cover"
                     alt="Natural Language Processing"
                   />
-                  <h2 className="text-2xl px-2 text-[#071b52] font-semibold">
+                  <h2 className="text-2xl px-2 text-[#071b52] dark:text-rose-600 font-semibold">
                     NLP- Natural Language Processing
                   </h2>
                   <p className="text-lg px-2 font-thin">
@@ -106,13 +109,13 @@ const Services = () => {
                     Summarization.
                   </p>
                 </div>
-                <div className="right w-full flex flex-col gap-4 transition-transform hover:-translate-y-2 hover:shadow-md">
+                <div className="right w-full flex flex-col gap-2 md:gap-4 transition-transform hover:-translate-y-2 hover:shadow-md dark:shadow-slate-700">
                   <img
-                    src="/img/machineLearning.jpg"
+                    src="/img/data5.png"
                     className="h-auto aspect-video object-cover"
                     alt="Machine Learning"
                   />
-                  <h2 className="text-2xl p-2 text-[#071b52] font-semibold">
+                  <h2 className="text-2xl p-2 text-[#071b52] dark:text-rose-600 font-semibold">
                     Machine Learning
                   </h2>
                   <p className="text-lg p-2 font-thin">
@@ -121,7 +124,8 @@ const Services = () => {
                     make the most of data and unleash its full potential. We use
                     the latest data science and technology to ensure your
                     organization benefits from it and explores its potential.
-                    <br /><br />
+                    <br />
+                    <br />
                     Earlier, organizations were limited to predictive analysis
                     to make the most of data. Predictive analysis meant making
                     assumptions and testing using past data to predict the
