@@ -37,6 +37,15 @@ import Blog2 from "./pages/Blog2";
 import Blog3 from "./pages/Blog3";
 import Blog4 from "./pages/Blog4";
 import ScrollToTop from "./components/ScrollToTop";
+import News from "./pages/News";
+import Requestdemo from "./pages/Requestdemo";
+import Blogs from "./pages/Blogs";
+import CS1 from "./pages/CS1";
+import CreateBlog from "./pages/CreateBlog";
+import Createnews from "./pages/Createnews";
+import CS8 from "./pages/CS8";
+import SingleBlog from "./pages/SingleBlog";
+import SingleNews from "./pages/SingleNews";
 
 function App() {
   return (
@@ -48,12 +57,12 @@ function App() {
 
         {/* About Routes */}
         <Route path="/about" element={<About />} />
-        <Route path="/about_1" element={<ValueProposition />} />
-        <Route path="/about_2" element={<Leadership />} />
+        <Route path="/valueproposition" element={<ValueProposition />} />
+        <Route path="/leadership" element={<Leadership />} />
         <Route path="/investors" element={<Investors />} />
 
         {/* Services Route */}
-        <Route path="/services" element={<Services />} />
+        <Route path="/data-analytics" element={<Services />} />
         <Route path="/cloud-solution" element={<CloudSolution />} />
         <Route path="/marketing-automation" element={<MarketingAutomation />} />
         <Route path="/digital-transformation" element={<DigitalTrans />} />
@@ -68,12 +77,14 @@ function App() {
 
         {/* Our Work */}
         <Route path="/our-work" element={<Ourwork />} />
+        <Route path="/case1" element={<CS1 />} />
         <Route path="/case2" element={<CS2 />} />
         <Route path="/case3" element={<CS3 />} />
         <Route path="/case4" element={<CS4 />} />
         <Route path="/case5" element={<CS5 />} />
         <Route path="/case6" element={<CS6 />} />
         <Route path="/case7" element={<CS7 />} />
+        <Route path="/case8" element={<CS8 />} />
 
         {/* Our Partners */}
         <Route path="/partners" element={<Partners />} />
@@ -83,16 +94,31 @@ function App() {
         <Route path="/culture" element={<Culture />} />
 
         {/* Blogs */}
-        <Route path="/blog1" element={<Blog1 />} />
-        <Route path="/blog2" element={<Blog2 />} />
-        <Route path="/blog3" element={<Blog3 />} />
-        <Route path="/blog4" element={<Blog4 />} />
+        <Route path="/blogs" element={<Blogs />} />
+        <Route path="/data_analytics" element={<Blog1 />} />
+        <Route path="/cloud_solution" element={<Blog2 />} />
+        <Route path="/marketing_automation" element={<Blog3 />} />
+        <Route path="/digital_transformation" element={<Blog4 />} />
+        <Route path="/blog/:id" element={<SingleBlog />} />
+
+        {/* Create Blog */}
+        <Route path="/create-blog" element={<CreateBlog />} />
 
         {/* Terms and Conditions */}
         <Route path="/tc" element={<T_C />} />
 
         {/* Cookies */}
         <Route path="/cookies" element={<Cookies />} />
+
+        {/* NEWS */}
+        <Route path="/news" element={<News />} />
+        <Route path="/news/:id" element={<SingleNews />} />
+
+        {/* Create News */}
+        <Route path="/create-news" element={<Createnews />} />
+
+        {/* Request Demo */}
+        <Route path="/request" element={<Requestdemo />} />
 
         <Route path="/media" element={<Media />} />
         <Route path="/offer" element={<Offers />} />

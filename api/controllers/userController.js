@@ -2,8 +2,8 @@ const userModel = require("../models/userModel");
 
 exports.userController = async (req,res) => {
     try {
-        const {username, email, phone, message} = req.body;
-        const user = await new userModel({username, email, phone, message}).save();
+        const {firstname, lastname, email, phone, message, subscribe, policy} = req.body;
+        const user = await new userModel({firstname, lastname, email, phone, message, subscribe, policy}).save();
         return res.status(200).json({
             success: true,
             message: "Message send",

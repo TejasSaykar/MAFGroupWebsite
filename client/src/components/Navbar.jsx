@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { Link, useLocation, useNavigate } from "react-router-dom";
 import { IoSearch } from "react-icons/io5";
 import HoverCard from "./HoverCard";
@@ -17,18 +17,11 @@ import { MdOutlineWbSunny } from "react-icons/md";
 import { IoMdMoon } from "react-icons/io";
 import { useTheme } from "./Themeprovider";
 import { MoonIcon, SunIcon } from "@radix-ui/react-icons";
+import axios from "axios";
 
 const Navbar = () => {
   const { theme, setTheme } = useTheme();
-  // const [hover, setHover] = useState(false);
-
-  // const handleHover = () => {
-  //     setHover(true);
-  // }
-
-  // const handleLeave = () => {
-  //     setHover(false);
-  // }
+  const [cat, setCat] = useState([]);
 
   const navigate = useNavigate();
 
@@ -45,11 +38,25 @@ const Navbar = () => {
     setOpen(false);
   };
 
-  // dark:
+  useEffect(() => {
+    const fetchCat = async () => {
+      try {
+        const { data } = await axios.get(
+          `${import.meta.env.VITE_BASE_URL}/api/blog/all-blogs`
+        );
+        if (data) {
+          setCat(data.blogs);
+        }
+      } catch (error) {
+        console.log(error);
+      }
+    };
+    fetchCat();
+  }, []);
 
   return (
     <>
-      <div className="h-16 shadow-md flex justify-between items-center px-3 sm:px-8 lg:px-16">
+      <div className="h-16 shadow-md flex items-center px-3 sm:px-8 lg:px-12">
         <div className="left">
           <div
             className="flex gap-2 items-center"
@@ -57,7 +64,7 @@ const Navbar = () => {
           >
             <Sheet>
               <SheetTrigger asChild>
-                <FiMenu className="font-bold text-2xl text-[#105f7f] dark:text-rose-600 md:hidden cursor-pointer" />
+                <FiMenu className="font-bold text-2xl text-[#105f7f] dark:text-rose-600 lg:hidden cursor-pointer" />
               </SheetTrigger>
               <SheetContent side="left">
                 <div className="flex flex-col gap-4 items-start justify-center mt-5">
@@ -80,12 +87,18 @@ const Navbar = () => {
                         </DropdownMenuLabel>
                         <DropdownMenuSeparator />
                         <DropdownMenuItem>
-                          <Link to={"/about_1"} className="dark:text-rose-600">
+                          <Link
+                            to={"/valueproposition"}
+                            className="dark:text-rose-600"
+                          >
                             Our Unique Value Proposition
                           </Link>
                         </DropdownMenuItem>
                         <DropdownMenuItem>
-                          <Link to={"/about_2"} className="dark:text-rose-600">
+                          <Link
+                            to={"/leadership"}
+                            className="dark:text-rose-600"
+                          >
                             Our Strategic Leadership
                           </Link>
                         </DropdownMenuItem>
@@ -95,7 +108,7 @@ const Navbar = () => {
 
                   <div className="w-full justify-between flex gap-10 items-center">
                     <Link
-                      to={"/services"}
+                      to={"/data-analytics"}
                       className="dark:text-rose-600 font-bold"
                     >
                       Services
@@ -107,12 +120,15 @@ const Navbar = () => {
                       <DropdownMenuContent>
                         <DropdownMenuLabel>
                           <h2 className="dark:text-rose-600 font-bold">
-                            <Link to="/services">Services</Link>
+                            <Link to="/data-analytics">Services</Link>
                           </h2>
                         </DropdownMenuLabel>
                         <DropdownMenuSeparator />
                         <DropdownMenuItem>
-                          <Link to={"/services"} className="dark:text-rose-600">
+                          <Link
+                            to={"/data-analytics"}
+                            className="dark:text-rose-600"
+                          >
                             Data Analytics
                           </Link>
                         </DropdownMenuItem>
@@ -162,6 +178,11 @@ const Navbar = () => {
                           </h2>
                         </DropdownMenuLabel>
                         <DropdownMenuSeparator />
+                        <DropdownMenuItem>
+                          <Link to={"/banking"} className="dark:text-rose-600">
+                            Banking
+                          </Link>
+                        </DropdownMenuItem>
                         <DropdownMenuItem>
                           <Link
                             to={"/pharmaceuticals"}
@@ -221,6 +242,11 @@ const Navbar = () => {
                           </h2>
                         </DropdownMenuLabel>
                         <DropdownMenuSeparator />
+                        <DropdownMenuItem>
+                          <Link to={"/case1"} className="dark:text-rose-600">
+                            Business Excellence
+                          </Link>
+                        </DropdownMenuItem>
                         <DropdownMenuItem>
                           <Link to={"/case2"} className="dark:text-rose-600">
                             Boosting Marketing
@@ -292,18 +318,18 @@ const Navbar = () => {
                             Organizational Culture
                           </Link>
                         </DropdownMenuItem>
-                        <DropdownMenuItem>
+                        {/* <DropdownMenuItem>
                           <Link to={"/contact"} className="dark:text-rose-600">
                             Contact Us
                           </Link>
-                        </DropdownMenuItem>
+                        </DropdownMenuItem> */}
                       </DropdownMenuContent>
                     </DropdownMenu>
                   </div>
 
                   <div className="flex gap-10 items-center w-full justify-between">
                     <Link
-                      to={"/avenues"}
+                      to={"/blog1"}
                       className="dark:text-rose-600 font-bold"
                     >
                       Blogs
@@ -315,50 +341,81 @@ const Navbar = () => {
                       <DropdownMenuContent>
                         <DropdownMenuLabel>
                           <h2 className="dark:text-rose-600 font-bold">
-                            <Link to="/blog1">Blogs</Link>
+                            <Link to="/blogs">Blogs</Link>
                           </h2>
                         </DropdownMenuLabel>
                         <DropdownMenuSeparator />
                         <DropdownMenuItem>
-                          <Link to={"/blog1"} className="dark:text-rose-600">
+                          <Link
+                            to={"/data_analytics"}
+                            className="dark:text-rose-600"
+                          >
                             Blog on Data Analytics
                           </Link>
                         </DropdownMenuItem>
                         <DropdownMenuItem>
-                          <Link to={"/blog2"} className="dark:text-rose-600">
+                          <Link
+                            to={"/cloud_solution"}
+                            className="dark:text-rose-600"
+                          >
                             Blog on Cloud solutions
                           </Link>
                         </DropdownMenuItem>
                         <DropdownMenuItem>
-                          <Link to={"/blog3"} className="dark:text-rose-600">
+                          <Link
+                            to={"/marketing_automation"}
+                            className="dark:text-rose-600"
+                          >
                             Blogs on Marketing Automation
                           </Link>
                         </DropdownMenuItem>
                         <DropdownMenuItem>
-                          <Link to={"/blog4"} className="dark:text-rose-600">
+                          <Link
+                            to={"/digital_transformation"}
+                            className="dark:text-rose-600"
+                          >
                             Blogs on Digital Transformation
                           </Link>
                         </DropdownMenuItem>
                       </DropdownMenuContent>
                     </DropdownMenu>
                   </div>
+                  <div className="flex gap-10 items-center w-full justify-between">
+                    <Link to={"/news"} className="dark:text-rose-600 font-bold">
+                      News
+                    </Link>
+                  </div>
+                  <div className="flex gap-10 items-center w-full justify-between">
+                    <Link
+                      to={"/contact"}
+                      className="dark:text-rose-600 font-bold"
+                    >
+                      Contact Us
+                    </Link>
+                  </div>
                 </div>
               </SheetContent>
             </Sheet>
             <div className="">
               <Link to={"/"}>
-                <img src="/img/logo2.png" className="h-7 xl:h-12" alt="" />
+                <img src="/img/logo1.png" className="h-7 xl:h-12" alt="" />
               </Link>
             </div>
           </div>
         </div>
-        <div className="middle hidden md:block">
+        <div className="middle hidden lg:block">
           <div
-            className="flex font-bold text-[11px] lg:text-[14px]"
+            className="flex font-bold text-[11px] lg:text-[12px]"
             style={{ fontFamily: "sans-serif" }}
           >
+            {/* <button
+              className={`hover:text-sky-600 hover:border-t-4 dark:hover:border-white border-t-4 border-transparent transition-all text-[#000050] dark:text-rose-600 h-16 px-5 items-center text-center flex hover:border-black`}
+              onClick={() => navigate("/")}
+            >
+              HOME
+            </button> */}
             <button
-              className={`hover:border-t-4 dark:hover:border-white border-t-4 border-transparent transition-all text-[#105f7f] dark:text-rose-600 h-16 px-5 items-center text-center flex hover:border-black ${
+              className={`hover:text-sky-600 hover:border-t-4 dark:hover:border-white border-t-4 border-transparent transition-all text-[#000050] dark:text-rose-600 h-16 px-5 items-center text-center flex hover:border-black ${
                 activeNavItem === 1 ? "hovered" : ""
               } `}
               onClick={() => {
@@ -372,9 +429,9 @@ const Navbar = () => {
             </button>
 
             <button
-              className={`hover:border-t-4 dark:hover:border-white border-t-4 border-transparent transition-all text-[#105f7f] dark:text-rose-600 h-16 px-5 items-center text-center flex hover:border-black`}
+              className={`hover:text-sky-600 hover:border-t-4 dark:hover:border-white border-t-4 border-transparent transition-all text-[#000050] dark:text-rose-600 h-16 px-5 items-center text-center flex hover:border-black`}
               onClick={() => {
-                navigate("/services"), setActiveNavItem(0);
+                navigate("/data-analytics"), setActiveNavItem(0);
               }}
               onMouseEnter={() => handleNavItemHover(3)}
               onMouseLeave={handleLeave}
@@ -383,7 +440,7 @@ const Navbar = () => {
             </button>
 
             <button
-              className="hover:border-t-4 dark:hover:border-white border-t-4 border-transparent transition-all text-[#105f7f] dark:text-rose-600 h-16 px-5 items-center text-center flex hover:border-black"
+              className="hover:text-sky-600 hover:border-t-4 dark:hover:border-white border-t-4 border-transparent transition-all text-[#000050] dark:text-rose-600 h-16 px-5 items-center text-center flex hover:border-black"
               onClick={() => {
                 navigate("/banking"), setActiveNavItem(0);
               }}
@@ -394,7 +451,7 @@ const Navbar = () => {
             </button>
 
             <button
-              className="hover:border-t-4 dark:hover:border-white border-t-4 border-transparent transition-all text-[#105f7f] dark:text-rose-600 h-16 px-5 items-center text-center flex hover:border-black"
+              className="hover:text-sky-600 hover:border-t-4 dark:hover:border-white border-t-4 border-transparent transition-all text-[#000050] dark:text-rose-600 h-16 px-5 items-center text-center flex hover:border-black"
               onClick={() => {
                 navigate("/our-work"), setActiveNavItem(0);
               }}
@@ -405,13 +462,13 @@ const Navbar = () => {
             </button>
 
             <Link
-              className="hover:border-t-4 dark:hover:border-white border-t-4 border-transparent transition-all text-[#105f7f] dark:text-rose-600 h-16 px-5 items-center text-center flex hover:border-black"
+              className="hover:text-sky-600 hover:border-t-4 dark:hover:border-white border-t-4 border-transparent transition-all text-[#000050] dark:text-rose-600 h-16 px-5 items-center text-center flex hover:border-black"
               to={"/partners"}
             >
               OUR PARTNERS
             </Link>
             <button
-              className="hover:border-t-4 dark:hover:border-white border-t-4 border-transparent transition-all text-[#105f7f] dark:text-rose-600 h-16 px-5 items-center text-center flex hover:border-black"
+              className="hover:text-sky-600 hover:border-t-4 dark:hover:border-white border-t-4 border-transparent transition-all text-[#000050] dark:text-rose-600 h-16 px-5 items-center text-center flex hover:border-black"
               onMouseEnter={() => handleNavItemHover(6)}
               onMouseLeave={handleLeave}
               onClick={() => {
@@ -422,18 +479,39 @@ const Navbar = () => {
             </button>
 
             <button
-              className="hover:border-t-4 dark:hover:border-white border-t-4 border-transparent transition-all text-[#105f7f] dark:text-rose-600 h-16 px-5 items-center text-center flex hover:border-black"
+              className="hover:text-sky-600 hover:border-t-4 dark:hover:border-white border-t-4 border-transparent transition-all text-[#000050] dark:text-rose-600 h-16 px-5 items-center text-center flex hover:border-black"
               onMouseEnter={() => handleNavItemHover(7)}
               onMouseLeave={handleLeave}
               onClick={() => {
-                navigate("/blog1"), setActiveNavItem(0);
+                navigate("/blogs"), setActiveNavItem(0);
               }}
             >
               BLOGS
             </button>
+            <button
+              className="hover:text-sky-600 hover:border-t-4 dark:hover:border-white border-t-4 border-transparent transition-all text-[#000050] dark:text-rose-600 h-16 px-5 items-center text-center flex hover:border-black"
+              onMouseEnter={() => handleNavItemHover(8)}
+              onMouseLeave={handleLeave}
+              onClick={() => {
+                navigate("/news"), setActiveNavItem(0);
+              }}
+            >
+              NEWS
+            </button>
+
+            <button
+              className="hover:text-sky-600 hover:border-t-4 dark:hover:border-white border-t-4 border-transparent transition-all text-[#000050] dark:text-rose-600 h-16 px-5 items-center text-center flex hover:border-black"
+              onMouseEnter={() => handleNavItemHover(9)}
+              onMouseLeave={handleLeave}
+              onClick={() => {
+                navigate("/contact"), setActiveNavItem(0);
+              }}
+            >
+              CONTACT US
+            </button>
           </div>
         </div>
-        <div className="right text-xl text-[#105f7f] dark:text-rose-600 flex items-center gap-3">
+        <div className="right text-xl text-[#000050] dark:text-rose-600 flex items-center gap-3">
           {/* {theme === "light" ? (
             <IoMdMoon
               onClick={() => setTheme("dark")}
@@ -456,19 +534,17 @@ const Navbar = () => {
           link={[
             {
               item: "Our Unique Value Proposition ",
-              link: "/about_1",
+              link: "/valueproposition",
             },
             {
               item: "Our Strategic Leadership ",
-              link: "/about_2",
+              link: "/leadership",
             },
           ]}
-          img1="/img/footprint.png"
-          img2="/img/lead3.png"
           h1="Diverse Footprint"
           h2="Our Strategic Leadership"
-          link1="/about_1"
-          link2="/about_2"
+          link1="/valueproposition"
+          link2="/leadership"
           handleNavItemHover={handleNavItemHover}
           activeNav={activeNavItem}
         />
@@ -496,12 +572,6 @@ const Navbar = () => {
               link: "/shareholder",
             },
           ]}
-          // img1="/img/homeImg4.jpg"
-          // img2="/img/homeImg5.jpg"
-          // h1="Digital Transformation"
-          // h2="Marketing"
-          // link1="/digital-transformation"
-          // link2="/marketing-automation"
           handleNavItemHover={handleNavItemHover}
           activeNav={activeNavItem}
         />
@@ -514,7 +584,7 @@ const Navbar = () => {
           link={[
             {
               item: "Data Analytics ",
-              link: "/services",
+              link: "/data-analytics",
             },
             {
               item: "Cloud Solutions ",
@@ -529,12 +599,6 @@ const Navbar = () => {
               link: "/digital-transformation",
             },
           ]}
-          // img1="/img/socialMedia.jpg"
-          // img2="/img/marketing.jpg"
-          // h1="Digital Transformation"
-          // h2="Marketing"
-          // link1="/digital-transformation"
-          // link2="/marketing-automation"
           handleNavItemHover={handleNavItemHover}
           activeNav={activeNavItem}
         />
@@ -545,6 +609,10 @@ const Navbar = () => {
       {activeNavItem === 4 && open && (
         <HoverCard
           link={[
+            {
+              item: "Banking",
+              link: "/banking",
+            },
             {
               item: "Pharmaceuticals",
               link: "/pharmaceuticals",
@@ -566,12 +634,6 @@ const Navbar = () => {
               link: "/manufacturing",
             },
           ]}
-          // img1="/img/bank1.avif"
-          // img2="/img/pharma3.jpg"
-          // h1="Banking"
-          // h2="Pharmaceuticals"
-          // link1="/banking"
-          // link2="/pharmaceuticals"
           handleNavItemHover={handleNavItemHover}
           activeNav={activeNavItem}
         />
@@ -584,7 +646,7 @@ const Navbar = () => {
           link={[
             {
               item: "Deliver Business Excellence",
-              link: "/our-work",
+              link: "/case1",
             },
             {
               item: "Boosting Marketing",
@@ -610,13 +672,11 @@ const Navbar = () => {
               item: "Enhance User Experience",
               link: "/case7",
             },
+            {
+              item: "Customer Satisfaction",
+              link: "/case8",
+            },
           ]}
-          // img1="/img/email.png"
-          // img2="/img/crm.png"
-          // h1="John Lewis Case Study"
-          // h2="ITC Infotech"
-          // link1="/case2"
-          // link2="/case5"
           handleNavItemHover={handleNavItemHover}
           activeNav={activeNavItem}
         />
@@ -635,17 +695,7 @@ const Navbar = () => {
               item: "Organizational Culture ",
               link: "/culture",
             },
-            {
-              item: "Contact Us",
-              link: "/contact",
-            },
           ]}
-          // img1="/img/careerImg.jpg"
-          // img2="/img/cultureImg.webp"
-          // h1="Career Avenues"
-          // h2="Organizational Culture"
-          // link1="/avenues"
-          // link2="/culture"
           handleNavItemHover={handleNavItemHover}
           activeNav={activeNavItem}
         />
@@ -656,20 +706,20 @@ const Navbar = () => {
         <HoverCard
           link={[
             {
-              item: "Blog on Data Analytics",
-              link: "/blog1",
+              item: "Data Analytics",
+              link: "/data_analytics",
             },
             {
-              item: "Blog on Cloud solutions",
-              link: "/blog2",
+              item: "Cloud solutions",
+              link: "/cloud_solution",
             },
             {
-              item: "Blogs on Marketing Automation",
-              link: "/blog3",
+              item: "Marketing Automation",
+              link: "/marketing_automation",
             },
             {
-              item: "Blogs on Digital Transformation",
-              link: "/blog4",
+              item: "Digital Transformation",
+              link: "/digital_transformation",
             },
           ]}
           handleNavItemHover={handleNavItemHover}

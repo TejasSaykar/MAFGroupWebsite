@@ -18,13 +18,17 @@ const HoverCard = (props) => {
       onMouseLeave={handleLeave}
     >
       {activeNav && (
-        <div className=" w-3/2 m-auto h-full gap-20 flex justify-around px-20 items-center">
+        <div
+          className={`w-${
+            activeNav === 5 ? "w-full" : "3/2"
+          }  m-auto h-full gap-20 flex justify-around px-20 items-center`}
+        >
           <div
             className={`text-gray-600 dark:text-rose-600  pl-40 flex flex-${
               props.img1 && props.img2 ? "col" : "row"
-            } h-full  w-${
-              props.img1 && props.img2 ? "1/2" : "full"
-            } text-sm gap-4 px-10 py-5 mb-4`}
+            } h-full  w-${props.img1 && props.img2 ? "1/2" : "full"} ${
+              activeNav === 5 ? "text-xs" : "text-sm"
+            } gap-4 px-10 py-5 mb-4`}
           >
             {props.link.map((item) => (
               <>

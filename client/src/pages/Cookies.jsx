@@ -55,8 +55,11 @@ const Cookies = () => {
             </li>
             <li>
               • You also have the right to object if we process your personal
-              data for direct marketing purposes. • You can also request
-              restrictions on the way we process your personal data.
+              data for direct marketing purposes.
+            </li>
+            <li>
+              • You can also request restrictions on the way we process your
+              personal data.
             </li>
             <li>
               • You can request the transfer of your personal data we have to
@@ -68,6 +71,10 @@ const Cookies = () => {
               • You can also withdraw consent at any time in cases where we rely
               on your consent to process your personal data.
             </li>
+            <p>
+              • If you want to exercise any of these rights, please get in touch
+              with us.
+            </p>
           </ul>
 
           <div className="mt-5 flex flex-col gap-3">

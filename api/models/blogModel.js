@@ -13,9 +13,17 @@ const blogSchema = new mongoose.Schema({
         type: String,
         required: true
     },
-    image: {
+    file: {
         type: String,
         required: true
+    },
+    keyword:{
+        type:[String],
+        default: []
+    },
+    meta:{
+        type: [String],
+        default:[]
     }
 
 }, { timestamps: true });

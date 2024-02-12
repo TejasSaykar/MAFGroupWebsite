@@ -6,23 +6,23 @@ const Carrier = () => {
     <Layout title={"MAAF | Carrier"}>
       <div className="w-full mt-[4rem]">
         <div className="w-[90%] lg:w-[70%] m-auto py-5 flex flex-col gap-6">
-          <h1 className="text-4xl font-bold text-[#071b52] dark:text-rose-600">
+          <h1 className="text-3xl font-bold text-[#071b52] dark:text-rose-600">
             Career Avenues
           </h1>
-          <div className="flex flex-col items-center gap-4 md:flex-row">
+          <div className="flex flex-col items-center gap-2 md:flex-row">
             <div className="w-full order-2 md:order-1">
-              <p className="text-xl font-light">
+              <p className="font-light">
                 Embark on a transformative journey where your abilities are
                 nurtured, talents are celebrated, and goals are realized. At
                 MAF, we bring together top-notch resources, cutting-edge
                 technology and a creative environment that encourages you to
                 pave your own path to professional success.
               </p>
-              <div className="flex flex-col gap-3">
-                <h2 className="text-2xl font-bold text-[#071b52] dark:text-rose-600 py-3">
+              <div className="flex flex-col mt-4">
+                <h2 className="text-2xl font-bold text-[#071b52] dark:text-rose-600">
                   Why choose MAF Group?
                 </h2>
-                <p className="text-xl font-light">
+                <p className="font-light">
                   Choosing MAF is not about opting for just a job, it is about
                   paving the way for a fulfilling career that promises unlimited
                   opportunities, collaborating with innovative thinkers and
@@ -37,11 +37,11 @@ const Carrier = () => {
               <img src="/img/career.png" alt="" />
             </div>
           </div>
-          <div className="flex flex-col gap-3">
+          <div className="flex flex-col">
             <h2 className="text-2xl font-bold text-[#071b52] dark:text-rose-600">
               Crafting Extraordinary careers
             </h2>
-            <p className="text-xl font-light">
+            <p className="font-light">
               At our organization we realize that excellence is not a
               destination but a continuous journey that we embark on. We make
               that journey more fruitful and enjoyable by meticulously crafting
@@ -51,11 +51,11 @@ const Carrier = () => {
               that instills pride and confidence in you!
             </p>
           </div>
-          <div className="flex flex-col gap-3">
+          <div className="flex flex-col">
             <h2 className="text-2xl font-bold text-[#071b52] dark:text-rose-600">
               Unleash your potential
             </h2>
-            <p className="text-xl font-light">
+            <p className="font-light">
               Your career at MAF Group is not a predetermined path, it is a
               canvas waiting for you to create something extraordinary. Unlock
               your full potential by exploring the wide array of roles that

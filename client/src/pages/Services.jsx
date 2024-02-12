@@ -13,23 +13,21 @@ const Services = () => {
             className="w-full h-full object-cover"
             alt=""
           />
-          <div class="absolute inset-0 bottom-0 bg-black opacity-50"></div>
-          <div class="absolute w-full inset-0 bottom-0 flex flex-col md:items-center md:justify-center pt-12 gap-5 text-white px-5 lg:px-16">
-            <h1
-              className="text-4xl lg:pb-5 lg:text-5xl font-bold"
-              style={{ fontFamily: "sans-serif" }}
+          <div className="absolute inset-0 bottom-0 bg-black opacity-60"></div>
+          <div className="absolute w-full inset-0 bottom-0 flex flex-col md:items-center md:justify-center pt-12 gap-5 text-white px-5 lg:px-16">
+            <h3 className="text-4xl font-bold text-center">Data Analytics</h3>
+            <p
+              className="md:text-start lg:text-2xl font-light text-justify"
+              style={{ textShadow: "1px 1px black" }}
             >
-              Data Analytics
-            </h1>
-            <p className="text-lg  md:text-start lg:text-2xl font-light">
-              Companies have more data than before but less time to utilize it
+              Companies have more data than before but less time to utilize it.
               They need help in using data and analytics to transform how they
               use data MAF Group helps with data assets, data governance and
-              even gets data out of silos We develop strategic, technical, and
+              even gets data out of silos. We develop strategic, technical, and
               human capabilities that help make your organization truly
-              data-driven From Data Source Evaluation to Quality Assessment,
+              data-driven. From Data Source Evaluation to Quality Assessment,
               Integration, and Modelling to choosing Platform and Technology and
-              even Data Reporting enhancement, we can handle it all
+              even Data Reporting enhancement, we can handle it all.
             </p>
           </div>
         </div>
@@ -38,20 +36,20 @@ const Services = () => {
 
         <div className="w-full mt-8">
           <div className="w-full md:w-[80vw] m-auto px-5 md:px-20 flex flex-col items-center justify-center">
-            <h1 className="text-4xl font-bold mb-5 text-[#071b52] dark:text-rose-600">
+            <h1 className="text-3xl md:text-4xl font-bold mb-5 text-[#071b52] dark:text-rose-600">
               Our Expertise
             </h1>
             <div className="w-full flex-col md:flex-row flex justify-center items-start gap-5">
-              <div className="left w-full flex flex-col gap-2 md:gap-4 transition-transform hover:-translate-y-2 hover:shadow-lg dark:shadow-slate-700">
+              <div className="left w-full flex flex-col transition-transform hover:-translate-y-2 hover:shadow-lg dark:shadow-slate-700">
                 <img
                   src="/img/data2.png"
                   className="aspect-video object-cover"
                   alt="Data Analytics"
                 />
-                <h2 className="text-2xl px-2 text-[#071b52] dark:text-rose-600 font-semibold">
+                <h2 className="text-2xl pt-4 px-2 text-[#071b52] dark:text-rose-600 font-semibold">
                   Data Analytics
                 </h2>
-                <p className="text-lg px-2 font-thin">
+                <p className="px-2 text-justify">
                   To automate data analytics, we will pick the right automation
                   platform that suits your business needs, create a strategy
                   that works and build an actionable plan. We also set up the
@@ -61,16 +59,16 @@ const Services = () => {
                   ensure effective operations without outside assistance.
                 </p>
               </div>
-              <div className="right w-full flex flex-col gap-2 md:gap-4 transition-transform hover:-translate-y-2 hover:shadow-md dark:shadow-slate-700">
+              <div className="right w-full flex flex-col transition-transform hover:-translate-y-2 hover:shadow-md dark:shadow-slate-700">
                 <img
                   src="/img/data3.png"
                   className="h-auto aspect-video object-cover"
                   alt="Real Time Data Analytics"
                 />
-                <h2 className="text-2xl p-2 text-[#071b52] dark:text-rose-600 font-semibold">
+                <h2 className="text-2xl mt-4 px-2 text-[#071b52] dark:text-rose-600 font-semibold">
                   Real-Time Analytics
                 </h2>
-                <p className="text-lg p-2 font-light">
+                <p className="px-2 text-justify">
                   Our data analytics service helps turn data into insights
                   quickly to help save time and effort. Also known as
                   operational intelligence, real-time analytics can predict
@@ -84,16 +82,16 @@ const Services = () => {
 
             <div className="mt-10">
               <div className="w-full flex-col md:flex-row flex justify-center items-start gap-5">
-                <div className="left w-full flex flex-col gap-2 md:gap-4 transition-transform hover:-translate-y-2 hover:shadow-lg dark:shadow-slate-700">
+                <div className="left w-full flex flex-col transition-transform hover:-translate-y-2 hover:shadow-lg dark:shadow-slate-700">
                   <img
                     src="/img/data4.png"
                     className="aspect-video object-cover"
                     alt="Natural Language Processing"
                   />
-                  <h2 className="text-2xl px-2 text-[#071b52] dark:text-rose-600 font-semibold">
+                  <h2 className="text-2xl mt-4 px-2 text-[#071b52] dark:text-rose-600 font-semibold">
                     NLP- Natural Language Processing
                   </h2>
-                  <p className="text-lg px-2 font-thin">
+                  <p className="px-2 font-thin">
                     By using Natural language Processing or NLP, we help you
                     foster human and computer interaction. We integrate the
                     business with intelligent systems to ensure the perpetual
@@ -109,16 +107,16 @@ const Services = () => {
                     Summarization.
                   </p>
                 </div>
-                <div className="right w-full flex flex-col gap-2 md:gap-4 transition-transform hover:-translate-y-2 hover:shadow-md dark:shadow-slate-700">
+                <div className="right w-full flex flex-col  transition-transform hover:-translate-y-2 hover:shadow-md dark:shadow-slate-700">
                   <img
                     src="/img/data5.png"
                     className="h-auto aspect-video object-cover"
                     alt="Machine Learning"
                   />
-                  <h2 className="text-2xl p-2 text-[#071b52] dark:text-rose-600 font-semibold">
+                  <h2 className="text-2xl mt-4 px-2 text-[#071b52] dark:text-rose-600 font-semibold">
                     Machine Learning
                   </h2>
-                  <p className="text-lg p-2 font-thin">
+                  <p className="px-2 font-thin">
                     As an independent consultancy that loves data science, we
                     use machine learning and statistics to help organizations
                     make the most of data and unleash its full potential. We use

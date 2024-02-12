@@ -7,11 +7,11 @@ const Automobile = () => {
       <div className="mt-[4rem] w-full">
         <div className="relative w-full h-[70vh]">
           <img
-            src="/img/automobile1.jpg"
+            src="/img/automobile3.jpg"
             className="w-full h-full object-cover bg-cover"
             alt=""
           />
-          <div className="absolute w-full inset-0 bottom-0 bg-black opacity-60"></div>
+          <div className="absolute w-full inset-0 bottom-0 bg-black opacity-50"></div>
           <div className="absolute w-full inset-0 flex items-center justify-center">
             <h2 className="text-5xl sm:text-6xl font-bold text-white">
               Automobile
@@ -19,10 +19,13 @@ const Automobile = () => {
           </div>
         </div>
         <div className="w-full mt-10">
-          <div className="w-[80%] m-auto flex flex-col gap-5">
+          <div className="w-[90%] md:w-[80%] m-auto flex flex-col gap-5">
             <div className="flex flex-col md:flex-row items-center gap-4">
-              <div className="w-full">
-                <p className="text-xl font-light">
+              <div
+                className="w-full order-2 md:order-1"
+                style={{ textAlign: "justify" }}
+              >
+                <p className="font-light">
                   The landscape of the automobile industry is evolving, fuelled
                   by the changing circumstances which include technological
                   advancements, customer preference changes and emergence of
@@ -30,19 +33,37 @@ const Automobile = () => {
                   world is next to impossible on top of building a business.
                   Despite all of this, staying ahead of the competition and
                   distinguishing yourself is a non-negotiable factor.{" "}
-                </p>
-                <p className="text-xl font-light">
+                </p>{" "}
+                <br />
+                <p className="font-light">
                   Aligning with the industry trends alone cannot guarantee you
                   standing out in the industry, personalization and trend
                   setting strategies are what will assure your unparalleled
                   success.
+                </p>{" "}
+                <br />
+                <p className="font-light">
+                  And MAF Group can help you achieve that goal by leveraging our
+                  comprehensive suite of services and decades of expertise in
+                  dabbling with the automobile industry. We aid you in curating
+                  a personalized experience for all your customers by
+                  incorporating cutting-edge tech like AI, NLP and Big Data thus
+                  playing a pivotal role in your business improvement.
+                </p>{" "}
+                <br />
+                <p className="font-light">
+                  As the automobile industry embraces and adapts to the digital
+                  future, we help you stay in pace with the transformation by
+                  inviting you to join us as your reliable partner. Let's equip
+                  your business with the technology to thrive and soar in this
+                  competitive environment.
                 </p>
               </div>
-              <div className="w-full">
+              <div className="w-full flex items-start order-1 md:order-2">
                 <img src="/img/auto1.png" alt="" />
               </div>
             </div>
-            <p className="text-xl font-light">
+            {/* <p className="text-xl font-light">
               And MAF Group can help you achieve that goal by leveraging our
               comprehensive suite of services and decades of expertise in
               dabbling with the automobile industry. We aid you in curating a
@@ -56,7 +77,7 @@ const Automobile = () => {
               inviting you to join us as your reliable partner. Let's equip your
               business with the technology to thrive and soar in this
               competitive environment.
-            </p>
+            </p> */}
           </div>
         </div>
       </div>
