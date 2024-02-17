@@ -26,9 +26,9 @@ const HoverCard = (props) => {
           <div
             className={`text-gray-600 dark:text-rose-600  pl-40 flex flex-${
               props.img1 && props.img2 ? "col" : "row"
-            } h-full  w-${props.img1 && props.img2 ? "1/2" : "full"} ${
+            } h-full  w-full} ${
               activeNav === 5 ? "text-xs" : "text-sm"
-            } gap-4 px-10 py-5 mb-4`}
+            } gap-4 px-${activeNav === 5 ? "0" : "10"} py-5 mb-4`}
           >
             {props.link.map((item) => (
               <>

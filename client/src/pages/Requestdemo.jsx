@@ -2,7 +2,8 @@ import Layout from "@/components/Layout";
 import axios from "axios";
 import React, { useState } from "react";
 import { message } from "antd";
-import { useNavigate } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
+import { Switch } from "@/components/ui/switch";
 
 const Requestdemo = () => {
   const [input, setInput] = useState({
@@ -170,6 +171,41 @@ const Requestdemo = () => {
                     setInput({ ...input, message: e.target.value })
                   }
                 ></textarea>
+              </div>
+            </div>
+
+            <div className="w-full">
+              <div className="">
+                <Switch
+                  checked={input.subscribe}
+                  onCheckedChange={() =>
+                    setInput({ ...input, subscribe: !input.subscribe })
+                  }
+                />
+                <label htmlFor="" className="pl-1 text-sm">
+                  Subscribe to Newletter
+                </label>
+              </div>
+              <div className="relative">
+                <sup className="absolute top-[9px] -left-4 text-xl pl-1 text-[16px] text-red-600">
+                  *
+                </sup>
+                <Switch
+                  className="mt-2"
+                  // checked={input.policy}
+                  // onCheckedChange={() =>
+                  //   setInput({ ...input, policy: !input.policy })
+                  // }
+                />
+                <label htmlFor="" className="text-sm pl-1">
+                  <Link className="text-sky-600 underline" to={"/tc"}>
+                    Terms and Condition{" "}
+                  </Link>
+                  and
+                  <Link className="pl-1 text-sky-600 underline" to={"/cookies"}>
+                    Privacy Ploicy
+                  </Link>
+                </label>
               </div>
             </div>
 

@@ -77,22 +77,24 @@ const CloudSolution = () => {
                   Planning, Deployment, and Optimization.
                 </p>
               </div>
-              <div className="two flex w-full mx-auto flex-col md:flex-row gap-4 mt-5 md:mt-12">
-                <div className="w-2/3 flex mx-7 md:mx-4  gap-4">
+              <div className="two px-4 md:px-0 flex w-full mx-auto flex-col md:flex-row gap-4 mt-5 md:mt-12">
+                <div className="w-full flex px-2 md:px-4 pb-4 gap-4">
                   <div className="hidden md:w-14 md:flex items-start">
-                    <FiAperture className="w-0 md:block bg-[#4f514e] text-white p-2 h-12 md:w-12 rounded-full" />
+                    <PiTargetLight className="w-0 md:block bg-[#4f514e] text-white p-2 h-12 md:w-12 rounded-full" />
                   </div>
-                  <div className="text-xl font-light">
+                  <div className="w-full text-xl font-light">
                     <h2 className="text-xl text-[#071b52] font-bold">
-                      Managed Services
+                      Cloud Solutions for Every Organization
                     </h2>
                     <p
                       className="mt-2 text-base text-black font-medium"
                       style={{ textAlign: "justify" }}
                     >
-                      We meticulously plan, strategize and implement a
-                      governance plan for cloud infrastructure and modernization
-                      services.
+                      MAF Group helps organizations transform their IT
+                      environment by using top-notch cloud solutions. Our team
+                      of experts will deliver reliable and affordable solutions
+                      that help your organization get a competitive edge, boost
+                      productivity and lower costs.
                     </p>
                   </div>
                 </div>
@@ -102,48 +104,6 @@ const CloudSolution = () => {
         </div>
 
         <div className="two flex w-[90%] mx-auto flex-col md:flex-row gap-4 mt-2 md:mt-5">
-          <div className="w-full flex px-2 md:px-4 pb-4 gap-4">
-            <div className="hidden md:w-14 md:flex items-start">
-              <GiPathDistance className="w-0 md:block bg-[#4f514e] text-white p-2 h-12 md:w-12 rounded-full" />
-            </div>
-            <div className="w-full text-xl font-light">
-              <h2 className="text-xl text-[#071b52] font-bold">
-                Cloud Migration Services
-              </h2>
-              <p
-                className="mt-2 text-base text-black font-medium"
-                style={{ textAlign: "justify" }}
-              >
-                Our cloud migration services include SWOT Analysis, readiness
-                assessment, Cloud-to-cloud movement, migration of workloads, and
-                validation, performance testing and disaster recovery management
-                services.
-              </p>
-            </div>
-          </div>
-          <div className="w-full flex px-2 md:px-4 pb-4 gap-4">
-            <div className="hidden md:w-14 md:flex items-start">
-              <PiTargetLight className="w-0 md:block bg-[#4f514e] text-white p-2 h-12 md:w-12 rounded-full" />
-            </div>
-            <div className="w-full text-xl font-light">
-              <h2 className="text-xl text-[#071b52] font-bold">
-                Cloud Solutions for Every Organization
-              </h2>
-              <p
-                className="mt-2 text-base text-black font-medium"
-                style={{ textAlign: "justify" }}
-              >
-                MAF Group helps organizations transform their IT environment by
-                using top notch cloud solutions. Our team of experts will
-                deliver reliable and affordable solutions that help your
-                organization get a competitive edge, boost productivity and
-                lower costs.
-              </p>
-            </div>
-          </div>
-        </div>
-
-        <div className="two flex w-[90%] mx-auto flex-col md:flex-row gap-4 mt-5">
           <div className="w-full flex px-2 md:px-4 pb-4 gap-4">
             <div className="hidden md:w-14 md:flex items-start">
               <BsFileWord className="w-0 md:block bg-[#4f514e] text-white p-2 h-12 md:w-12 rounded-full" />
@@ -167,27 +127,6 @@ const CloudSolution = () => {
 
           <div className="w-full flex px-2 md:px-4 pb-4 gap-4">
             <div className="hidden md:w-14 md:flex items-start">
-              <RiDatabaseFill className="w-0 md:block bg-[#4f514e] text-white p-2 h-12 md:w-12 rounded-full" />
-            </div>
-            <div className="w-full text-xl font-light">
-              <h2 className="text-xl text-[#071b52] font-bold">
-                Knowledge Transfer
-              </h2>
-              <p
-                className="mt-2 text-base text-black font-medium"
-                style={{ textAlign: "justify" }}
-              >
-                After delivering the right cloud solutions, MAF Group can offer
-                your IT team guidance on cloud transformation and knowledge
-                transfer.
-              </p>
-            </div>
-          </div>
-        </div>
-
-        <div className="two flex w-[90%] mx-auto flex-col md:flex-row gap-4 mt-5">
-          <div className="w-full flex px-2 md:px-4 pb-4 gap-4">
-            <div className="hidden md:w-14 md:flex items-start">
               <SiGamedeveloper className="w-0 md:block bg-[#4f514e] text-white p-2 h-12 md:w-12 rounded-full" />
             </div>
             <div className="w-full text-xl font-light">
@@ -205,6 +144,9 @@ const CloudSolution = () => {
               </p>
             </div>
           </div>
+        </div>
+
+        <div className="two flex w-[90%] mx-auto flex-col md:flex-row gap-4 mt-5">
           <div className="w-full flex px-2 md:px-4 pb-4 gap-4">
             <div className="hidden md:w-14 md:flex items-start">
               <MdOutlineSecurity className="w-0 md:block bg-[#4f514e] text-white p-2 h-12 md:w-12 rounded-full" />
@@ -223,9 +165,7 @@ const CloudSolution = () => {
               </p>
             </div>
           </div>
-        </div>
 
-        <div className="two flex w-[90%] mx-auto flex-col md:flex-row gap-4 mt-5">
           <div className="w-full flex px-2 md:px-4 pb-4 gap-4">
             <div className="hidden md:w-14 md:flex items-start">
               <MdOutlineBackup className="w-0 md:block bg-[#4f514e] text-white p-2 h-12 md:w-12 rounded-full" />
@@ -245,9 +185,80 @@ const CloudSolution = () => {
             </div>
           </div>
         </div>
+
+        <div className="two flex w-[90%] mx-auto flex-col md:flex-row gap-4 mt-5">
+          <div className="w-full flex px-2 md:px-4 pb-4 gap-4">
+            <div className="hidden md:w-14 md:flex items-start">
+              <GiPathDistance className="w-0 md:block bg-[#4f514e] text-white p-2 h-12 md:w-12 rounded-full" />
+            </div>
+            <div className="w-full text-xl font-light">
+              <h2 className="text-xl text-[#071b52] font-bold">
+                Cloud Migration Services
+              </h2>
+              <p
+                className="mt-2 text-base text-black font-medium"
+                style={{ textAlign: "justify" }}
+              >
+                Our cloud migration services include SWOT Analysis, readiness
+                assessment, Cloud-to-cloud movement, migration of workloads, and
+                validation, performance testing and disaster recovery management
+                services.
+              </p>
+            </div>
+          </div>
+
+          <div className="w-full flex md:mx-4 gap-4 px-2">
+            <div className="hidden md:w-14 md:flex items-start">
+              <FiAperture className="w-0 md:block bg-[#4f514e] text-white p-2 h-12 md:w-12 rounded-full" />
+            </div>
+            <div className="text-xl font-light">
+              <h2 className="text-xl text-[#071b52] font-bold">
+                Managed Services
+              </h2>
+              <p
+                className="mt-2 text-base text-black font-medium"
+                style={{ textAlign: "justify" }}
+              >
+                We meticulously plan, strategize and implement a governance plan
+                for cloud infrastructure and modernization services.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div className="two flex w-[90%] mx-auto flex-col md:flex-row gap-4 mt-5">
+          <div className="w-full flex px-2 md:px-4 pb-4 gap-4">
+            <div className="hidden md:w-14 md:flex items-start">
+              <RiDatabaseFill className="w-0 md:block bg-[#4f514e] text-white p-2 h-12 md:w-12 rounded-full" />
+            </div>
+            <div className="w-full text-xl font-light">
+              <h2 className="text-xl text-[#071b52] font-bold">
+                Knowledge Transfer
+              </h2>
+              <p
+                className="mt-2 text-base text-black font-medium"
+                style={{ textAlign: "justify" }}
+              >
+                After delivering the right cloud solutions, MAF Group can offer
+                your IT team guidance on cloud transformation and knowledge
+                transfer.
+              </p>
+            </div>
+          </div>
+        </div>
       </div>
     </Layout>
   );
 };
 
 export default CloudSolution;
+
+/*
+
+
+*/
+
+/*
+
+
+*/

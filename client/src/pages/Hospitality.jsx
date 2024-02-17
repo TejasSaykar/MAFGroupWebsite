@@ -23,10 +23,17 @@ const Hospitality = () => {
         </div>
 
         <div className="w-full mt-10">
-          <div className="w-[90%] lg:w-[70%] m-auto flex flex-col gap-5 font-light">
-            <div className="flex flex-col items-start gap-4">
+          <div className="w-[90%] lg:w-[80%] m-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
+            <div className="w-full flex flex-col items-start gap-4">
+              <div className="w-full">
+                <img
+                  src="/img/hotel.png"
+                  className="aspect-video shadow-sm object-cover bg-cover"
+                  alt=""
+                />
+              </div>
               <div>
-                <p>
+                <p className="text-justify">
                   The hospitality industry has been going through many changes,
                   and the players have been trying to offer more holistic
                   experiences to customers in the last few years. One of the key
@@ -36,26 +43,44 @@ const Hospitality = () => {
                   their feedback, and improvise accordingly.
                 </p>
               </div>
-              <div className="w-full">
-                <img src="/img/hotel.png" className="md:w-1/2 mx-auto" alt="" />
+            </div>
+
+            <div className="w-full flex flex-col items-start gap-4">
+              <div>
+                <img
+                  src="/img/hotel1.png"
+                  className="aspect-video shadow-sm object-cover bg-cover"
+                  alt=""
+                />
               </div>
-              <div className="w-full" style={{ textAlign: "justify" }}>
-                <p>
+              <div>
+                <p className="text-justify">
                   Access to marketing automation and customer data is a key
                   factor for success in this industry, as customer experience
                   matters a lot. Customers who get what they expect will stay
                   engaged with the brand and be more loyal. However, even one
                   disappointment can lead to disasters. So, there is no scope
                   for an error.
-                </p>{" "}
-                <br />
-                <p>
+                </p>
+              </div>
+            </div>
+
+            <div className="w-full flex flex-col items-start gap-4">
+              <div>
+                <img
+                  src="/img/hotel2.png"
+                  className="aspect-video shadow-sm object-cover bg-cover"
+                  alt=""
+                />
+              </div>
+              <div>
+                <p className="text-justify">
                   At MAF Group, we help ensure a perfect customer experience
                   using the latest tools like cloud, AI, data ingestion,
                   marketing automation, and analytics implementation. With
-                  achievable goals like supporting real-time experience on
-                  digital platforms, MAF Group has helped countless customers in
-                  the hospitality industry to get the end customers the
+                  achievable goals like supporting <br /> real-time experience
+                  on digital platforms, MAF Group has helped countless customers
+                  in the hospitality industry to get the end customers the
                   best-ever experience. We helped Bourne Leisure Limited, a big
                   name in the hospitality industry.
                 </p>

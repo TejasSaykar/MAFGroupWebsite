@@ -20,12 +20,9 @@ const Blog2 = () => {
       <div className="w-full mt-[4rem]">
         <div className="w-full px-5 md:w-[90%] md:px-0 mx-auto pt-10">
           <div className="text-2xl md:text-2xl pb-4 font-bold px-2 md:px-7">
-            <h1 className="text-[#071b52] text-start dark:text-rose-600">
+            <h1 className="text-[#071b52] text-center dark:text-rose-600">
               Advantages of Using Google Cloud Hosting
             </h1>
-            <h2 className="text-[#071b52] mt-1">
-              - Shruti Bhandari. <br />
-            </h2>
           </div>
 
           <div className="one flex w-full flex-col md:flex-row gap-4 mt-2">
@@ -243,6 +240,12 @@ const Blog2 = () => {
                 </p>
               </div>
             </div>
+          </div>
+
+          <div className="md:ml-20 ml-2 mb-5">
+            <h2 className="text-[#071b52] font-semibold mt-1">
+              - Shruti Bhandari. <br />
+            </h2>
           </div>
 
           <div className="md:mx-10  mx-2">

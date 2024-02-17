@@ -18,11 +18,10 @@ const Blog3 = () => {
       <div className="w-full mt-[4rem]">
         <div className="w-full px-5 md:w-[90%] md:px-0 mx-auto pt-10">
           <div className="text-2xl md:text-2xl pb-4 font-bold px-2 md:px-6">
-            <h1 className="text-[#071b52] dark:text-rose-600 text-justify">
+            <h1 className="text-[#071b52] dark:text-rose-600 text-center">
               Marketing Automation Trends No Forward-Thinking Organization
               Should Ignore!
             </h1>
-            <h2 className="text-[#071b52] mt-1">- Shruti Bhandari</h2>
           </div>
 
           <div className="one flex w-full flex-col md:flex-row mt-0">
@@ -190,6 +189,13 @@ const Blog3 = () => {
               </div>
             </div>
           </div>
+
+          <div className="md:ml-20 ml-2 mb-5">
+            <h2 className="text-[#071b52] font-semibold mt-1">
+              - Shruti Bhandari. <br />
+            </h2>
+          </div>
+
           <p className="pt-6 px-2 md:w-1/2 mx-auto">
             {" "}
             Looking for help with Marketing Automation? Contact MAF Group.

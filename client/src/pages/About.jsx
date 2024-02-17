@@ -5,7 +5,7 @@ const About = () => {
   return (
     <Layout title={"About | MAF"} description={"This is the about page"}>
       <div className="mt-[4rem] w-full">
-        <div className="relative top w-full h-[90vh] sm:h-[90vh]">
+        <div className="relative top w-full h-[90vh] sm:h-[80vh]">
           <img
             src="/img/about.jpg"
             className="w-full object-cover bg-center bg-cover h-full"
@@ -17,13 +17,7 @@ const About = () => {
               <h2 className="text-3xl lg:text-5xl text-start font-bold capitalize">
                 We are your transformation journey partner !
               </h2>
-              <p className="text-justify text-lg lg:text-xl font-thin mt-6 md:mt-4 text-justify">
-                Setup your business for unparalleled success by navigating
-                complex data landscapes with precision. We are experts in
-                formulating clear, actionable strategies that position your
-                business strategically to achieve optimal outcomes.
-              </p>
-              <p className="text-justify text-lg hidden md:block text-justify lg:text-xl font-thin mt-2">
+              <p className="text-lg text-justify lg:text-xl font-thin mt-2">
                 We analyze, digitize and automate your business through smart
                 data-driven decision by leveraging our decades long experience
                 to boost productivity and achieve organizational excellence.
@@ -43,9 +37,30 @@ const About = () => {
         </div>
 
         <div className="md:w-[90%] mx-auto">
-          {/* Fitst */}
+          <div className="second w-full mt-10 mb-4">
+            <div className="w-full flex-col md:flex-row flex px-5 md:px-14 items-center justify-start gap-3">
+              <div className="left h-auto md:my-auto order-1 md:order-2">
+                <img
+                  src="/img/data2.png"
+                  alt=""
+                  className="object-cover aspect-video md:w-2/3 mx-auto"
+                />
+              </div>
+              <div className="w-full right flex flex-col order-2 md:order-1">
+                <h1 className="text-2xl font-bold text-[#071b52] dark:text-rose-600">
+                  Precision analytics
+                </h1>
+                <p className="text-justify font-thin mx-auto mt-2">
+                  Setup your business for unparalleled success by navigating
+                  complex data landscapes with precision. We are experts in
+                  formulating clear, actionable strategies that position your
+                  business strategically to achieve optimal outcomes.
+                </p>
+              </div>
+            </div>
+          </div>
 
-          <div className="second w-full mt-5">
+          <div className="second w-full mt-5 md:mt-12">
             <div className="w-full flex-col md:flex-row flex px-5 md:px-14 items-start justify-start gap-3">
               <div className="left h-auto md:my-auto">
                 <img
@@ -107,7 +122,7 @@ const About = () => {
                 />
               </div>
               <div className="right flex flex-col w-full">
-                <h2 className="mt-5 text-2xl font-bold text-[#071b52]">
+                <h2 className="mt-5 text-3xl text-center font-bold text-[#071b52]">
                   Our Services
                 </h2>
 

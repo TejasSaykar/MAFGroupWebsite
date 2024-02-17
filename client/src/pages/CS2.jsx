@@ -5,56 +5,122 @@ const CS2 = () => {
   return (
     <Layout title={"MAF | Work"}>
       <div className="mt-[4rem] w-full">
-        <div className="w-[90%] lg:w-[70%] m-auto flex flex-col gap-3 pt-5">
-          <h1 className="text-3xl font-bold text-[#071b52] dark:text-rose-600">
-            Boosting Marketing Efficiency by strategic transition
-          </h1>
-          <div className="flex flex-col">
-            <h2 className="text-2xl font-semibold text-[#071b52] dark:text-rose-600">
-              Problem Statement:
-            </h2>
-            <p className="font-light">
-              Our client wanted to keep pace with digital evolution and to
-              optimize their marketing efficiency while cutting down expenses.
-              They wanted to move their data to a common platform to facilitate
-              better reporting in the future.
-            </p>
-          </div>
-          <div className="flex flex-col">
-            <div className="flex flex-col gap-4 md:flex-row items-center">
-              <div className="w-full order-2 md:order-1">
-                <h2 className="text-2xl font-semibold mt-2 text-[#071b52] dark:text-rose-600">
-                  Our Solution:
-                </h2>
-                <p className="font-light">
-                  We helped them migrate from Adobe Analytics to Google
-                  Analytics as a cost-saving measure and to provide them with a
-                  strategic shift towards a more efficient marketing platform.
-                </p>
-                <p className="font-light">
-                  Parallel to our analytics transition, we shifted the raw data
-                  from Adobe into a single powerful data warehouse and
-                  constructed pipelines to make sure the information stays
-                  updated.
-                </p>
-              </div>
-              <div className="w-full order-1 md:order-2">
-                <img src="/img/w3.png" className="md:w-2/3 mx-auto" alt="" />
+        <div className="w-[90%] lg:w-[80%] m-auto flex flex-col gap-4 pt-4">
+          <div className="w-full flex flex-col gap-4">
+            <div className="flex gap-2 items-center">
+              <span className="text-2xl font-semibold text-[#071b52]">
+                Strategic Transition to Enhance Marketing Efficiency in the
+                Banking Sector
+              </span>
+            </div>
+            <div className="flex gap-2">
+              <h2 className="text-lg font-bold text-[#071b52]">Industry : </h2>
+              <span className="">Banking</span>
+            </div>
+            <div className="flex gap-2">
+              <h2 className="text-lg font-bold text-[#071b52]">Location : </h2>
+              <span className="">London</span>
+            </div>
+            <div className="flex flex-col md:flex-row gap-2">
+              <h2 className="text-lg font-bold text-[#071b52]">Solution : </h2>
+              <span className="md:w-[80%]">
+                Transition from Adobe Analytics to GA4
+              </span>
+            </div>
+            <div className="flex flex-col md:flex-col gap-2">
+              <h2 className="text-lg font-bold text-[#071b52]">Result : </h2>
+              <div className="flex flex-col gap-1  md:ml-8">
+                <h3>• £110,000 Saved in Marketing Expenditure</h3>
+                <h3>• 112% Increase in Marketing Efficiency</h3>
               </div>
             </div>
 
-            <p className="font-light">
-              This transformative journey repurposed the way our client
-              conducted their digital marketing approach, yielding stellar
-              results. Our endeavors{" "}
-              <span className="font-semibold text-[#071b52] dark:text-rose-600">
-                cut down the marketing expenditure by 110K{" "}
-              </span>{" "}
-              pounds while simultaneously{" "}
-              <span className="font-semibold text-[#071b52] dark:text-rose-600">
-                improving efficiency by 112%.
-              </span>
-            </p>
+            <div className="flex flex-col">
+              <h2 className="font-semibold text-lg text-[#071b52]">
+                Background:
+              </h2>
+              <p className=" md:ml-8 text-justify md:text-start">
+                Our respectable client is the foremost employee-owned enterprise
+                in the UK within the banking and retail sectors and has a
+                history that spans over 150 countries. To keep up with their
+                unwavering commitment to deliver excellence to their clients,
+                they entrusted us with their digital advancement journey that
+                optimizes their marketing strategies and reduces operational
+                costs.
+              </p>
+            </div>
+
+            <div className="flex flex-col">
+              <h2 className="font-semibold text-lg text-[#071b52]">
+                Objective:
+              </h2>
+              <p className=" md:ml-8 text-justify md:text-start">
+                The client wanted to have a holistic view of their customer data
+                by bringing it into a unified platform thus simplifying the
+                reporting processes and bringing in cost effective measures.
+              </p>
+            </div>
+
+            <div className="flex flex-col gap-2">
+              <div className="w-full">
+                <h2 className="text-lg font-semibold text-[#071b52]">
+                  Solution :{" "}
+                </h2>
+                <p className=" md:ml-8 text-justify md:text-start">
+                  Keeping their goals in mind, we strategized to seamlessly
+                  transfer their data from Adobe analytics to Google Analytics
+                  (GA4), a bold move aimed at improving marketing efficiency and
+                  driving cost savings.
+                </p>
+                <p className=" md:ml-8 mt-1 text-justify md:text-start">
+                  Concurrently, we spearheaded the migration of raw data from
+                  Adobe to a robust data warehousing solution by implementing
+                  sophisticated pipelines that facilitated real-time flow of
+                  data.
+                </p>
+              </div>
+
+              <div className="mt-5">
+                <div className="flex flex-col">
+                  <div className="flex flex-col gap-1">
+                    <h2 className="text-xl font-semibold text-[#071b52]">
+                      Results :{" "}
+                    </h2>
+                    <p className="mb-2  md:ml-0 text-justify md:text-start">
+                      The shift to a different analytics platform provided
+                      exemplary results with a notable £110,000 reduction in
+                      marketing expenditure. Their marketing efficiency also
+                      showed an increase in an impressive 112% improvement.
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <div className="mt-5">
+                <h2 className="text-xl font-semibold mb-2 text-[#071b52]">
+                  Key Performance Indicators (KPI):{" "}
+                </h2>
+                <div className="flex flex-col gap-1  md:ml-4">
+                  <p>• £110,000 Saved in Marketing Expenditure</p>
+                  <p>• 112% Increase in Marketing Efficiency</p>
+                </div>
+              </div>
+
+              <div className="mt-5">
+                <h2 className="text-xl font-semibold text-[#071b52]">
+                  Conclusion:
+                </h2>
+                <p className=" md:ml-0 text-justify md:text-start">
+                  With a thorough plan and flawless execution, we empowered them
+                  to navigate the digital landscape and achieve their business
+                  objectives. We achieved tangible cost savings while elevating
+                  their marketing performance to unprecedented levels. This
+                  project was an indication of our unwavering commitment to
+                  delivering impactful solutions that are tailored to your
+                  requirements and objectives.
+                </p>
+              </div>
+            </div>
           </div>
         </div>
       </div>

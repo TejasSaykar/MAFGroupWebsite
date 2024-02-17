@@ -46,6 +46,9 @@ import Createnews from "./pages/Createnews";
 import CS8 from "./pages/CS8";
 import SingleBlog from "./pages/SingleBlog";
 import SingleNews from "./pages/SingleNews";
+import Da from "./pages/Da";
+import CS9 from "./pages/CS9";
+import CS10 from "./pages/CS10";
 
 function App() {
   return (
@@ -62,7 +65,8 @@ function App() {
         <Route path="/investors" element={<Investors />} />
 
         {/* Services Route */}
-        <Route path="/data-analytics" element={<Services />} />
+        <Route path="/services" element={<Services />} />
+        <Route path="/data-analytics" element={<Da />} />
         <Route path="/cloud-solution" element={<CloudSolution />} />
         <Route path="/marketing-automation" element={<MarketingAutomation />} />
         <Route path="/digital-transformation" element={<DigitalTrans />} />
@@ -85,6 +89,8 @@ function App() {
         <Route path="/case6" element={<CS6 />} />
         <Route path="/case7" element={<CS7 />} />
         <Route path="/case8" element={<CS8 />} />
+        <Route path="/case9" element={<CS9 />} />
+        <Route path="/case10" element={<CS10 />} />
 
         {/* Our Partners */}
         <Route path="/partners" element={<Partners />} />

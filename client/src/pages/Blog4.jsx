@@ -18,12 +18,9 @@ const Blog4 = () => {
       <div className="w-full mt-[4rem]">
         <div className="w-full px-5 md:w-[90%] md:px-0 mx-auto pt-10">
           <div className="text-xl md:text-2xl pb-4 font-bold px-2 md:px-6">
-            <h1 className="text-[#071b52] dark:text-rose-600">
+            <h1 className="text-[#071b52] text-center dark:text-rose-600">
               Exciting Digital Transformation Trends You Can't Ignore
             </h1>
-            <h2 className="text-[#071b52] text-start mt-1">
-              - Shruti Bhandari
-            </h2>
           </div>
 
           <div className="one flex w-full flex-col md:flex-row gap-4 mt-2 md:mt-0">
@@ -183,12 +180,14 @@ const Blog4 = () => {
                 </p>
               </div>
             </div>
-            {/* <div className="w-full flex px-2 md:px-4 pb-4 gap-4">
+            <div className="w-full flex px-2 md:px-4 pb-4 gap-4">
               <div className="hidden md:w-14 md:flex items-start">
                 <FaRegFileWord className="w-0 md:block bg-[#4f514e] text-white p-2 h-12 md:w-12 rounded-full" />
               </div>
               <div className="w-full text-xl font-light">
-                <h2 className="text-xl text-[#071b52] font-bold">Final Words</h2>
+                <h2 className="text-xl text-[#071b52] font-bold">
+                  Final Words
+                </h2>
                 <p
                   className="mt-2 text-base text-black font-medium"
                   style={{ textAlign: "justify" }}
@@ -201,7 +200,13 @@ const Blog4 = () => {
                   for help with Marketing Automation? Contact MAF Group.
                 </p>
               </div>
-            </div> */}
+            </div>
+          </div>
+
+          <div className="md:ml-20 ml-2 mb-5">
+            <h2 className="text-[#071b52] font-semibold mt-1">
+              - Shruti Bhandari. <br />
+            </h2>
           </div>
 
           <div className="md:mx-10 mx-2">

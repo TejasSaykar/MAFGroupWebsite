@@ -108,7 +108,7 @@ const Navbar = () => {
 
                   <div className="w-full justify-between flex gap-10 items-center">
                     <Link
-                      to={"/data-analytics"}
+                      to={"/services"}
                       className="dark:text-rose-600 font-bold"
                     >
                       Services
@@ -120,7 +120,7 @@ const Navbar = () => {
                       <DropdownMenuContent>
                         <DropdownMenuLabel>
                           <h2 className="dark:text-rose-600 font-bold">
-                            <Link to="/data-analytics">Services</Link>
+                            <Link to="/services">Services</Link>
                           </h2>
                         </DropdownMenuLabel>
                         <DropdownMenuSeparator />
@@ -244,12 +244,12 @@ const Navbar = () => {
                         <DropdownMenuSeparator />
                         <DropdownMenuItem>
                           <Link to={"/case1"} className="dark:text-rose-600">
-                            Business Excellence
+                            Digital Landscape
                           </Link>
                         </DropdownMenuItem>
                         <DropdownMenuItem>
                           <Link to={"/case2"} className="dark:text-rose-600">
-                            Boosting Marketing
+                            Enhance Marketing Efficiency
                           </Link>
                         </DropdownMenuItem>
                         <DropdownMenuItem>
@@ -269,12 +269,27 @@ const Navbar = () => {
                         </DropdownMenuItem>
                         <DropdownMenuItem>
                           <Link to={"/case6"} className="dark:text-rose-600">
-                            Optimize Marketing Strategy
+                            Marketing Strategy
                           </Link>
                         </DropdownMenuItem>
                         <DropdownMenuItem>
                           <Link to={"/case7"} className="dark:text-rose-600">
                             Enhance User Experience
+                          </Link>
+                        </DropdownMenuItem>
+                        <DropdownMenuItem>
+                          <Link to={"/case8"} className="dark:text-rose-600">
+                            Customer Satisfaction
+                          </Link>
+                        </DropdownMenuItem>
+                        <DropdownMenuItem>
+                          <Link to={"/case9"} className="dark:text-rose-600">
+                            Customer Engagement
+                          </Link>
+                        </DropdownMenuItem>
+                        <DropdownMenuItem>
+                          <Link to={"/case10"} className="dark:text-rose-600">
+                            Retail
                           </Link>
                         </DropdownMenuItem>
                       </DropdownMenuContent>
@@ -329,7 +344,7 @@ const Navbar = () => {
 
                   <div className="flex gap-10 items-center w-full justify-between">
                     <Link
-                      to={"/blog1"}
+                      to={"/blogs"}
                       className="dark:text-rose-600 font-bold"
                     >
                       Blogs
@@ -350,7 +365,7 @@ const Navbar = () => {
                             to={"/data_analytics"}
                             className="dark:text-rose-600"
                           >
-                            Blog on Data Analytics
+                            Data Analytics
                           </Link>
                         </DropdownMenuItem>
                         <DropdownMenuItem>
@@ -358,7 +373,7 @@ const Navbar = () => {
                             to={"/cloud_solution"}
                             className="dark:text-rose-600"
                           >
-                            Blog on Cloud solutions
+                            Cloud solutions
                           </Link>
                         </DropdownMenuItem>
                         <DropdownMenuItem>
@@ -366,7 +381,7 @@ const Navbar = () => {
                             to={"/marketing_automation"}
                             className="dark:text-rose-600"
                           >
-                            Blogs on Marketing Automation
+                            Marketing Automation
                           </Link>
                         </DropdownMenuItem>
                         <DropdownMenuItem>
@@ -374,7 +389,7 @@ const Navbar = () => {
                             to={"/digital_transformation"}
                             className="dark:text-rose-600"
                           >
-                            Blogs on Digital Transformation
+                            Digital Transformation
                           </Link>
                         </DropdownMenuItem>
                       </DropdownMenuContent>
@@ -431,7 +446,7 @@ const Navbar = () => {
             <button
               className={`hover:text-sky-600 hover:border-t-4 dark:hover:border-white border-t-4 border-transparent transition-all text-[#000050] dark:text-rose-600 h-16 px-5 items-center text-center flex hover:border-black`}
               onClick={() => {
-                navigate("/data-analytics"), setActiveNavItem(0);
+                navigate("/services"), setActiveNavItem(0);
               }}
               onMouseEnter={() => handleNavItemHover(3)}
               onMouseLeave={handleLeave}
@@ -645,11 +660,11 @@ const Navbar = () => {
         <HoverCard
           link={[
             {
-              item: "Deliver Business Excellence",
+              item: "Digital Landscape",
               link: "/case1",
             },
             {
-              item: "Boosting Marketing",
+              item: "Enhance Marketing Efficiency",
               link: "/case2",
             },
             {
@@ -665,7 +680,7 @@ const Navbar = () => {
               link: "/case5",
             },
             {
-              item: "Optimize Marketing Strategy",
+              item: "Marketing Strategy",
               link: "/case6",
             },
             {
@@ -675,6 +690,14 @@ const Navbar = () => {
             {
               item: "Customer Satisfaction",
               link: "/case8",
+            },
+            {
+              item: "Customer Engagement",
+              link: "/case9",
+            },
+            {
+              item: "Retail",
+              link: "/case10",
             },
           ]}
           handleNavItemHover={handleNavItemHover}

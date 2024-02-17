@@ -108,7 +108,7 @@ const ValueProposition = () => {
                   the development lifecycle thus exhibiting our dedication to
                   your project’s success. Our strategic partnerships are built
                   on trust and faith ensuring a collaborative and fruitful
-                  completion of every project while ensuring long term growth.
+                  completion of every project while ensuring long-term growth.
                 </p>
               </div>
             </div>

@@ -5,7 +5,7 @@ const Leadership = () => {
   return (
     <Layout title={"MAF | Leadership"}>
       <div className="mt-[4rem] w-full">
-        <div className="relative w-full h-[90vh]">
+        <div className="relative w-full h-[90vh] md:h-[70vh]">
           <img
             src="/img/lead0.jpg"
             className="w-full h-full object-cover"
@@ -38,7 +38,7 @@ const Leadership = () => {
               <h2 className="text-2xl mt-3 font-semibold text-[#071b52] dark:text-rose-600">
                 Architects of Progress
               </h2>
-              <p className="font-thin">
+              <p className="font-thin text-justify">
                 Our C-Suite executives are a team of individuals with diverse
                 skill sets, innovative thought processes and extensively
                 experienced, competitive professionals with a knack for making
@@ -61,13 +61,12 @@ const Leadership = () => {
               <h2 className="text-2xl font-semibold text-[#071b52] dark:text-rose-600">
                 Strategic Visionaries
               </h2>
-              <p className="font-thin">
-                Our dynamic leadership team has always been <br />{" "}
-                forward-thinking, attuned to emerging opportunities,
-                anticipating trends and capitalizing on the changing business
-                landscape. With them at the top we have always navigated the
-                tech industry with precision and purpose and achieved our
-                organizational goals.
+              <p className="font-thin text-justify">
+                Our dynamic leadership team has always been forward-thinking,
+                attuned to emerging opportunities, anticipating trends and
+                capitalizing on the changing business landscape. With them at
+                the top we have always navigated the tech industry with
+                precision and purpose and achieved our organizational goals.
               </p>
             </div>
             <div className="w-full order-1">
@@ -84,7 +83,7 @@ const Leadership = () => {
               <h2 className="text-2xl font-semibold text-[#071b52] dark:text-rose-600">
                 Thought Leadership
               </h2>
-              <p className="font-thin">
+              <p className="font-thin text-justify">
                 Our work environment is fueled by creativity where our leaders
                 are the orchestrators. They nurture and foster our innovative
                 spirit by creating a culture that values experimentation and the
@@ -106,7 +105,7 @@ const Leadership = () => {
               <h2 className="text-2xl font-semibold text-[#071b52] dark:text-rose-600">
                 Navigating dynamic business landscape
               </h2>
-              <p className="font-thin">
+              <p className="font-thin text-justify">
                 The tech landscape is an ever-changing, vast, intricate and
                 evolving domain where rapid adaptation and quick informed
                 decision-making is rewarded. Our arsenal of exceptional

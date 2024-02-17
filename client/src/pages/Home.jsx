@@ -262,14 +262,14 @@ const Home = () => {
         </div>
 
         <div className="relative middle1 mt-16 md:mt-32">
-          <h2 className="hidden md:block absolute md:left-10 top-16 font-bold text-xl -rotate-90 text-[#071b52] dark:text-rose-600">
+          <h2 className="hidden md:block absolute md:left-5 top-16 font-bold text-xl -rotate-90 text-[#071b52] dark:text-rose-600">
             LATEST NEWS
           </h2>
           <h2 className="absolute underline underline-offset-8 md:hidden -top-10 bottom-20 left-[30%] font-bold text-xl text-[#071b52] dark:text-rose-600">
             LATEST NEWS
           </h2>
-          <div className="w-full px-3 flex-col md:flex-row md:w-[55%] m-auto flex md:px-10 gap-10">
-            <div className="left sm:w-[70%] sm:m-auto md:w-[60vw] lg:w-1/2">
+          <div className="w-full px-3 flex-col md:flex-row flex md:px-10 gap-10">
+            <div className="left max-sm:mt-5 flex justify-center w-full sm:w-[50vw] mx-auto sm:ml-20 md:w-[60vw] lg:w-1/4">
               <div className="flex flex-col items-start w-full shadow-xl pb-3">
                 <img
                   src="/img/bai.jpg"

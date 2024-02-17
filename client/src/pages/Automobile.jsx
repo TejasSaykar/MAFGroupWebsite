@@ -19,12 +19,16 @@ const Automobile = () => {
           </div>
         </div>
         <div className="w-full mt-10">
-          <div className="w-[90%] md:w-[80%] m-auto flex flex-col gap-5">
-            <div className="flex flex-col md:flex-row items-center gap-4">
-              <div
-                className="w-full order-2 md:order-1"
-                style={{ textAlign: "justify" }}
-              >
+          <div className="w-[90%] md:w-[80%] mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
+            <div className="w-full flex flex-col items-center">
+              <div className="w-full">
+                <img
+                  src="/img/auto1.png"
+                  className="aspect-video md:aspect-square object-cover bg-cover shadow-sm mb-4"
+                  alt=""
+                />
+              </div>
+              <div className="w-full" style={{ textAlign: "justify" }}>
                 <p className="font-light">
                   The landscape of the automobile industry is evolving, fuelled
                   by the changing circumstances which include technological
@@ -33,16 +37,20 @@ const Automobile = () => {
                   world is next to impossible on top of building a business.
                   Despite all of this, staying ahead of the competition and
                   distinguishing yourself is a non-negotiable factor.{" "}
-                </p>{" "}
-                <br />
-                <p className="font-light">
-                  Aligning with the industry trends alone cannot guarantee you
-                  standing out in the industry, personalization and trend
-                  setting strategies are what will assure your unparalleled
-                  success.
-                </p>{" "}
-                <br />
-                <p className="font-light">
+                </p>
+              </div>
+            </div>
+
+            <div>
+              <div>
+                <img
+                  src="/img/auto2.png"
+                  className="aspect-video md:aspect-square object-cover bg-cover shadow-sm mb-4"
+                  alt=""
+                />
+              </div>
+              <div>
+                <p className="font-light text-justify">
                   And MAF Group can help you achieve that goal by leveraging our
                   comprehensive suite of services and decades of expertise in
                   dabbling with the automobile industry. We aid you in curating
@@ -50,34 +58,30 @@ const Automobile = () => {
                   incorporating cutting-edge tech like AI, NLP and Big Data thus
                   playing a pivotal role in your business improvement.
                 </p>{" "}
-                <br />
-                <p className="font-light">
-                  As the automobile industry embraces and adapts to the digital
-                  future, we help you stay in pace with the transformation by
-                  inviting you to join us as your reliable partner. Let's equip
-                  your business with the technology to thrive and soar in this
-                  competitive environment.
-                </p>
-              </div>
-              <div className="w-full flex items-start order-1 md:order-2">
-                <img src="/img/auto1.png" alt="" />
               </div>
             </div>
-            {/* <p className="text-xl font-light">
-              And MAF Group can help you achieve that goal by leveraging our
-              comprehensive suite of services and decades of expertise in
-              dabbling with the automobile industry. We aid you in curating a
-              personalized experience for all your customers by incorporating
-              cutting-edge tech like AI, NLP and Big Data thus playing a pivotal
-              role in your business improvement.
-            </p>
-            <p className="text-xl font-light">
-              As the automobile industry embraces and adapts to the digital
-              future, we help you stay in pace with the transformation by
-              inviting you to join us as your reliable partner. Let's equip your
-              business with the technology to thrive and soar in this
-              competitive environment.
-            </p> */}
+
+            <div>
+              <div>
+                <img
+                  src="/img/auto3.png"
+                  className="aspect-video md:aspect-square object-cover bg-cover shadow-sm mb-4"
+                  alt=""
+                />
+              </div>
+              <div>
+                <p className="font-light text-justify">
+                  Aligning with the industry trends alone cannot guarantee you
+                  standing out in the industry, personalization and trend
+                  setting strategies are what will assure your unparalleled
+                  success. As the automobile industry embraces and adapts to the
+                  digital future, we help you stay in pace with the
+                  transformation by inviting you to join us as your reliable
+                  partner. Let's equip your business with the technology to
+                  thrive and soar in this competitive environment.
+                </p>
+              </div>
+            </div>
           </div>
         </div>
       </div>

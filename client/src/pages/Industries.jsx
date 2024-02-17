@@ -76,7 +76,7 @@ const Industries = () => {
                 the cloud or hope to offer a better mobile experience, or even
                 create cool content that motivates people to connect, our
                 experts can deliver perfect solutions to you after delving
-                through data driven insights and using the latest technological
+                through data-driven insights and using the latest technological
                 tools that go with the flow and improve with time. We have
                 helped many clients in the banking sector.
               </p>

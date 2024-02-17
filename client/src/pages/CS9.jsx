@@ -1,7 +1,7 @@
 import Layout from "@/components/Layout";
 import React from "react";
 
-const CS8 = () => {
+const CS9 = () => {
   return (
     <Layout>
       <div className="mt-[4rem] w-full">
@@ -9,8 +9,8 @@ const CS8 = () => {
           <div className="w-full flex flex-col gap-4">
             <div className="flex gap-2 items-center">
               <span className="text-2xl font-semibold text-[#071b52]">
-                Elevating Customer Satisfaction Through Single Customer View
-                (SCV) in Retail
+                Driving Hyper-Personalization for Enhanced Customer Engagement
+                in Retail
               </span>
             </div>
             <div className="flex gap-2">
@@ -24,23 +24,16 @@ const CS8 = () => {
             <div className="flex flex-col md:flex-row gap-2">
               <h2 className="text-lg font-bold text-[#071b52]">Solution : </h2>
               <span className="md:w-[80%]">
-                Adobe Analytics, SCV, Power BI, ML
+                CRM, Azure Blob, Adobe Target, Adobe Optimize
               </span>
             </div>
             <div className="flex flex-col gap-2">
               <h2 className="text-lg font-bold text-[#071b52]">Result : </h2>
               <div className="flex flex-col gap-1 md:ml-8">
+                <h3>• 53% Uplift in Total Revenue</h3>
+                <h3>• 15% Increase in Repeat Subscriptions</h3>
                 <h3>
-                  • 7x Reduction in Time for Adobe Targeting & Other Marketing
-                  Efforts
-                </h3>
-                <h3>
-                  • Consolidation of 70+ Marketing & Sales Data Sources into
-                  Single Source of Truth
-                </h3>
-                <h3>
-                  • Saving of 3000+ Hours per Month in Manual Marketing Across
-                  All Teams
+                  • 45% Increase in Average Revenue and Profit per Customer
                 </h3>
               </div>
             </div>
@@ -63,12 +56,12 @@ const CS8 = () => {
                 Objective:
               </h2>
               <p className="md:ml-8 text-justify md:text-start">
-                Facing challenges stemming from fragmented customer data across
-                multiple channels, our client sought to enhance customer
-                engagement and offer customization to drive satisfaction and
-                loyalty in a fiercely competitive market. The objective was to
-                integrate disparate data sources to facilitate a holistic view
-                of customer interactions and preferences.
+                In pursuit of enhancing customer engagement and driving revenue
+                growth, our client aimed to develop hyper-personalized customer
+                journeys tailored to individual preferences. Leveraging the
+                power of data analytics, our objective was to engage customers
+                effectively, upsell products, retain users, and recapture those
+                who had paused their engagement.
               </p>
             </div>
 
@@ -78,23 +71,27 @@ const CS8 = () => {
                   Solution :{" "}
                 </h2>
                 <p className="md:ml-8 text-justify md:text-start">
-                  In response to our client's objectives, we proposed the
-                  creation of a Single Customer View (SCV) to consolidate and
-                  analyze customer data efficiently. Commencing with data
-                  integration from diverse sources including Google, Adobe
-                  Analytics, Qualtrics, Magento, Shopify, and subscription data,
-                  we established a unified system to house comprehensive
-                  customer profiles. Leveraging data warehousing and matching
-                  algorithms, we curated enriched customer profiles encompassing
-                  holistic information.
+                  Harnessing the power of data analytics, our team embarked on a
+                  comprehensive analysis of churn data to identify prospective
+                  pain points and customer attributes. Leveraging Azure Blob
+                  storage for data processing and formatting, we seamlessly
+                  integrated with Adobe Target and Adobe Optimize to execute
+                  personalized campaigns tailored to each customer segment.
                 </p>
                 <p className="md:ml-8 mt-2 md:mt-1 text-justify md:text-start">
-                  An SCV application was developed utilizing Power BI, offering
-                  real-time updates and predictive analytics capabilities.
-                  Employing advanced machine learning techniques, we segmented
-                  customer data and conducted extensive behavior analysis. The
-                  system was further augmented to enable automatic targeting of
-                  users across multiple channels, including Adobe.
+                  Drawing insights from previous customer interactions, we
+                  categorized customers into distinct segments and devised
+                  personalized campaigns spanning website banners, email
+                  marketing, and targeted communications. From long-time users
+                  to first-time customers and those who had lapsed in their
+                  engagement, we crafted tailored experiences to drive
+                  engagement and conversion.
+                </p>
+                <p className="md:ml-8 mt-2 md:mt-1 text-justify md:text-start">
+                  Furthermore, we proposed call center and service email
+                  initiatives to augment the reach of our hyper-personalization
+                  program, furthering our efforts to engage customers across
+                  multiple touchpoints.
                 </p>
               </div>
 
@@ -105,11 +102,14 @@ const CS8 = () => {
                       Results :{" "}
                     </h2>
                     <p className="mb-2 text-justify md:text-start">
-                      The implementation of SCV yielded significant improvements
-                      in customer engagement and satisfaction through targeted
-                      marketing strategies. Automation of business processes
-                      reduced manual intervention, driving efficiency and
-                      fostering sustainable business growth.
+                      The implementation of hyper-personalized CRM strategies
+                      yielded remarkable results, driving customer satisfaction,
+                      reducing churn rates, mitigating cancellation attempts,
+                      and ultimately boosting revenue. The tailored UI
+                      experiences and dynamic content contributed to a
+                      significant 53% uplift in total revenue, alongside a 15%
+                      increase in repeat subscriptions and a substantial 45%
+                      enhancement in average revenue and profit per customer.
                     </p>
                   </div>
                 </div>
@@ -120,17 +120,10 @@ const CS8 = () => {
                   Key Performance Indicators (KPI):{" "}
                 </h2>
                 <div className="flex flex-col gap-1 md:ml-4">
+                  <p>• 53% Uplift in Total Revenue</p>
+                  <p>• 15% Increase in Repeat Subscriptions</p>
                   <p>
-                    • 7x Reduction in Time for Adobe Targeting & Other Marketing
-                    Efforts
-                  </p>
-                  <p>
-                    • Consolidation of 70+ Marketing & Sales Data Sources into
-                    Single Source of Truth
-                  </p>
-                  <p>
-                    • Saving of 3000+ Hours per Month in Manual Marketing Across
-                    All Teams
+                    • 45% Increase in Average Revenue and Profit per Customer
                   </p>
                 </div>
               </div>
@@ -140,12 +133,12 @@ const CS8 = () => {
                   Conclusion:
                 </h2>
                 <p className="text-justify md:text-start">
-                  Through the strategic deployment of SCV coupled with advanced
-                  analytics and automation, we empowered our client to unlock
-                  new opportunities for customer engagement and satisfaction.
-                  The success of this initiative underscores our commitment to
-                  delivering transformative solutions tailored to meet the
-                  evolving needs of the retail industry.
+                  Through strategic deployment of hyper-personalization
+                  techniques and leveraging advanced data analytics, we
+                  empowered our client to unlock new avenues for customer
+                  engagement and revenue growth. The success of this initiative
+                  underscores our commitment to delivering impactful solutions
+                  tailored to meet the evolving needs of the retail industry.
                 </p>
               </div>
             </div>
@@ -156,4 +149,4 @@ const CS8 = () => {
   );
 };
 
-export default CS8;
+export default CS9;

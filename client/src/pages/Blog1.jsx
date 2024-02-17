@@ -25,7 +25,7 @@ const Blog1 = () => {
       <div className="w-full mt-[4rem]">
         <div className="w-full px-5 md:w-[90%] md:px-0 mx-auto pt-5 md:pt-10">
           <div className="text-2xl md:text-4xl pb-4 font-bold px-2 md:px-6">
-            <h2 className="text-2xl font-semibold my-4 text-[#071b52] text-justify">
+            <h2 className="text-2xl font-semibold text-center my-4 text-[#071b52]">
               18 intriguing facts about Data analytics that you cannot afford to
               miss
             </h2>
