@@ -51,12 +51,12 @@ const Automobile = () => {
               </div>
               <div>
                 <p className="font-light text-justify">
-                  And MAF Group can help you achieve that goal by leveraging our
-                  comprehensive suite of services and decades of expertise in
-                  dabbling with the automobile industry. We aid you in curating
-                  a personalized experience for all your customers by
-                  incorporating cutting-edge tech like AI, NLP and Big Data thus
-                  playing a pivotal role in your business improvement.
+                  Aligning with the industry trends alone cannot guarantee you
+                  standing out in the industry, personalization and trend
+                  setting strategies are what will assure your unparalleled
+                  success. And MAF Group can help you achieve that goal by
+                  leveraging our comprehensive suite of services and decades of
+                  expertise in dabbling with the automobile industry.
                 </p>{" "}
               </div>
             </div>
@@ -71,11 +71,11 @@ const Automobile = () => {
               </div>
               <div>
                 <p className="font-light text-justify">
-                  Aligning with the industry trends alone cannot guarantee you
-                  standing out in the industry, personalization and trend
-                  setting strategies are what will assure your unparalleled
-                  success. As the automobile industry embraces and adapts to the
-                  digital future, we help you stay in pace with the
+                  We aid you in curating a personalized experience for all your
+                  customers by incorporating cutting-edge tech like AI, NLP and
+                  Big Data thus playing a pivotal role in your business
+                  improvement. As the automobile industry embraces and adapts to
+                  the digital future, we help you stay in pace with the
                   transformation by inviting you to join us as your reliable
                   partner. Let's equip your business with the technology to
                   thrive and soar in this competitive environment.

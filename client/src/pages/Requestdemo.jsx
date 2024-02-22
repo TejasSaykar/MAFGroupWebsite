@@ -7,51 +7,80 @@ import { Switch } from "@/components/ui/switch";
 
 const Requestdemo = () => {
   const [input, setInput] = useState({
-    fullname: "",
+    fullName: "",
+    lastName: "",
     email: "",
     phone: "",
     message: "",
+    subscribe: true,
+    policy: true,
   });
 
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState("");
+  const [success, setSuccess] = useState("");
 
   const navigate = useNavigate();
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-    if (!input.fullname) {
-      setError("Fullname is required!");
+    if (!input.firstName) {
+      setError("First name is required!");
       setTimeout(() => {
         setError("");
       }, 3000);
       return;
     }
-    if (!input.email) {
-      setError("Email is required!");
+    if (!input.lastName) {
+      setError("Last name is required!");
       setTimeout(() => {
         setError("");
       }, 3000);
       return;
     }
-    if (!input.phone) {
-      setError("Phone is required!");
+
+    const email = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    if (!email.test(input.email)) {
+      setError("Invalid Email Address");
       setTimeout(() => {
-        setError("");
+        setError(false);
       }, 3000);
       return;
     }
+
+    const mobileRegex = /^[0-9]{10}$/;
+    if (!mobileRegex.test(input.phone)) {
+      setError("Invalid Mobile Number");
+      setTimeout(() => {
+        setError(false);
+      }, 3000);
+      return;
+    }
+
     try {
       setLoading(true);
-      const { data } = await axios.post(
-        `${import.meta.env.VITE_BASE_URL}/api/user/sendmail`,
-        {
-          fullname: input.fullname,
-          email: input.email,
-          phone: input.phone,
-          message: input.message,
-        }
-      );
+      setInput({
+        firstName: "",
+        lastName: "",
+        email: "",
+        phone: "",
+        message: "",
+        subscribe: true,
+        policy: true,
+      });
+      // const { data } = await axios.post(
+      //   `${import.meta.env.VITE_BASE_URL}/api/user/sendmail`,
+      //   {
+      //     fullname: input.firstName,
+      //     email: input.email,
+      //     phone: input.phone,
+      //     message: input.message,
+      //   }
+      // );
+      setSuccess(true);
+      setTimeout(() => {
+        setSuccess(false);
+      }, 2000);
       setLoading(false);
       console.log("Data : ", data);
       setInput({
@@ -77,6 +106,11 @@ const Requestdemo = () => {
             </h2>
             <div className="relative h-2 mb-4">
               {loading && <h3 className="text-center">Loading...</h3>}
+              {success && (
+                <h3 className="text-center w-full text-gray-600 bg-green-200 rounded-md p-1">
+                  Request send successfully
+                </h3>
+              )}
               {error && (
                 <h3 className="text-center w-full text-red-500 bg-red-200 rounded-md p-1">
                   {error}
@@ -100,17 +134,40 @@ const Requestdemo = () => {
                   htmlFor=""
                   className="text-base font-semibold text-gray-700"
                 >
-                  Fullname :{" "}
+                  First Name :{" "}
                 </label>
                 <input
                   className="focus:outline-none py-1 md:py-2 px-2 rounded-sm ring-1 ring-gray-600"
                   type="text"
-                  value={input.username}
+                  value={input.firstName}
                   onChange={(e) =>
-                    setInput({ ...input, fullname: e.target.value })
+                    setInput({ ...input, firstName: e.target.value })
                   }
                 />
               </div>
+
+              <div className="relative flex w-full flex-col gap-1">
+                <sup className="absolute top-[1px] -left-4 text-xl pl-1 text-[16px] text-red-600">
+                  *
+                </sup>
+                <label
+                  htmlFor=""
+                  className="text-base font-semibold text-gray-700"
+                >
+                  Last Name :{" "}
+                </label>
+                <input
+                  className="focus:outline-none py-1 md:py-2 px-2 rounded-sm ring-1 ring-gray-600"
+                  type="text"
+                  value={input.lastName}
+                  onChange={(e) =>
+                    setInput({ ...input, lastName: e.target.value })
+                  }
+                />
+              </div>
+            </div>
+
+            <div className="flex flex-col md:flex-row gap-4 w-full">
               <div className="relative flex w-full flex-col gap-1">
                 <sup className="absolute top-[1px] -left-4 text-xl pl-1 text-[16px] text-red-600">
                   *
@@ -130,9 +187,7 @@ const Requestdemo = () => {
                   }
                 />
               </div>
-            </div>
 
-            <div className="flex flex-col md:flex-row gap-4 w-full">
               <div className="relative flex w-full flex-col gap-1">
                 <sup className="absolute top-[1px] -left-4 text-xl pl-1 text-[16px] text-red-600">
                   *
@@ -152,26 +207,24 @@ const Requestdemo = () => {
                   }
                 />
               </div>
-              <div className="relative flex w-full flex-col gap-1">
-                <sup className="absolute top-[1px] -left-4 text-xl pl-1 text-[16px] text-red-600">
-                  *
-                </sup>
-                <label
-                  htmlFor=""
-                  className="text-base font-semibold text-gray-700"
-                >
-                  Message :{" "}
-                </label>
-                <textarea
-                  className="focus:outline-none rounded-sm w-full px-2 ring-1 ring-gray-600 placeholder:text-gray-600"
-                  cols="30"
-                  placeholder="Enter message here..."
-                  value={input.message}
-                  onChange={(e) =>
-                    setInput({ ...input, message: e.target.value })
-                  }
-                ></textarea>
-              </div>
+            </div>
+
+            <div className="relative flex w-full flex-col gap-1">
+              <label
+                htmlFor=""
+                className="text-base font-semibold text-gray-700"
+              >
+                Message :{" "}
+              </label>
+              <textarea
+                className="focus:outline-none rounded-sm w-full px-2 ring-1 ring-gray-600 placeholder:text-gray-600"
+                cols="30"
+                placeholder="Enter message here..."
+                value={input.message}
+                onChange={(e) =>
+                  setInput({ ...input, message: e.target.value })
+                }
+              ></textarea>
             </div>
 
             <div className="w-full">
@@ -183,29 +236,41 @@ const Requestdemo = () => {
                   }
                 />
                 <label htmlFor="" className="pl-1 text-sm">
-                  Subscribe to Newletter
+                  Subscribe to Newsletter
                 </label>
               </div>
               <div className="relative">
-                <sup className="absolute top-[9px] -left-4 text-xl pl-1 text-[16px] text-red-600">
-                  *
-                </sup>
-                <Switch
-                  className="mt-2"
-                  // checked={input.policy}
-                  // onCheckedChange={() =>
-                  //   setInput({ ...input, policy: !input.policy })
-                  // }
-                />
-                <label htmlFor="" className="text-sm pl-1">
-                  <Link className="text-sky-600 underline" to={"/tc"}>
-                    Terms and Condition{" "}
-                  </Link>
-                  and
-                  <Link className="pl-1 text-sky-600 underline" to={"/cookies"}>
-                    Privacy Ploicy
-                  </Link>
-                </label>
+                {/* <div className="flex gap-2 mx-1">
+                  <input type="checkbox" className="p-3" />
+                  <label htmlFor="">Accept</label>
+                </div> */}
+                <div className="relative">
+                  <Switch
+                    className="mt-1"
+                    checked={input.policy}
+                    onCheckedChange={() =>
+                      setInput({ ...input, policy: !input.policy })
+                    }
+                  />
+                  <label htmlFor="" className="text-sm pl-1">
+                    <Link
+                      className="text-sky-600 underline"
+                      to={"/terms_conditions"}
+                    >
+                      Accept Terms and Conditions{" "}
+                    </Link>
+                    and
+                    <Link
+                      className="pl-1 text-sky-600 underline"
+                      to={"/terms_conditions"}
+                    >
+                      Privacy Policy
+                    </Link>
+                  </label>
+                  <sup className="top-[3px] text-xl pl-1 text-[16px] text-red-600">
+                    *
+                  </sup>
+                </div>
               </div>
             </div>
 

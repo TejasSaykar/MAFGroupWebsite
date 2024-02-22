@@ -23,6 +23,9 @@ const Blog2 = () => {
             <h1 className="text-[#071b52] text-center dark:text-rose-600">
               Advantages of Using Google Cloud Hosting
             </h1>
+            <p className="text-center text-sm font-medium my-3">
+              30 July, 2022{" "}
+            </p>
           </div>
 
           <div className="one flex w-full flex-col md:flex-row gap-4 mt-2">
@@ -199,7 +202,7 @@ const Blog2 = () => {
           </div>
 
           <div className="two flex w-full flex-col md:flex-row gap-4 mt-2 md:mt-5">
-            <div className="w-full flex px-2 md:px-4 pb-4 gap-4">
+            <div className="w-full md:w-1/2 flex px-2 md:px-4 pb-4 gap-4">
               <div className="hidden md:w-14 md:flex items-start">
                 <MdOutlineBackup className="w-0 md:block bg-[#4f514e] text-white p-2 h-12 md:w-12 rounded-full" />
               </div>
@@ -220,15 +223,18 @@ const Blog2 = () => {
                 </p>
               </div>
             </div>
+          </div>
 
-            <div className="w-full flex px-2 md:px-4 pb-4 gap-4">
-              <div className="hidden md:w-14 md:flex items-start">
+          <div className="py-8 bg-gray-50">
+            <div className="w-full md:w-1/2 mx-auto flex flex-col px-2 md:px-4 pb-4 mt-5">
+              <div className="hidden md:flex gap-5 items-center justify-center">
                 <FaRegFileWord className="w-0 md:block bg-[#4f514e] text-white p-2 h-12 md:w-12 rounded-full" />
-              </div>
-              <div className="w-full text-xl font-light">
                 <h2 className="text-xl text-[#071b52] font-bold">
                   Final Words
                 </h2>
+              </div>
+              <div className="w-full text-xl font-light"></div>
+              <div className="">
                 <p
                   className="mt-1 text-base text-black font-medium"
                   style={{ textAlign: "justify" }}
@@ -242,7 +248,7 @@ const Blog2 = () => {
             </div>
           </div>
 
-          <div className="md:ml-20 ml-2 mb-5">
+          <div className="md:w-1/2 mx-auto mb-5">
             <h2 className="text-[#071b52] font-semibold mt-1">
               - Shruti Bhandari. <br />
             </h2>

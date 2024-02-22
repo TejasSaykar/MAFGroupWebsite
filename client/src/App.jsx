@@ -1,7 +1,5 @@
 import { Route, Routes } from "react-router-dom";
 import "./App.css";
-import Footer from "./components/Footer";
-import Navbar from "./components/Navbar";
 import Home from "./pages/Home";
 import About from "./pages/About";
 import Investors from "./pages/Investors";
@@ -111,7 +109,7 @@ function App() {
         <Route path="/create-blog" element={<CreateBlog />} />
 
         {/* Terms and Conditions */}
-        <Route path="/tc" element={<T_C />} />
+        <Route path="/terms_conditions" element={<T_C />} />
 
         {/* Cookies */}
         <Route path="/cookies" element={<Cookies />} />

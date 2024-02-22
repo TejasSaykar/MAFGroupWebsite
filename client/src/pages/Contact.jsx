@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import Layout from "../components/Layout";
-import { Link, useNavigate } from "react-router-dom";
+import { Link, useLocation, useNavigate } from "react-router-dom";
 import { Switch } from "@/components/ui/switch";
 import axios from "axios";
 import { message } from "antd";
@@ -12,60 +12,78 @@ const Contact = () => {
     email: "",
     phone: "",
     message: "",
-    subscribe: false,
-    policy: false,
+    policy: true,
   });
+
+  const [isChecked, setIsChecked] = useState(true);
 
   const navigate = useNavigate();
 
   const [error, setError] = useState("");
+  const [success, setSuccess] = useState(false);
 
   const handleSubmit = async (e) => {
     e.preventDefault();
     if (!input.firstname) {
-      setError("Firstname is required!");
+      setError("First name is required!");
       setTimeout(() => {
         setError("");
       }, 3000);
       return;
     }
     if (!input.lastname) {
-      setError("Lastname is required!");
+      setError("Last name is required!");
       setTimeout(() => {
         setError("");
       }, 3000);
       return;
     }
-    if (!input.email) {
-      setError("Email is required!");
+    const email = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    if (!email.test(input.email)) {
+      setError("Invalid Email Address");
       setTimeout(() => {
-        setError("");
+        setError(false);
       }, 3000);
       return;
     }
-    if (!input.phone) {
-      setError("Phone is required!");
+
+    const mobileRegex = /^[0-9]{10}$/;
+    if (!mobileRegex.test(input.phone)) {
+      setError("Invalid Mobile Number");
       setTimeout(() => {
-        setError("");
+        setError(false);
       }, 3000);
       return;
     }
 
     try {
-      const { data } = await axios.post(
-        `${import.meta.env.VITE_BASE_URL}/api/user/contact`,
-        {
-          firstname: input.firstname,
-          lastname: input.lastname,
-          email: input.email,
-          phone: input.phone,
-          message: input.message,
-          subscribe: input.subscribe,
-          policy: input.policy,
-        }
-      );
+      setSuccess(true);
+      setTimeout(() => {
+        setSuccess(false);
+      }, 2000);
+
+      setInput({
+        firstname: "",
+        lastname: "",
+        email: "",
+        phone: "",
+        message: "",
+        policy: true,
+      });
+
+      // const { data } = await axios.post(
+      //   `${import.meta.env.VITE_BASE_URL}/api/user/contact`,
+      //   {
+      //     firstname: input.firstname,
+      //     lastname: input.lastname,
+      //     email: input.email,
+      //     phone: input.phone,
+      //     message: input.message,
+      //     subscribe: input.subscribe,
+      //     policy: input.policy,
+      //   }
+      // );
       if (data) {
-        message.success("Message send");
         console.log("Data : ", data);
         navigate("/");
       }
@@ -78,26 +96,26 @@ const Contact = () => {
     <Layout title={"Contact | MAF"} description={"This is the contact page"}>
       <div className="mt-[4rem] w-full">
         <div className="relative top w-full">
-          <div className="relative w-full h-[90vh] md:h-[60vh]">
+          <div className="relative w-full h-[90vh] md:h-[70vh]">
             <img
-              src="/img/contactBg1.jpg"
+              src="/img/contactUs.jpg"
               className="w-full h-full object-cover bg-center bg-cover"
               alt=""
             />
             <div className="absolute bottom-0 inset-0 bg-black opacity-60"></div>
           </div>
-          <div className="absolute top-10 lg:top-14 text-white px-5 md:px-20">
+          <div className="absolute top-10 lg:top-28 text-white px-5 md:px-20">
             <div className="w-full flex-col md:flex-row flex md:justify-between lg:gap-32">
               <div className="left w-full mt-7">
                 <h2 className="text-3xl font-semibold">UK Address</h2>
-                <p className="text-xl my-2 md:mt-5 font-light">
+                <p className="text-xl my-2 md:mt-5 font-light text-justify">
                   1st Floor, Building 2 Croxley Business Park, Watford, United
                   Kingdom, WD18 8YA -
                 </p>
               </div>
               <div className="right w-full mt-7">
                 <h2 className="text-3xl font-semibold">India Address</h2>
-                <p className="text-xl mt-2 md:mt-5 font-light">
+                <p className="text-xl mt-2 md:mt-5 font-light text-justify">
                   Krishe Sapphire, Hitech City Rd, Hyderabad, Telangana 500081,
                   India +1800 789-4567
                 </p>
@@ -112,12 +130,17 @@ const Contact = () => {
           </div>
         </div>
 
-        <div className="w-full flex items-center justify-center mt-5">
+        <div className="w-full flex items-center justify-center">
           <div className="shadow-lg rounded-lg flex flex-col gap-3 p-4 w-full mx-3 md:mx-0 md:w-[60vw]">
             <h2 className="text-3xl font-bold text-center text-[#071b52]">
               Contact Us
             </h2>
             <div className="relative h-4 mb-4">
+              {success && (
+                <h3 className="text-center w-full text-gray-600 bg-green-200 rounded-md p-1">
+                  Details Successfully Submitted
+                </h3>
+              )}
               {error && (
                 <h3 className="text-center w-full text-red-500 bg-red-200 rounded-md py-2">
                   {error}
@@ -235,37 +258,49 @@ const Contact = () => {
             </div>
 
             <div className="w-full">
-              <div className="">
+              <div className="flex items-center">
                 <Switch
-                  checked={input.subscribe}
-                  onCheckedChange={() =>
-                    setInput({ ...input, subscribe: !input.subscribe })
-                  }
+                  checked={isChecked}
+                  onCheckedChange={() => setIsChecked(!isChecked)}
                 />
                 <label htmlFor="" className="pl-1 text-sm">
-                  Subscribe to Newletter
+                  Subscribe to Newsletter
                 </label>
               </div>
-              <div className="relative">
-                <sup className="absolute top-[9px] -left-4 text-xl pl-1 text-[16px] text-red-600">
-                  *
-                </sup>
-                <Switch
-                  className="mt-2"
-                  checked={input.policy}
-                  onCheckedChange={() =>
-                    setInput({ ...input, policy: !input.policy })
-                  }
-                />
-                <label htmlFor="" className="text-sm pl-1">
-                  <Link className="text-sky-600 underline" to={"/tc"}>
-                    Terms and Condition{" "}
-                  </Link>
-                  and
-                  <Link className="pl-1 text-sky-600 underline" to={"/cookies"}>
-                    Privacy Ploicy
-                  </Link>
-                </label>
+              <div className="relative pt-2">
+                <div className="flex flex-col">
+                  {/* <div className="flex gap-2 mx-1">
+                    <input type="checkbox" className="p-3" />
+                    <label htmlFor="">Accept</label>
+                  </div> */}
+                  <div className="relative">
+                    <Switch
+                      className="mt-2"
+                      checked={input.policy}
+                      onCheckedChange={() =>
+                        setInput({ ...input, policy: !input.policy })
+                      }
+                    />
+                    <label htmlFor="" className="text-sm pl-1">
+                      <Link
+                        className="text-sky-600 underline"
+                        to={"/terms_conditions"}
+                      >
+                        Accept Terms and Conditions{" "}
+                      </Link>
+                      and
+                      <Link
+                        className="pl-1 text-sky-600 underline"
+                        to={"/terms_conditions"}
+                      >
+                        Privacy Policy
+                      </Link>
+                    </label>
+                    <sup className="top-[3px] text-xl pl-1 text-[16px] text-red-600">
+                      *
+                    </sup>
+                  </div>
+                </div>
               </div>
             </div>
 

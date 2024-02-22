@@ -58,7 +58,7 @@ const Manufacturing = () => {
               </div>
               <div>
                 <p>
-                  With tailored solutions that have the most impact for business
+                  With tailored solutions that have the most impact for business,
                   crafted by analyzing your stand and objectives, we promise to
                   empower you with everything you need to build a thriving
                   business.

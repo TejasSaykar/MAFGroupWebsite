@@ -21,13 +21,15 @@ const Da = () => {
               style={{ textShadow: "1px 1px black" }}
             >
               Companies have more data than before but less time to utilize it.
-              They need help in using data and analytics to transform how they
-              use data. MAF Group helps with data assets, data governance and
-              even gets data out of silos. We develop strategic, technical, and
-              human capabilities that help make your organization truly
-              data-driven. From Data Source Evaluation to Quality Assessment,
-              Integration, and Modelling to choosing Platform and Technology and
-              even Data Reporting enhancement, we can handle it all.
+              They require advanced analytical tools to properly utilize and
+              transform the way they use data. MAF Group comes equipped with the
+              data assets, governance and infrastructure to bring data out of it
+              siloes, categorize, order and relate it in a comprehensive manner.
+              We provide you with the technology, team and tools required to
+              make your organization data-oriented and agile. From source
+              evaluation to quality assessment, Integration and Modelling we
+              have everything to deliver an exhaustive, end-to-end service that
+              covers all your requirements.
             </p>
           </div>
         </div>
@@ -39,7 +41,7 @@ const Da = () => {
             <h1 className="text-3xl md:text-4xl font-bold mb-5 text-[#071b52] dark:text-rose-600">
               Our Expertise
             </h1>
-            <div className="w-full flex-col md:flex-row flex justify-center items-start gap-5">
+            <div className="w-full flex-col md:flex-row flex justify-center items-start gap-10">
               <div className="left w-full flex flex-col transition-transform hover:-translate-y-2 hover:shadow-lg dark:shadow-slate-700">
                 <img
                   src="/img/data2.png"
@@ -81,7 +83,7 @@ const Da = () => {
             </div>
 
             <div className="mt-10">
-              <div className="w-full flex-col md:flex-row flex justify-center items-start gap-5">
+              <div className="w-full flex-col md:flex-row flex justify-center items-start gap-10">
                 <div className="left w-full flex flex-col transition-transform hover:-translate-y-2 hover:shadow-lg dark:shadow-slate-700">
                   <img
                     src="/img/data4.png"
@@ -91,7 +93,7 @@ const Da = () => {
                   <h2 className="text-2xl mt-4 px-2 text-[#071b52] dark:text-rose-600 font-semibold">
                     NLP- Natural Language Processing
                   </h2>
-                  <p className="px-2 font-thin">
+                  <p className="px-2 font-thin text-justify">
                     By using Natural language Processing or NLP, we help you
                     foster human and computer interaction. We integrate the
                     business with intelligent systems to ensure the perpetual
@@ -116,7 +118,7 @@ const Da = () => {
                   <h2 className="text-2xl mt-4 px-2 text-[#071b52] dark:text-rose-600 font-semibold">
                     Machine Learning
                   </h2>
-                  <p className="px-2 font-thin">
+                  <p className="px-2 font-thin text-justify">
                     As an independent consultancy that loves data science, we
                     use machine learning and statistics to help organizations
                     make the most of data and unleash its full potential. We use

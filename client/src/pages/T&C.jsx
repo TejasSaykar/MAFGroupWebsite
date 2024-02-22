@@ -136,53 +136,68 @@ const T_C = () => {
             </div>
 
             <div className="mt-3">
-              <h2 className="text-2xl font-semibold text-[#071b52] dark:text-rose-600">
-                Will Your Data be Transferred outside the UK or even EEA?
-              </h2>
-              <p className="text-xl font-light pt-2">
-                No, we will never transfer your personal data outside the UK.
+              <h1 className="text-2xl font-semibold text-[#071b52] dark:text-rose-600 py-2">
+                Security of Your Data
+              </h1>
+              <p className="text-xl font-light">
+                You can be assured that we will hold your data securely. We will
+                ensure no unauthorized disclosure or no one who has not
+                authorized access to your information will be able to access it
+                by constantly implementing strong electronic security and
+                physical safeguards. Furthermore, your personal data will be
+                used per the latest Data Protection Regulations.
               </p>
             </div>
 
             <div className="mt-3">
-              <h2 className="text-2xl font-semibold text-[#071b52]">
-                Contact Us
+              <h2 className="text-2xl font-semibold pt-3 text-[#071b52] dark:text-rose-600">
+                What Are Your Legal Rights?
               </h2>
-              <p className="text-xl font-light pt-2">
-                To know more about our cookie policy or to discuss any concerns,
-                please feel free to contact us. This is meant to remind the
-                users who visited the MAF Group website before, these cookies
-                allow us to provide you with the same experience as we did when
-                you visited our website before. These cookies are also known as
-                performance cookies and can be used by either the MAF Group
-                website or the third-party service providers to analyze how the
-                websites are used and how they perform. For instance, these
-                analytical cookies will track where our visitors are coming
-                from, and which pages are visited more frequently than others.
-                An example of these cookies is Google Analytics cookies. <br />
-                <h2 className="text-2xl font-semibold text-[#071b52] mt-5">
-                  Analytics Cookies{" "}
-                </h2>
-                Also known as strictly necessary cookies, these allow the MAF
-                Group website to operate smoothly and give you access to the
-                sections you need to visit. For example, they can help the MAF
-                Group website know your previous actions within the same
-                browsing sessions and secure the MAF Group website. These
-                cookies are temporary and will be deleted from your device when
-                the web browser is closed. The purpose of these cookies is to
-                track internet usage. <br />
-                You have the right to refuse the acceptance of browser cookies.
-                For that, you can activate the appropriate setting on the
-                browser. Remember that if you change this setting, you might not
-                see some parts of the MAF Group website. If you adjust the
-                browser setting to refuse cookies, the cookies will be
-                automatically issued by our system when you visit our website
-                through that browser. The data that is collected by the MAF
-                Group website via cookies will be kept on your device only until
-                its purpose is met. The maximum period for which these cookies
-                can be kept on your device is one year.
+              <p className="text-xl font-light py-2">
+                In specific circumstances, you have the rights per the data
+                protection laws you can use. Here are some of them.
               </p>
             </div>
+
+            <ul className="flex flex-col gap-2 pl-5 text-lg font-light">
+              <li>
+                • You are free to request access to your personal data or data
+                subject access request.
+              </li>
+              <li>
+                • You have the right to request correction of the personal data
+                we have on you. You can get the data corrected, and we will
+                verify the accuracy of the data corrections you are asking us to
+                make.
+              </li>
+              <li>
+                • You can even request that we erase your personal data if you
+                feel that we are holding it can impact your fundamental rights
+                and freedom.
+              </li>
+              <li>
+                • You also have the right to object if we process your personal
+                data for direct marketing purposes.
+              </li>
+              <li>
+                • You can also request restrictions on the way we process your
+                personal data.
+              </li>
+              <li>
+                • You can request the transfer of your personal data we have to
+                you or a third party. This right only applies to automated
+                information provided by you or the information we used to
+                initiate a contract with you.
+              </li>
+              <li>
+                • You can also withdraw consent at any time in cases where we
+                rely on your consent to process your personal data.
+              </li>
+              <p>
+                • If you want to exercise any of these rights, please get in
+                touch with us.
+              </p>
+            </ul>
           </div>
         </div>
       </div>

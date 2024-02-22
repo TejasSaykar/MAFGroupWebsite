@@ -1,10 +1,11 @@
 import Layout from "@/components/Layout";
 import axios from "axios";
 import React, { useEffect, useState } from "react";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 
 const Blogs = () => {
   const [blogs, setBlogs] = useState([]);
+  const navigate = useNavigate();
 
   const PF = "http://localhost:8080/images/";
 
@@ -38,9 +39,12 @@ const Blogs = () => {
                 className="h-auto sm:w-full bg-cover bg-center object-cover aspect-video sm:aspect-video"
                 alt=""
               />
-              <h2 className="px-2 text-xl font-bold mt-4 hover:underline text-[#071b52] dark:text-rose-600">
-                18 intriguing facts about Data analytics that you cannot afford
-                to miss
+              <h2
+                onClick={() => navigate("/data_analytics")}
+                className="px-2 cursor-pointer text-xl font-bold mt-4 hover:underline text-[#071b52] dark:text-rose-600"
+              >
+                18 Intriguing Facts About Data Analytics That You Cannot Afford
+                To Miss
               </h2>
               <p className="px-2 font-normal mt-1">
                 In this fast-paced world, data analytics has played an...{" "}
@@ -55,7 +59,10 @@ const Blogs = () => {
                 className="h-auto sm:w-full bg-cover bg-center object-cover aspect-video sm:aspect-video"
                 alt=""
               />
-              <h2 className="px-2 text-xl font-bold mt-4 hover:underline text-[#071b52] dark:text-rose-600">
+              <h2
+                onClick={() => navigate("/cloud_solution")}
+                className="px-2 cursor-pointer text-xl font-bold mt-4 hover:underline text-[#071b52] dark:text-rose-600"
+              >
                 Advantages of Using Google Cloud Hosting
               </h2>
               <p className="px-2 font-normal mt-1">
@@ -72,7 +79,10 @@ const Blogs = () => {
                 className="h-auto sm:w-full bg-contain object-cover bg-center aspect-video sm:aspect-video"
                 alt=""
               />
-              <h2 className="px-2 text-xl font-bold mt-4 hover:underline text-[#071b52] dark:text-rose-600">
+              <h2
+                onClick={() => navigate("/marketing_automation")}
+                className="px-2 cursor-pointer text-xl font-bold mt-4 hover:underline text-[#071b52] dark:text-rose-600"
+              >
                 Marketing Automation Trends No Forward-Thinking Organization
                 Should Ignore!
               </h2>
@@ -92,7 +102,10 @@ const Blogs = () => {
                 className="h-auto sm:w-full bg-contain object-cover bg-center aspect-video sm:aspect-video"
                 alt=""
               />
-              <h2 className="px-2 text-xl font-bold mt-4 hover:underline text-[#071b52] dark:text-rose-600">
+              <h2
+                onClick={() => navigate("/digital_transformation")}
+                className="px-2 text-xl font-bold mt-4 cursor-pointer hover:underline text-[#071b52] dark:text-rose-600"
+              >
                 Exciting Digital Transformation Trends You Can't Ignore
               </h2>
               <p className="px-2 font-normal mt-1">
@@ -113,7 +126,10 @@ const Blogs = () => {
                   className="h-auto sm:w-full bg-contain object-cover bg-center aspect-video sm:aspect-video"
                   alt=""
                 />
-                <h2 className="px-2 text-xl font-bold mt-4 hover:underline text-[#071b52] dark:text-rose-600">
+                <h2
+                  onClick={() => navigate(`/blog/${blog._id}`)}
+                  className="px-2 cursor-pointer text-xl font-bold mt-4 hover:underline text-[#071b52] dark:text-rose-600"
+                >
                   {blog.title}
                 </h2>
                 <p className="px-2 font-normal mt-1">

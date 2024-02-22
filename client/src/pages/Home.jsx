@@ -111,12 +111,15 @@ const Home = () => {
                 alt=""
               />
 
-              <h2 className="px-2 text-xl font-bold mt-3 text-[#072b52]">
-                Leveraging the power of a data to deliver business excellence
+              <h2
+                onClick={() => navigate("/case1")}
+                className="px-2 hover:underline cursor-pointer text-xl font-bold mt-3 text-[#072b52]"
+              >
+                Transforming Digital Landscape: A Comprehensive Case Study in
+                Retail Industry
               </h2>
               <p className="px-2 font-normal mt-1 dark:text-rose-600">
-                Our team uncovered untapped potential and orchestrated a
-                comprehensive...
+                Google Marketing Platform, Adobe Marketing Platform,...
                 <Link to={"/case1"} className="text-sky-700 pl-1 underline">
                   more
                 </Link>
@@ -128,13 +131,17 @@ const Home = () => {
                 className="h-auto sm:w-full bg-cover bg-center object-cover aspect-video sm:aspect-video"
                 alt=""
               />
-              <h3 className="px-2 text-xl font-bold mt-3 hover:underline text-[#071b52] dark:text-rose-600">
-                Boosting Marketing Efficiency by strategic transition
+              <h3
+                onClick={() => navigate("/case2")}
+                className="px-2 text-xl font-bold mt-3 hover:underline cursor-pointer text-[#071b52] dark:text-rose-600"
+              >
+                Strategic Transition to Enhance Marketing Efficiency in the
+                Banking Sector
               </h3>
               <p className="px-2 font-normal mt-1">
                 {" "}
-                We helped them migrate from Adobe Analytics to Google Analytics
-                as a cost-saving...{" "}
+                Keeping their goals in mind, we strategized to seamlessly
+                transfer their data ...{" "}
                 <Link className="text-sky-700 pl-1 underline" to={"/case2"}>
                   more
                 </Link>
@@ -146,11 +153,15 @@ const Home = () => {
                 className="h-auto sm:w-full bg-contain object-cover bg-center aspect-video sm:aspect-video"
                 alt=""
               />
-              <h2 className="px-2 text-xl font-bold mt-3 hover:underline text-[#071b52] dark:text-rose-600">
+              <h2
+                onClick={() => navigate("/case3")}
+                className="px-2 text-xl font-bold mt-3 hover:underline cursor-pointer text-[#071b52] dark:text-rose-600"
+              >
                 Ensuring GDPR compliance and a risk-free strategy implementation
               </h2>
               <p className="px-2 font-normal mt-1">
-                We started our project by meticulously mapping out the...
+                Like every project, we started this with a comprehensive
+                assessment of our...
                 <Link to={"/case3"} className="text-sky-700 pl-1 underline">
                   more
                 </Link>
@@ -162,12 +173,16 @@ const Home = () => {
                 className="h-auto sm:w-full bg-contain object-cover bg-center aspect-video sm:aspect-video"
                 alt=""
               />
-              <h2 className="px-2 text-xl font-bold mt-3 hover:underline text-[#071b52] dark:text-rose-600">
-                Uplift revenue and implement real-time targeting in marketing
+              <h2
+                onClick={() => navigate("/case4")}
+                className="px-2 text-xl font-bold mt-3 hover:underline cursor-pointer text-[#071b52] dark:text-rose-600"
+              >
+                Driving Revenue Uplift and Real-Time Targeting in Banking
+                Industry
               </h2>
               <p className="px-2 mt-1">
-                We initiated the project by systematically deploying Tealium
-                Audience Stream (TAS) and...
+                As an initial step, we strategically deployed Tealium
+                Audience...
                 <Link className="text-sky-700 pl-1 underline" to={"/case4"}>
                   more
                 </Link>
@@ -190,9 +205,12 @@ const Home = () => {
                 className="h-auto sm:w-full bg-cover bg-center object-cover aspect-video sm:aspect-video"
                 alt=""
               />
-              <h2 className="px-2 text-xl font-bold mt-4 hover:underline text-[#071b52] dark:text-rose-600">
-                18 intriguing facts about Data analytics that you cannot afford
-                to miss
+              <h2
+                onClick={() => navigate("/data_analytics")}
+                className="px-2 text-xl cursor-pointer font-bold mt-4 hover:underline text-[#071b52] dark:text-rose-600"
+              >
+                18 Intriguing Facts About Data Analytics That You Cannot Afford
+                To Miss
               </h2>
               <p className="px-2 font-normal mt-1">
                 In this fast-paced world, data analytics has played an...{" "}
@@ -207,7 +225,10 @@ const Home = () => {
                 className="h-auto sm:w-full bg-cover bg-center object-cover aspect-video sm:aspect-video"
                 alt=""
               />
-              <h2 className="px-2 text-xl font-bold mt-4 hover:underline text-[#071b52] dark:text-rose-600">
+              <h2
+                onClick={() => navigate("/cloud_solution")}
+                className="px-2 text-xl font-bold mt-4 cursor-pointer hover:underline text-[#071b52] dark:text-rose-600"
+              >
                 Advantages of Using Google Cloud Hosting
               </h2>
               <p className="px-2 font-normal mt-1">
@@ -224,7 +245,10 @@ const Home = () => {
                 className="h-auto sm:w-full bg-contain object-cover bg-center aspect-video sm:aspect-video"
                 alt=""
               />
-              <h2 className="px-2 text-xl font-bold mt-4 hover:underline text-[#071b52] dark:text-rose-600">
+              <h2
+                onClick={() => navigate("/marketing_automation")}
+                className="px-2 text-xl font-bold mt-4 cursor-pointer hover:underline text-[#071b52] dark:text-rose-600"
+              >
                 Marketing Automation Trends No Forward-Thinking Organization
                 Should Ignore!
               </h2>
@@ -244,7 +268,10 @@ const Home = () => {
                 className="h-auto sm:w-full bg-contain object-cover bg-center aspect-video sm:aspect-video"
                 alt=""
               />
-              <h2 className="px-2 text-xl font-bold mt-4 hover:underline text-[#071b52] dark:text-rose-600">
+              <h2
+                onClick={() => navigate("/digital_transformation")}
+                className="px-2 text-xl font-bold mt-4 cursor-pointer hover:underline text-[#071b52] dark:text-rose-600"
+              >
                 Exciting Digital Transformation Trends You Can't Ignore
               </h2>
               <p className="px-2 font-normal mt-1">
@@ -276,7 +303,14 @@ const Home = () => {
                   className="w-full h-auto bg-cover object-cover bg-center"
                   alt=""
                 />
-                <h2 className="text-xl font-semibold my-3 px-2 text-[#071b52] dark:text-rose-600">
+                <h2
+                  onClick={() =>
+                    openWebsite(
+                      "https://dma.org.uk/awards/winner/2023-gold-customer-programme"
+                    )
+                  }
+                  className="text-xl hover:underline cursor-pointer font-semibold my-3 px-2 text-[#071b52] dark:text-rose-600"
+                >
                   Using predictive-AI to reduce churn
                 </h2>
                 <p className="text-justify px-2">

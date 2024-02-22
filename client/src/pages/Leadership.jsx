@@ -16,13 +16,16 @@ const Leadership = () => {
             <div className="w-full">
               <h1
                 className="text-4xl font-bold px-3 md:px-0 md:text-center text-white dark:text-rose-600"
-                style={{ fontFamily: "sans-serif" }}
+                style={{
+                  fontFamily: "sans-serif",
+                  textShadow: "1px 1px black",
+                }}
               >
                 Our Strategic Leadership{" "}
               </h1>
             </div>
             <div className="w-full text-white px-3 md:px-0 md:mx-8">
-              <h3 className="text-xl text-justify">
+              <h3 style={{ textShadow: "1px 1px black" }} className="text-xl text-justify">
                 At the helm of our future-oriented organization is a dynamic
                 leadership team who are a blend of tech-savvy entrepreneurs and
                 innovators who are thought leaders in their fields. Their vision
@@ -103,7 +106,7 @@ const Leadership = () => {
           <div className="flex flex-col md:flex-row gap-4 mt-7 items-center">
             <div className="w-full flex flex-col order-2">
               <h2 className="text-2xl font-semibold text-[#071b52] dark:text-rose-600">
-                Navigating dynamic business landscape
+                Navigating Dynamic Business Landscape
               </h2>
               <p className="font-thin text-justify">
                 The tech landscape is an ever-changing, vast, intricate and

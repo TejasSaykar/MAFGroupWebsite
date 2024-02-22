@@ -1,11 +1,13 @@
 import React from "react";
 import Layout from "../components/Layout";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 
 const Ourwork = () => {
   const openwebsite = (url) => {
     window.open(url, "_blanck");
   };
+
+  const navigate = useNavigate();
 
   return (
     <Layout title={"MAF | Our Work"}>
@@ -21,7 +23,10 @@ const Ourwork = () => {
               alt=""
             />
 
-            <h2 className="px-2 text-lg font-bold mt-3 text-[#072b52]">
+            <h2
+              onClick={() => navigate("/case1")}
+              className="px-2 text-lg hover:underline cursor-pointer font-bold mt-3 text-[#072b52]"
+            >
               Transforming Digital Landscape
             </h2>
             <p className="px-2 font-normal mt-1 dark:text-rose-600">
@@ -39,7 +44,10 @@ const Ourwork = () => {
               className="h-auto sm:w-full bg-cover bg-center object-cover aspect-video sm:aspect-video"
               alt=""
             />
-            <h3 className="px-2 text-lg font-bold mt-3 hover:underline text-[#071b52] dark:text-rose-600">
+            <h3
+              onClick={() => navigate("/case2")}
+              className="px-2 cursor-pointer text-lg font-bold mt-3 hover:underline text-[#071b52] dark:text-rose-600"
+            >
               Strategic Transition to Enhance Marketing Efficiency in the
               Banking Sector
             </h3>
@@ -58,7 +66,10 @@ const Ourwork = () => {
               className="h-auto sm:w-full bg-contain object-cover bg-center aspect-video sm:aspect-video"
               alt=""
             />
-            <h2 className="px-2 text-lg font-bold mt-3 hover:underline text-[#071b52] dark:text-rose-600">
+            <h2
+              onClick={() => navigate("/case3")}
+              className="px-2 cursor-pointer text-lg font-bold mt-3 hover:underline text-[#071b52] dark:text-rose-600"
+            >
               Ensuring GDPR Compliance and Risk-Free Strategy Implementation in
               the FMCG Industry
             </h2>
@@ -76,7 +87,10 @@ const Ourwork = () => {
               className="h-auto sm:w-full bg-contain object-cover bg-center aspect-video sm:aspect-video"
               alt=""
             />
-            <h2 className="px-2 text-lg font-bold mt-3 hover:underline text-[#071b52] dark:text-rose-600">
+            <h2
+              onClick={() => navigate("/case4")}
+              className="px-2 cursor-pointer text-lg font-bold mt-3 hover:underline text-[#071b52] dark:text-rose-600"
+            >
               Driving Revenue Uplift and Real-Time Targeting in Banking Industry
             </h2>
             <p className="px-2 font-normal mt-1">
@@ -97,7 +111,10 @@ const Ourwork = () => {
               alt=""
             />
 
-            <h2 className="px-2 text-lg font-bold mt-3 text-[#072b52]">
+            <h2
+              onClick={() => navigate("/case5")}
+              className="px-2 cursor-pointer text-lg font-bold mt-3 text-[#072b52]"
+            >
               Seamless Migration for Successful Digital Transformation in the IT
               Industry
             </h2>
@@ -115,7 +132,10 @@ const Ourwork = () => {
               className="h-auto sm:w-full bg-cover bg-center object-cover aspect-video sm:aspect-video"
               alt=""
             />
-            <h3 className="px-2 text-lg font-bold mt-3 hover:underline text-[#071b52] dark:text-rose-600">
+            <h3
+              onClick={() => navigate("/case6")}
+              className="px-2 cursor-pointer text-lg font-bold mt-3 hover:underline text-[#071b52] dark:text-rose-600"
+            >
               Streamlining Marketing Strategy for Enhanced Performance in the
               Hospitality Industry
             </h3>
@@ -133,7 +153,10 @@ const Ourwork = () => {
               className="h-auto sm:w-full bg-contain object-cover bg-center aspect-video sm:aspect-video"
               alt=""
             />
-            <h2 className="px-2 text-lg font-bold mt-3 hover:underline text-[#071b52] dark:text-rose-600">
+            <h2
+              onClick={() => navigate("/case7")}
+              className="px-2 cursor-pointer text-lg font-bold mt-3 hover:underline text-[#071b52] dark:text-rose-600"
+            >
               Revolutionizing User Experience in the IT Sector
             </h2>
             <p className="px-2 font-normal mt-1">
@@ -149,7 +172,10 @@ const Ourwork = () => {
               className="h-auto sm:w-full bg-contain object-cover bg-center aspect-video sm:aspect-video"
               alt=""
             />
-            <h2 className="px-2 text-lg font-bold mt-3 hover:underline text-[#071b52] dark:text-rose-600">
+            <h2
+              onClick={() => navigate("/case8")}
+              className="px-2 cursor-pointer text-lg font-bold mt-3 hover:underline text-[#071b52] dark:text-rose-600"
+            >
               Elevating Customer Satisfaction Through Single Customer View (SCV)
               in Retail
             </h2>
@@ -166,7 +192,10 @@ const Ourwork = () => {
               className="h-auto sm:w-full bg-contain object-cover bg-center aspect-video sm:aspect-video"
               alt=""
             />
-            <h2 className="px-2 text-lg font-bold mt-3 hover:underline text-[#071b52] dark:text-rose-600">
+            <h2
+              onClick={() => navigate("/case9")}
+              className="px-2 cursor-pointer text-lg font-bold mt-3 hover:underline text-[#071b52] dark:text-rose-600"
+            >
               Driving Hyper-Personalization for Enhanced Customer Engagement in
               Retail
             </h2>
@@ -183,7 +212,10 @@ const Ourwork = () => {
               className="h-auto sm:w-full bg-contain object-cover bg-center aspect-video sm:aspect-video"
               alt=""
             />
-            <h2 className="px-2 text-lg font-bold mt-3 hover:underline text-[#071b52] dark:text-rose-600">
+            <h2
+              onClick={() => navigate("/case10")}
+              className="px-2 cursor-pointer text-lg font-bold mt-3 hover:underline text-[#071b52] dark:text-rose-600"
+            >
               Enhancing Marketing Efficiency through Digital Transformation in
               Retail
             </h2>

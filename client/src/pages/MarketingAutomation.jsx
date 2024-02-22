@@ -48,22 +48,30 @@ const MarketingAutomation = () => {
           </h2>
           <div className="w-full flex-col md:flex-row flex gap-3 px-6">
             <div className="one shadow-lg dark:shadow-gray-700 w-full flex flex-col">
-              <img src="/img/seo1.png" alt="" />
+              <img
+                src="/img/seo1.png"
+                className="aspect-video bg-cover object-cover"
+                alt=""
+              />
               <h2 className="text-xl mt-1 p-1 font-semibold text-[#071b52] dark:text-rose-600">
                 Search Engine Optimization – SEO Services
               </h2>
-              <p className="my-1 p-1">
+              <p className="text-justify my-1 p-1 px-2">
                 We offer on-page and off-page SEO strategies and services to
                 boost organic traffic to your website.
               </p>
             </div>
 
             <div className="two shadow-lg dark:shadow-gray-700 w-full">
-              <img src="/img/google1.png" alt="" />
+              <img
+                src="/img/google1.png"
+                className="aspect-video bg-cover object-cover"
+                alt=""
+              />
               <h2 className="text-xl mt-1 p-1 font-semibold text-[#071b52] dark:text-rose-600">
                 Google Ads Management – PPC Services
               </h2>
-              <p className="my-1 p-1">
+              <p className="text-justify my-1 p-1 px-2">
                 Pay-Per-Click is a crucial aspect of marketing a business
                 online. We can help you create and manage successful ad
                 campaigns on Google and other social media platforms like
@@ -72,11 +80,15 @@ const MarketingAutomation = () => {
             </div>
 
             <div className="three shadow-lg dark:shadow-gray-700 w-full">
-              <img src="/img/ma2.png" alt="" />
+              <img
+                src="/img/ma2.png"
+                className="aspect-video  bg-cover object-cover"
+                alt=""
+              />
               <h2 className="text-xl mt-1 p-1 font-semibold text-[#071b52] dark:text-rose-600">
                 Social Media Marketing
               </h2>
-              <p className="my-1 p-1">
+              <p className="text-justify my-1 p-1 px-2">
                 Create a social presence of your brand by availing of our social
                 media marketing services to ensure your brand gets a suitable
                 image across different social media platforms.
@@ -84,11 +96,15 @@ const MarketingAutomation = () => {
             </div>
 
             <div className="four shadow-lg dark:shadow-gray-700 w-full">
-              <img src="/img/email.png" alt="" />
+              <img
+                src="/img/email.png"
+                className="aspect-video bg-cover object-cover"
+                alt=""
+              />
               <h2 className="text-xl mt-1 p-1 font-semibold text-[#071b52] dark:text-rose-600">
                 Email Marketing
               </h2>
-              <p className="my-1 p-1">
+              <p className="text-justify my-1 p-1 px-2">
                 We help you create and implement successful email marketing
                 strategies that bring real and measurable results.
               </p>
@@ -105,7 +121,7 @@ const MarketingAutomation = () => {
               <h2 className="text-xl mt-1 p-1 font-semibold text-[#071b52] dark:text-rose-600">
                 Targeted Online Advertising & Remarketing
               </h2>
-              <p className="my-1 p-1">
+              <p className="text-justify my-1 p-1 px-2">
                 We help you target potential customers who have already visited
                 your website or shown interest in your products/services.
                 Converting these into leads is simpler with the right approach.
@@ -121,7 +137,7 @@ const MarketingAutomation = () => {
               <h2 className="text-xl mt-1 p-1 font-semibold text-[#071b52] dark:text-rose-600">
                 Content Marketing
               </h2>
-              <p className="my-1 p-1">
+              <p className="text-justify my-1 p-1 px-2">
                 Our team will create and distribute relevant and valuable
                 content consistently to attract customer attention and drive
                 conversions.
@@ -137,7 +153,7 @@ const MarketingAutomation = () => {
               <h2 className="text-xl mt-1 p-1 font-semibold text-[#071b52] dark:text-rose-600">
                 Inbound Marketing
               </h2>
-              <p className="my-1 p-1 font-thin">
+              <p className="text-justify my-1 p-1 px-2 font-thin">
                 In this service, we will utilize different forms of pull
                 marketing like content marketing, SEO, blogs, social media,
                 etc., to create brand awareness and attract new business
@@ -154,7 +170,7 @@ const MarketingAutomation = () => {
               <h2 className="text-xl mt-1 p-1 font-semibold text-[#071b52] dark:text-rose-600">
                 Marketing Strategy
               </h2>
-              <p className="my-1 p-1 font-thin">
+              <p className="text-justify my-1 p-1 px-2 font-thin">
                 After studying and analyzing your business, our experts create a
                 customized marketing strategy that suits your business needs and
                 appeals to your target audience.
@@ -172,7 +188,7 @@ const MarketingAutomation = () => {
               <h2 className="text-xl mt-1 p-1 font-semibold text-[#071b52] dark:text-rose-600">
                 Marketing Automation
               </h2>
-              <p className="my-1 p-1 font-thin">
+              <p className="text-justify my-1 p-1 px-2 font-thin">
                 We select the right marketing automation path for you and help
                 you make it a success.
               </p>
@@ -187,7 +203,7 @@ const MarketingAutomation = () => {
               <h2 className="text-xl mt-1 p-1 font-semibold text-[#071b52] dark:text-rose-600">
                 Sales Strategy & Training
               </h2>
-              <p className="my-1 p-1 font-thin">
+              <p className="text-justify my-1 p-1 px-2 font-thin">
                 Rely on us to create a successful sales strategy to boost the
                 sales figures and let us train your internal teams on the same.
               </p>
@@ -202,7 +218,7 @@ const MarketingAutomation = () => {
               <h2 className="text-xl mt-1 p-1 font-semibold text-[#071b52] dark:text-rose-600">
                 CRM Set Up, Training & Optimization
               </h2>
-              <p className="my-1 p-1">
+              <p className="text-justify my-1 p-1 px-2">
                 We set up, implement, and optimize a CRM solution that matches
                 your business needs. We undertake extensive training for
                 seamless change management.

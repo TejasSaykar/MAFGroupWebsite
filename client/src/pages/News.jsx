@@ -1,10 +1,11 @@
 import Layout from "@/components/Layout";
 import axios from "axios";
 import React, { useEffect, useState } from "react";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 
 const News = () => {
   const [news, setNews] = useState([]);
+  const navigate = useNavigate();
   const PF = "http://localhost:8080/images/";
 
   const openWebsite = (url) => {
@@ -31,6 +32,9 @@ const News = () => {
     <Layout title={"News | MAF"}>
       <div className="w-full mt-[4rem]">
         <div className="relative middle1 mt-16 md:mt-10">
+          <h2 className="text-xl text-center pt-2 font-semibold text-[#071b52]">
+            News
+          </h2>
           <div className="w-full px-3 md:w-[90%] lg:w-[80%] m-auto">
             <div className="left grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 pt-4">
               <div className="flex flex-col items-start w-full shadow-xl pb-3">
@@ -39,7 +43,14 @@ const News = () => {
                   className="w-full aspect-video h-auto bg-cover object-cover bg-center"
                   alt=""
                 />
-                <h2 className="text-xl font-bold px-2 my-3 text-[#071b52] dark:text-rose-600">
+                <h2
+                  onClick={() =>
+                    openWebsite(
+                      "https://dma.org.uk/awards/winner/2023-gold-customer-programme"
+                    )
+                  }
+                  className="text-xl hover:underline cursor-pointer font-bold px-2 my-3 text-[#071b52] dark:text-rose-600"
+                >
                   Using predictive-AI to reduce churn
                 </h2>
                 <p className="text-justify px-2 font-light">
@@ -64,7 +75,7 @@ const News = () => {
                     className="w-full h-auto aspect-video bg-cover object-cover bg-center"
                     alt=""
                   />
-                  <h2 className="text-xl font-bold px-2 my-3 text-[#071b52] dark:text-rose-600">
+                  <h2 onClick={() => navigate(`/news/${news._id}`)} className="text-xl hover:underline cursor-pointer font-bold px-2 my-3 text-[#071b52] dark:text-rose-600">
                     {news.title}
                   </h2>
                   <p className="text-justify px-2 font-light">

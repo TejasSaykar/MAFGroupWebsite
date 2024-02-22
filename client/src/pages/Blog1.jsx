@@ -177,7 +177,7 @@ const Blog1 = () => {
                   className="mt-2 text-base text-black font-medium"
                   style={{ textAlign: "justify" }}
                 >
-                  In this era where we want instant gratification and swift
+                  In this era where we want instant gratification, swift
                   responses are the key for success, real-time analytics are a
                   god send. With analysis getting generated as data comes in,
                   precise and accurate decision-making and responding to

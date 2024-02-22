@@ -16,13 +16,16 @@ const ValueProposition = () => {
             <div className="left w-full text-center md:text-start md:w-[50%]">
               <h2
                 className="text-3xl md:text-5xl text-start font-bold mt-5 md:mt-40 cursor-pointer"
-                style={{ fontFamily: "sans-serif" }}
+                style={{ fontFamily: "sans-serif",textShadow: "1px 1px black" }}
               >
                 Our Unique Value Proposition
               </h2>
             </div>
             <div className="right w-full text-center md:text-start md:w-[40%]">
-              <p className="hover text-lg md:text-2xl font-light cursor-pointer hover:drop-shadow-xl drop-shadow-md text-justify">
+              <p
+                style={{ textShadow: "1px 1px black" }}
+                className="hover text-lg md:text-2xl font-light cursor-pointer hover:drop-shadow-xl drop-shadow-md text-justify"
+              >
                 We at MAF Group, seamlessly blend creativity with technology to
                 reimagine a future where your business not only adapts but
                 thrives. We bring forth the best services, talents and resources

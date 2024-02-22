@@ -21,6 +21,9 @@ const Blog4 = () => {
             <h1 className="text-[#071b52] text-center dark:text-rose-600">
               Exciting Digital Transformation Trends You Can't Ignore
             </h1>
+            <p className="text-center text-sm font-medium my-3">
+              27 July, 2022
+            </p>
           </div>
 
           <div className="one flex w-full flex-col md:flex-row gap-4 mt-2 md:mt-0">
@@ -154,7 +157,7 @@ const Blog4 = () => {
           </div>
 
           <div className="two flex w-full flex-col md:flex-row gap-4 mt-2">
-            <div className="w-full flex px-2 md:px-4 pb-4 gap-4">
+            <div className="w-full md:w-1/2 flex px-2 md:px-4 pb-4 gap-4">
               <div className="hidden md:w-14 md:flex items-start">
                 <IoCloudOffline className="w-0 md:block bg-[#4f514e] text-white p-2 h-12 md:w-12 rounded-full" />
               </div>
@@ -180,30 +183,33 @@ const Blog4 = () => {
                 </p>
               </div>
             </div>
-            <div className="w-full flex px-2 md:px-4 pb-4 gap-4">
-              <div className="hidden md:w-14 md:flex items-start">
+          </div>
+
+          <div className="py-8 bg-gray-50">
+            <div className="w-full md:w-1/2 mx-auto flex flex-col px-2 md:px-4 pb-4 mt-5 gap-2">
+              <div className="hidden md:flex gap-3 items-center justify-center">
                 <FaRegFileWord className="w-0 md:block bg-[#4f514e] text-white p-2 h-12 md:w-12 rounded-full" />
-              </div>
-              <div className="w-full text-xl font-light">
                 <h2 className="text-xl text-[#071b52] font-bold">
                   Final Words
                 </h2>
+              </div>
+              <div className="w-full text-xl font-light">
                 <p
                   className="mt-2 text-base text-black font-medium"
                   style={{ textAlign: "justify" }}
                 >
-                  A user will not wait for brands to meet their expectations.
-                  They will simply switch to another brand. So, brands need to
-                  leverage marketing automation to keep the users engaged and
-                  create a more targeted and personalized experience if they
-                  want to retain existing customers and gain new ones. Looking
-                  for help with Marketing Automation? Contact MAF Group.
+                  Digital transformation is an evolving process all businesses
+                  must focus on. Keeping up with the latest tools, technologies,
+                  and trends is essential for successful digital transformation.
+                  If your business needs help with digital transformation or
+                  wants a partner who will make the journey easier, trust MAF
+                  Group. Get in touch today to know more.
                 </p>
               </div>
             </div>
           </div>
 
-          <div className="md:ml-20 ml-2 mb-5">
+          <div className="md:w-1/2 mx-auto mb-5">
             <h2 className="text-[#071b52] font-semibold mt-1">
               - Shruti Bhandari. <br />
             </h2>

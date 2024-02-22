@@ -5,33 +5,59 @@ const CS6 = () => {
   return (
     <Layout title={"MAF | Work"}>
       <div className="mt-[4rem] w-full">
-        <div className="w-[90%] lg:w-[80%] m-auto flex flex-col gap-4 pt-4">
-          <div className="w-full flex flex-col gap-4">
-            <div className="flex gap-2 items-center">
+        <div className="w-full">
+          <div className="relative w-full h-[60vh] md:h-[70vh]">
+            <img
+              src="/img/hospitality2.jpg"
+              className="h-full w-full bg-cover object-cover"
+              alt=""
+            />
+            <div className="absolute inset-0 bottom-0 bg-black opacity-60"></div>
+            <div className="absolute flex w-full items-center justify-center top-32">
+              <h2 className="text-center text-3xl md:w-2/3 mx-auto text-white font-semibold">
+                Streamlining Marketing Strategy for Enhanced Performance in the
+                Hospitality Industry
+              </h2>
+            </div>
+          </div>
+        </div>
+        <div className="flex flex-col gap-4 pt-4">
+          <div className="w-full flex flex-col">
+            {/* <div className="flex gap-2 items-center">
               <span className="text-2xl font-semibold text-[#071b52]">
                 Streamlining Marketing Strategy for Enhanced Performance in the
                 Hospitality Industry
               </span>
-            </div>
-            <div className="flex gap-2">
-              <h2 className="text-lg font-bold text-[#071b52]">Industry : </h2>
-              <span className="">Hospitality</span>
-            </div>
-            <div className="flex gap-2">
-              <h2 className="text-lg font-bold text-[#071b52]">Location : </h2>
-              <span className="">London, UK</span>
-            </div>
-            <div className="flex flex-col md:flex-row gap-2">
-              <h2 className="text-lg font-bold text-[#071b52]">Solution : </h2>
-              <span className="md:w-[80%]">
-                BigQuery, AI, Optimize, Seaware, Google Marketing Platform,
-                Marketing Data Hub, Cloud Solutions
-              </span>
-            </div>
-            <div className="flex flex-col gap-2">
-              <h2 className="text-lg font-bold text-[#071b52]">Result : </h2>
-              <div className="flex flex-col gap-1 md:ml-8">
-                <h3>• £500,000 Increase in Upsell within 3 Months</h3>
+            </div> */}
+            <div className="w-full px-5 py-4 md:px-32 grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-3">
+              <div className="flex w-full flex-row md:flex-col gap-2">
+                <h2 className="text-lg w-2/3 font-bold text-[#071b52]">
+                  Industry
+                </h2>
+                <span className="w-full">Hospitality</span>
+              </div>
+              <div className="flex flex-row md:flex-col w-full gap-2">
+                <h2 className="text-lg w-2/3 font-bold text-[#071b52]">
+                  Location
+                </h2>
+                <span className="w-full">London, UK</span>
+              </div>
+              <div className="flex flex-row md:flex-col gap-2">
+                <h2 className="text-lg w-2/3 font-bold text-[#071b52]">
+                  Solution
+                </h2>
+                <span className="w-full">
+                  BigQuery, AI, Optimize, Seaware, Google Marketing Platform,
+                  Marketing Data Hub, Cloud Solutions
+                </span>
+              </div>
+              <div className="flex w-full flex-row md:flex-col gap-2 lg:ml-7">
+                <h2 className="text-lg w-2/3 font-bold text-[#071b52]">
+                  Result
+                </h2>
+                <div className="flex w-full flex-col gap-1">
+                  <h3>• £500,000 Increase in Upsell within 3 Months</h3>
+                </div>
               </div>
             </div>
 
@@ -49,11 +75,11 @@ const CS6 = () => {
               </p>
             </div> */}
 
-            <div className="flex flex-col">
+            <div className="flex flex-col bg-gray-50 px-5 py-4 md:px-32">
               <h2 className="font-semibold text-lg text-[#071b52]">
-                Objective:
+                Objective
               </h2>
-              <p className="md:ml-8 text-justify md:text-start">
+              <p className="mt-1 text-justify md:text-start">
                 A British Private Limited company approached us with a
                 multifaceted challenge where they wanted to measure the
                 effectiveness of their marketing campaigns and streamline them
@@ -63,33 +89,33 @@ const CS6 = () => {
               </p>
             </div>
 
-            <div className="flex flex-col gap-2">
+            <div className="flex flex-col gap-2 bg-gray-50 px-5 py-4 md:px-32">
               <div className="w-full">
                 <h2 className="text-lg font-semibold text-[#071b52]">
-                  Solution :{" "}
+                  Solution
                 </h2>
-                <p className="md:ml-8 text-justify md:text-start">
+                <p className="text-justify md:text-start">
                   We employed a phased strategy to address our client’s
                   objectives with a thorough meticulous approach. We utilised a
                   whole suite of tools including BigQuery, Optimize and Seaware
                   that engineered a seamless integration to optimize their
                   marketing efforts while enhancing performance.
                 </p>
-                <p className="md:ml-8 mt-2 md:mt-1 text-justify md:text-start">
+                <p className="mt-2 md:mt-1 text-justify md:text-start">
                   On initiation of the transformation, we deployed marketing
                   automation which aimed at fine-tuning their campaign
                   strategies and maximized their engagement and conversion.
                 </p>
-                <p className="md:ml-8 mt-2 md:mt-1 text-justify md:text-start">
+                <p className="mt-2 md:mt-1 text-justify md:text-start">
                   Concurrently, we developed a personalized product
                   recommendation engine that leveraged Cloud-AI technologies.
-                  This engine leveragedprevious user behavior and analytics data
-                  to tailor product recommendations and give customers unique
-                  and targeted messaging that prolonged their site engagement.
-                  This further promoted conversions and increased their upsell
-                  rates.
+                  This engine leveraged previous user behavior and analytics
+                  data to tailor product recommendations and give customers
+                  unique and targeted messaging that prolonged their site
+                  engagement. This further promoted conversions and increased
+                  their upsell rates.
                 </p>
-                <p className="md:ml-8 mt-2 md:mt-1 text-justify md:text-start">
+                <p className="mt-2 md:mt-1 text-justify md:text-start">
                   We also established a centralized analytics system across all
                   client sites utilizing their Google Marketing Platform thus
                   creating a standard framework for data analysis.
@@ -99,46 +125,51 @@ const CS6 = () => {
                   view.
                 </p>
               </div>
+            </div>
 
-              <div className="mt-5">
-                <div className="flex flex-col">
-                  <div className="flex flex-col gap-1">
-                    <h2 className="text-xl font-semibold text-[#071b52]">
-                      Results :{" "}
-                    </h2>
-                    <p className="mb-2 text-justify md:text-start">
-                      The successful integration of BigQuery, Optimize, and
-                      Seaware facilitated streamlined processes andcoupled with
-                      the implementation of the product recommendation engine,
-                      resulted in a significant increase in sales. Within a mere
-                      3 months, our client experienced a remarkable £500,000
-                      upsurge in upsell revenue, underscoring the transformative
-                      impact of our solutions.
-                    </p>
-                  </div>
+            <div className="px-5 py-4 md:px-32 bg-gray-50">
+              <div className="flex flex-col">
+                <div className="flex flex-col gap-1">
+                  <h2 className="text-xl font-semibold text-[#071b52]">
+                    Results :{" "}
+                  </h2>
+                  <p className="mb-2 text-justify md:text-start">
+                    The successful integration of BigQuery, Optimize, and
+                    Seaware facilitated streamlined processes and coupled with
+                    the implementation of the product recommendation engine,
+                    resulted in a significant increase in sales. Within a mere 3
+                    months, our client experienced a remarkable £500,000 upsurge
+                    in upsell revenue, underscoring the transformative impact of
+                    our solutions.
+                  </p>
                 </div>
               </div>
+            </div>
 
-              <div className="mt-5">
-                <h2 className="text-xl font-semibold mb-2 text-[#071b52]">
-                  Key Performance Indicators (KPI):{" "}
-                </h2>
-                <div className="flex flex-col gap-1 md:ml-4">
-                  <p>• £500,000 Increase in Upsell Revenue within 3 Months</p>
+            <div className="mt-5 px-5 md:px-32">
+              <h2 className="text-xl font-semibold mb-2 text-[#071b52]">
+                Key Performance Indicators (KPI)
+              </h2>
+
+              <div className="flex mt-4 flex-col md:flex-row items-center justify-center gap-4 md:gap-10 md:ml-4">
+                <div className="flex flex-col items-center justify-center gap-3">
+                  <h2 className="text-2xl font-medium">£500,000</h2>
+                  <p className="font-medium text-center text-gray-500">
+                    Increase in Upsell Revenue within 3 Months
+                  </p>
                 </div>
               </div>
+            </div>
 
-              <div className="mt-5">
-                <h2 className="text-xl font-semibold text-[#071b52]">
-                  Conclusion:
-                </h2>
-                <p className="text-justify md:text-start">
-                  Through strategic integration of advanced technologies and
-                  meticulous execution, we empowered our client to optimize
-                  their marketing strategy and drive substantial business
-                  growth.
-                </p>
-              </div>
+            <div className="mt-5 px-5 md:px-32">
+              <h2 className="text-xl font-semibold text-[#071b52]">
+                Conclusion
+              </h2>
+              <p className="mt-1 text-justify md:text-start">
+                Through strategic integration of advanced technologies and
+                meticulous execution, we empowered our client to optimize their
+                marketing strategy and drive substantial business growth.
+              </p>
             </div>
           </div>
         </div>

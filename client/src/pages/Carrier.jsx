@@ -11,7 +11,7 @@ const Carrier = () => {
           </h1>
           <div className="flex flex-col items-center gap-2 md:flex-row">
             <div className="w-full order-2 md:order-1">
-              <p className="font-light">
+              <p className="font-light text-justify md:text-start">
                 Embark on a transformative journey where your abilities are
                 nurtured, talents are celebrated, and goals are realized. At
                 MAF, we bring together top-notch resources, cutting-edge
@@ -20,9 +20,9 @@ const Carrier = () => {
               </p>
               <div className="flex flex-col mt-4">
                 <h2 className="text-2xl font-bold text-[#071b52] dark:text-rose-600">
-                  Why choose MAF Group?
+                  Why Choose MAF Group?
                 </h2>
-                <p className="font-light">
+                <p className="font-light text-justify md:text-start">
                   Choosing MAF is not about opting for just a job, it is about
                   paving the way for a fulfilling career that promises unlimited
                   opportunities, collaborating with innovative thinkers and
@@ -39,9 +39,9 @@ const Carrier = () => {
           </div>
           <div className="flex flex-col">
             <h2 className="text-2xl font-bold text-[#071b52] dark:text-rose-600">
-              Crafting Extraordinary careers
+              Crafting Extraordinary Careers
             </h2>
-            <p className="font-light">
+            <p className="font-light text-justify md:text-start">
               At our organization we realize that excellence is not a
               destination but a continuous journey that we embark on. We make
               that journey more fruitful and enjoyable by meticulously crafting
@@ -53,9 +53,9 @@ const Carrier = () => {
           </div>
           <div className="flex flex-col">
             <h2 className="text-2xl font-bold text-[#071b52] dark:text-rose-600">
-              Unleash your potential
+              Unleash Your Potential
             </h2>
-            <p className="font-light">
+            <p className="font-light text-justify md:text-start">
               Your career at MAF Group is not a predetermined path, it is a
               canvas waiting for you to create something extraordinary. Unlock
               your full potential by exploring the wide array of roles that

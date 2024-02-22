@@ -470,8 +470,8 @@ const Navbar = () => {
               onClick={() => {
                 navigate("/our-work"), setActiveNavItem(0);
               }}
-              onMouseEnter={() => handleNavItemHover(5)}
-              onMouseLeave={handleLeave}
+              // onMouseEnter={() => handleNavItemHover(5)}
+              // onMouseLeave={handleLeave}
             >
               OUR WORK
             </button>
@@ -495,8 +495,8 @@ const Navbar = () => {
 
             <button
               className="hover:text-sky-600 hover:border-t-4 dark:hover:border-white border-t-4 border-transparent transition-all text-[#000050] dark:text-rose-600 h-16 px-5 items-center text-center flex hover:border-black"
-              onMouseEnter={() => handleNavItemHover(7)}
-              onMouseLeave={handleLeave}
+              // onMouseEnter={() => handleNavItemHover(7)}
+              // onMouseLeave={handleLeave}
               onClick={() => {
                 navigate("/blogs"), setActiveNavItem(0);
               }}
@@ -733,7 +733,7 @@ const Navbar = () => {
               link: "/data_analytics",
             },
             {
-              item: "Cloud solutions",
+              item: "Cloud Solutions",
               link: "/cloud_solution",
             },
             {

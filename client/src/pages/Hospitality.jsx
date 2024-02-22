@@ -78,9 +78,9 @@ const Hospitality = () => {
                   At MAF Group, we help ensure a perfect customer experience
                   using the latest tools like cloud, AI, data ingestion,
                   marketing automation, and analytics implementation. With
-                  achievable goals like supporting <br /> real-time experience
-                  on digital platforms, MAF Group has helped countless customers
-                  in the hospitality industry to get the end customers the
+                  achievable goals like supporting real-time experience on
+                  digital platforms, MAF Group has helped countless customers in
+                  the hospitality industry to get the end customers the
                   best-ever experience. We helped Bourne Leisure Limited, a big
                   name in the hospitality industry.
                 </p>

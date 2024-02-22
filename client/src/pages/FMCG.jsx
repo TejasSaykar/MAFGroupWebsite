@@ -7,7 +7,7 @@ const FMCG = () => {
       <div className="w-full mt-[4rem]">
         <div className="relative w-full h-[50%] md:h-[74vh]">
           <img
-            src="/img/fmcg1.jpeg"
+            src="/img/fmcg1.jpg"
             className="w-full h-full bg-cover object-cover"
             alt=""
           />
@@ -61,7 +61,7 @@ const FMCG = () => {
             <div>
               <div className="w-full order-1 md:order-2">
                 <img
-                  src="/img/goods.png"
+                  src="/img/fmcg2.png"
                   className="aspect-video shadow-sm rounded-md object-cover bg-cover"
                   alt=""
                 />

@@ -48,7 +48,7 @@ const About = () => {
               </div>
               <div className="w-full right flex flex-col order-2 md:order-1">
                 <h1 className="text-2xl font-bold text-[#071b52] dark:text-rose-600">
-                  Precision analytics
+                  Precision Analytics
                 </h1>
                 <p className="text-justify font-thin mx-auto mt-2">
                   Setup your business for unparalleled success by navigating
@@ -71,7 +71,7 @@ const About = () => {
               </div>
               <div className="w-full right flex flex-col">
                 <h1 className="text-2xl font-bold text-[#071b52] dark:text-rose-600">
-                  Building Digitization Dynamics
+                  Digitization Dynamics
                 </h1>
                 <p className="text-justify font-thin mx-auto mt-2">
                   Revolutionize your business with expert digitization services
@@ -90,7 +90,7 @@ const About = () => {
             <div className="w-full flex-col flex gap-5 lg:flex-row px-4 md:px-14 items-start justify-start">
               <div className="right order-2 lg:order-1 flex flex-col  w-full">
                 <h1 className="text-2xl font-bold text-[#071b52] dark:text-rose-600">
-                  Automation mastery
+                  Automation Mastery
                 </h1>
                 <p className="text-justify font-thin mt-2">
                   Our automation mastery helps unlock seamless operations and
@@ -109,8 +109,13 @@ const About = () => {
               </div>
             </div>
           </div>
-
-          {/* Fifth */}
+        </div>
+        <div className="bg-gray-50 md:px-16 pt-4 pb-10 mt-5">
+          <div className="text-center mt-8">
+            <h2 className="mt-5 text-3xl text-center font-bold text-[#071b52]">
+              Our Services
+            </h2>
+          </div>
 
           <div className="second w-full mt-12 md:mt-5">
             <div className="w-full flex-col flex px-5 lg:flex-row md:px-14 items-center justify-center gap-3">
@@ -122,12 +127,8 @@ const About = () => {
                 />
               </div>
               <div className="right flex flex-col w-full">
-                <h2 className="mt-5 text-3xl text-center font-bold text-[#071b52]">
-                  Our Services
-                </h2>
-
-                <h1 className="text-xl mt-2 font-bold text-[#071b52] dark:text-rose-600">
-                  Data analytics
+                <h1 className="text-2xl mt-2 font-bold text-[#071b52] dark:text-rose-600">
+                  Data Analytics
                 </h1>
                 <p className="text-justify font-thin">
                   We reveal the narrative behind the numbers – creating order
@@ -141,7 +142,7 @@ const About = () => {
           <div className="flex flex-col md:flex-row items-center gap-4 px-5 md:px-0 md:w-[90%] mx-auto mt-12 md:mt-5">
             <div className="w-full order-2 md:order-1">
               <h1 className="text-2xl font-bold text-[#071b52] dark:text-rose-600">
-                Cloud solutions
+                Cloud Solutions
               </h1>
               <p className="text-justify font-thin">
                 We make technological marvels become everyday realities by
@@ -151,7 +152,11 @@ const About = () => {
               </p>
             </div>
             <div className="w-full order-1 md:order-2">
-              <img src="/img/cs1.png" className="md:w-1/2 mx-auto" alt="" />
+              <img
+                src="/img/cs1.png"
+                className="md:w-2/3 aspect-video object-cover bg-cover mx-auto"
+                alt=""
+              />
             </div>
           </div>
 
@@ -161,7 +166,7 @@ const About = () => {
             <div className="w-full flex-col lg:flex-row flex px-4 md:px-14 items-start justify-start gap-4 md:gap-20">
               <div className="right w-full flex flex-col order-2">
                 <h1 className="text-2xl font-bold text-[#071b52] dark:text-rose-600">
-                  Digital transformation
+                  Digital Transformation
                 </h1>
                 <p className="text-justify font-thin mt-2">
                   Reign the digital age by reimagining and reshaping the way you
@@ -183,7 +188,7 @@ const About = () => {
           <div className="flex flex-col mt-12 md:mt-5 md:flex-row items-center px-5 md:px-0 gap-4 md:w-[90%] mx-auto">
             <div className="w-full order-2 md:order-1">
               <h1 className="text-2xl font-bold text-[#071b52] dark:text-rose-600">
-                Marketing automation
+                Marketing Automation
               </h1>
               <p className="text-justify font-thin mt-2">
                 We automate success in every marketing venture from clicks to
@@ -195,7 +200,7 @@ const About = () => {
             <div className="w-full order-1 md:order-2">
               <img
                 src="/img/ma3.png"
-                className="object-cover aspect-video md:w-1/2 mx-auto"
+                className="object-cover aspect-video md:w-2/3 mx-auto"
                 alt=""
               />
             </div>

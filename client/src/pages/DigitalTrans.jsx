@@ -7,7 +7,7 @@ const DigitalTrans = () => {
       <div className="mt-[4rem] w-full">
         <div className="relative w-full h-[80vh] md:h-[70vh] top">
           <img
-            src="/img/digital-transformation-1.jpg"
+            src="/img/dt.jpg"
             className="w-full h-full bg-center bg-cover object-cover aspect-video"
             alt=""
           />

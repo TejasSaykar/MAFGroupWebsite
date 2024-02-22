@@ -26,7 +26,7 @@ const Industries = () => {
           <div className="w-full flex-col items-center mx-auto flex">
             <div className="w-full my-auto mx-20 ring-1 ring-red-200 rounded-sm items-end flex">
               <img
-                src="/img/bank1.avif"
+                src="/img/bank1.png"
                 className="aspect-video object-cover"
                 alt=""
               />
@@ -65,7 +65,7 @@ const Industries = () => {
           <div className="w-full flex-col justify-start items-start mx-auto flex">
             <div className="w-full mx-auto flex pt-4">
               <img
-                src="/img/bank3.webp"
+                src="/img/bank2.png"
                 className="aspect-video object-cover"
                 alt=""
               />

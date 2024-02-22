@@ -7,7 +7,7 @@ const Pharma = () => {
       <div className="w-full mt-[4rem]">
         <div className="relative w-full h-[50vh] md:h-[70vh]">
           <img
-            src="/img/pharma.jpeg"
+            src="/img/pharma5.jpg"
             className="w-full h-full object-cover bg-center"
             alt=""
           />
@@ -30,7 +30,7 @@ const Pharma = () => {
                 className="aspect-video bg-center bg-cover object-cover"
                 alt=""
               />
-              <p className="text-md font-light p-2 mt-2">
+              <p className="text-md text-justify font-light p-2 mt-2">
                 In the dynamic landscape of the pharmaceutical industry,
                 disruptions and unpredicted changes are quite the norm. In an
                 era where digital services are on the rise and novel industry
@@ -44,7 +44,7 @@ const Pharma = () => {
                 className="aspect-video bg-center bg-cover object-cover"
                 alt=""
               />
-              <p className="text-md font-light p-2 mt-2">
+              <p className="text-md font-light text-justify p-2 mt-2">
                 In this era of transformation, it is not only essential to
                 embrace digitization and enhancing online services but also
                 striving to continually adapt and strive for excellence. Failing
@@ -62,7 +62,7 @@ const Pharma = () => {
               className="aspect-video bg-center bg-cover object-cover"
               alt=""
             />
-            <p className="text-md font-light p-2 mt-2">
+            <p className="text-md font-light text-justify p-2 mt-2">
               We at MAF Group, with a proven track record of assisting numerous
               clients in this domain, are aware of the obstacles in your journey
               and come prepared with a strategic roadmap that is most fruitful
@@ -77,7 +77,7 @@ const Pharma = () => {
               className="aspect-video bg-center bg-cover object-cover"
               alt=""
             />
-            <p className="text-md font-light p-2 mt-2">
+            <p className="text-md font-light text-justify p-2 mt-2">
               Whether it is catering to your current requirements or building
               cutting-edge technological solutions that cater to your future
               requirements, we do it all. We not only create solutions, but we
