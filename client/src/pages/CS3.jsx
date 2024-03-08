@@ -8,7 +8,7 @@ const CS3 = () => {
         <div className="w-full">
           <div className="relative w-full h-[60vh] md:h-[70vh]">
             <img
-              src="/img/case3.jpg"
+              src="/img/case3-min.jpg"
               className="h-full w-full bg-cover object-cover"
               alt=""
             />

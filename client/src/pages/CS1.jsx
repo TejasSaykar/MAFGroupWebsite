@@ -8,7 +8,7 @@ const CS1 = () => {
         <div className="w-full">
           <div className="relative w-full h-[60vh] md:h-[70vh]">
             <img
-              src="/img/case1.jpg"
+              src="/img/case1-min.jpg"
               className="h-full w-full bg-cover object-cover"
               alt=""
             />
@@ -133,7 +133,7 @@ const CS1 = () => {
               <div className="mb-8 bg-white rounded-t-lg">
                 <div className="flex mx-auto flex-col gap-2">
                   <img
-                    src="/img/case111.jpg"
+                    src="/img/case111-min.jpg"
                     className="object-cover rounded-t-lg bg-cover aspect-video"
                     alt=""
                   />
@@ -168,7 +168,7 @@ const CS1 = () => {
                 <div className="grid grid-cols-1 w-2/3 mx-auto gap-5 md:gap-10 mt-4"> */}
               <div className="flex flex-col gap-2 h-[max-content] pb-6 bg-white rounded-t-lg">
                 <img
-                  src="/img/wp.jpg"
+                  src="/img/wp-min.jpg"
                   alt=""
                   className="aspect-video bg-cover object-cover rounded-lg"
                 />
@@ -192,7 +192,7 @@ const CS1 = () => {
               </div>
               <div className="flex flex-col gap-2 bg-white rounded-t-lg">
                 <img
-                  src="/img/dp.jpg"
+                  src="/img/dp-min.jpg"
                   alt=""
                   className="aspect-video bg-cover object-cover rounded-t-lg"
                 />
@@ -214,7 +214,7 @@ const CS1 = () => {
               </div>
               <div className="flex flex-col gap-2 bg-white rounded-t-lg">
                 <img
-                  src="/img/NLP.webp"
+                  src="/img/NLP1-min.jpg"
                   alt=""
                   className="aspect-video bg-cover object-cover rounded-t-lg"
                 />
@@ -237,7 +237,7 @@ const CS1 = () => {
               </div>
               <div className="flex flex-col gap-2 bg-white rounded-t-lg">
                 <img
-                  src="/img/ecom.jpg"
+                  src="/img/ecom-min.jpg"
                   alt=""
                   className="aspect-video bg-cover object-cover rounded-t-lg"
                 />

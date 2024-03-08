@@ -8,7 +8,7 @@ const CS4 = () => {
         <div className="w-full">
           <div className="relative w-full h-[60vh] md:h-[70vh]">
             <img
-              src="/img/case4.jpg"
+              src="/img/case4-min.jpg"
               className="h-full w-full bg-cover object-cover"
               alt=""
             />
@@ -78,7 +78,7 @@ const CS4 = () => {
             </div>
 
             <div>
-              <img src="/img/case44.jpg" alt="" />
+              <img src="/img/case44-min.jpg" alt="" />
             </div>
 
             <div className="flex flex-col px-5 py-6 md:px-32 bg-gray-50">

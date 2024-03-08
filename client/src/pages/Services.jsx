@@ -14,7 +14,7 @@ const Services = () => {
           <div className="relative grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 h-full w-full gap-8 md:w-[90vw] md:flex-row lg:w-[80vw] m-auto px-4 justify-center sm:items-start mt-8">
             <div className="h-full one m-auto sm:w-full md:mt-0">
               <img
-                src="/img/da.jpg"
+                src="/img/da-min.jpg"
                 className="h-auto sm:w-full bg-cover bg-center object-cover rounded-xl aspect-video sm:aspect-video"
                 alt=""
               />
@@ -33,7 +33,7 @@ const Services = () => {
             </div>
             <div className="h-full two m-auto md:mt-0 sm:w-full">
               <img
-                src="/img/cloudBanner.jpg"
+                src="/img/cloudBanner-min.jpg"
                 className="h-auto sm:w-full bg-cover bg-center object-cover rounded-xl aspect-video sm:aspect-video"
                 alt=""
               />
@@ -52,7 +52,7 @@ const Services = () => {
             </div>
             <div className="h-full three m-auto mt-8 md:mt-0 sm:w-full">
               <img
-                src="/img/marketingBanner.jpg"
+                src="/img/marketingBanner-min.jpg"
                 className="h-auto sm:w-full bg-contain object-cover rounded-xl bg-center aspect-video sm:aspect-video"
                 alt=""
               />
@@ -70,7 +70,7 @@ const Services = () => {
             </div>
             <div className="h-full four mt-8 md:mt-0 w-full">
               <img
-                src="/img/digitalBanner.jpg"
+                src="/img/digitalBanner-min.jpg"
                 className="h-auto sm:w-full bg-contain object-cover rounded-xl bg-center aspect-video sm:aspect-video"
                 alt=""
               />

@@ -36,7 +36,7 @@ const Banking = () => {
             </div>
             <div className="w-full">
               <img
-                src="/img/bankingBanner.jpg"
+                src="/img/bankingBanner-min.jpg"
                 className="h-full object-cover"
                 alt=""
               />

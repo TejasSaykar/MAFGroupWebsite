@@ -33,7 +33,7 @@ const Hospitality = () => {
             </div>
             <div className="w-full">
               <img
-                src="/img/hospitality2.jpg"
+                src="/img/hospitality2-min.jpg"
                 className="h-full object-cover"
                 alt=""
               />

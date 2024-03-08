@@ -8,7 +8,7 @@ const CS5 = () => {
         <div className="w-full">
           <div className="relative w-full h-[60vh] md:h-[70vh]">
             <img
-              src="/img/case5.jpg"
+              src="/img/case5-min.jpg"
               className="h-full w-full bg-cover object-cover"
               alt=""
             />
@@ -79,7 +79,7 @@ const CS5 = () => {
 
             <div className="h-[100vh] w-full">
               <img
-                src="/img/case55.jpg"
+                src="/img/case55-min.jpg"
                 className="h-full w-full object-cover"
                 alt=""
               />

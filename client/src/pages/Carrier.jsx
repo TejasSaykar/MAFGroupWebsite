@@ -8,7 +8,7 @@ const Carrier = () => {
         <div className="h-[90vh] w-full">
           <div className="h-full w-full">
             <img
-              src="/img/careerBanner.jpg"
+              src="/img/careerBanner-min.jpg"
               className="h-full w-full object-cover bg-bottom"
               alt=""
             />
@@ -45,7 +45,7 @@ const Carrier = () => {
               </div>
             </div>
             <div className="w-full order-1 md:order-2 my-auto">
-              <img src="/img/career1.jpg" className="rounded-lg" alt="" />
+              <img src="/img/career1-min.jpg" className="rounded-lg" alt="" />
             </div>
           </div>
           <div className="w-full py-8 bg-[#eb1c26]">
@@ -66,7 +66,7 @@ const Carrier = () => {
                 </p>
               </div>
               <div className="w-full">
-                <img src="/img/career.jpg" className="rounded-lg" alt="" />
+                <img src="/img/career-min.jpg" className="rounded-lg" alt="" />
               </div>
             </div>
           </div>
@@ -89,7 +89,7 @@ const Carrier = () => {
               </div>
             </div>
             <div className="order-1 md:order-2">
-              <img src="/img/career2.jpg" className="rounded-lg" alt="" />
+              <img src="/img/career2-min.jpg" className="rounded-lg" alt="" />
             </div>
           </div>
         </div>

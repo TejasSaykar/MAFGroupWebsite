@@ -342,7 +342,7 @@ const Navbar = () => {
                     </DropdownMenu>
                   </div>
 
-                  <div className="flex gap-10 items-center w-full justify-between">
+                  {/* <div className="flex gap-10 items-center w-full justify-between">
                     <Link
                       to={"/blogs"}
                       className="dark:text-rose-600 font-bold"
@@ -394,7 +394,7 @@ const Navbar = () => {
                         </DropdownMenuItem>
                       </DropdownMenuContent>
                     </DropdownMenu>
-                  </div>
+                  </div> */}
                   <div className="flex gap-10 items-center w-full justify-between">
                     <Link to={"/news"} className="dark:text-rose-600 font-bold">
                       News
@@ -493,7 +493,7 @@ const Navbar = () => {
               PEOPLE
             </button>
 
-            <button
+            {/* <button
               className="hover:text-sky-600 hover:border-t-4 dark:hover:border-white border-t-4 border-transparent transition-all text-[#000050] dark:text-rose-600 h-16 px-5 items-center text-center flex hover:border-black"
               // onMouseEnter={() => handleNavItemHover(7)}
               // onMouseLeave={handleLeave}
@@ -502,7 +502,7 @@ const Navbar = () => {
               }}
             >
               BLOGS
-            </button>
+            </button> */}
             <button
               className="hover:text-sky-600 hover:border-t-4 dark:hover:border-white border-t-4 border-transparent transition-all text-[#000050] dark:text-rose-600 h-16 px-5 items-center text-center flex hover:border-black"
               onMouseEnter={() => handleNavItemHover(8)}

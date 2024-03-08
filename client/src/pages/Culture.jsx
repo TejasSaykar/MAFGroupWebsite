@@ -8,7 +8,7 @@ const Culture = () => {
         <div className="h-[90vh] w-full">
           <div className="h-full w-full">
             <img
-              src="/img/cultureBanner.jpg"
+              src="/img/cultureBanner-min.jpg"
               className="h-full w-full object-cover"
               alt=""
             />
@@ -55,7 +55,7 @@ const Culture = () => {
               </div>
             </div>
             <div className="w-full order-1 md:order-2">
-              <img src="/img/culture1.jpg" className="rounded-lg" alt="" />
+              <img src="/img/culture1-min.jpg" className="rounded-lg" alt="" />
             </div>
           </div>
           <div className="w-full pb-9 md:my-10 bg-[#eb1c26]">
@@ -73,7 +73,7 @@ const Culture = () => {
                 </p>
               </div>
               <div className="w-full">
-                <img src="/img/worklife.jpg" className="rounded-lg" alt="" />
+                <img src="/img/worklife-min.jpg" className="rounded-lg" alt="" />
               </div>
             </div>
           </div>
@@ -106,7 +106,7 @@ const Culture = () => {
               </div>
             </div>
             <div className="order-1 md:order-2">
-              <img src="/img/culture2.jpg" className="rounded-lg" alt="" />
+              <img src="/img/culture2-min.jpg" className="rounded-lg" alt="" />
             </div>
           </div>
         </div>

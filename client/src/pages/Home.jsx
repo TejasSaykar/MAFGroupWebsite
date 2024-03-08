@@ -77,7 +77,7 @@ const Home = () => {
         <div className="relative top w-full">
           <div className="hidden md:block relative w-full h-screen">
             <img
-              src="/img/home-background2.jpg"
+              src="/img/home-background2-min.jpg"
               className="w-full object-cover h-screen"
               alt=""
             />
@@ -266,13 +266,13 @@ const Home = () => {
                 alt=""
               />
             </div>
-            <div className="pl-4 w-full">
+            {/* <div className="pl-4 w-full">
               <img
                 src="/img/hsbc1.png"
                 className="aspect-video h-[100px]"
                 alt=""
               />
-            </div>
+            </div> */}
             <div className="pl-4 w-full">
               <img
                 src="/img/dia.png"
@@ -287,13 +287,13 @@ const Home = () => {
                 alt=""
               />
             </div>
-            <div className="pl-4 w-full">
+            {/* <div className="pl-4 w-full">
               <img
                 src="/img/mphasis.jpg"
                 className="aspect-video md:h-[150px]"
                 alt=""
               />
-            </div>
+            </div> */}
             <div className="pl-4 w-full">
               <img src="/img/bat.png" className="px-4 h-1/2" alt="" />
             </div>

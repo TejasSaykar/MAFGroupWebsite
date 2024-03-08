@@ -32,7 +32,7 @@ const MarketingAutomation = () => {
             </div>
             <div className="bg-cyan-200/40 w-full">
               <img
-                src="/img/marketingBanner.jpg"
+                src="/img/marketingBanner-min.jpg"
                 className="h-full object-cover"
                 alt=""
               />

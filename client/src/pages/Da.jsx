@@ -171,7 +171,11 @@ const Da = () => {
               </button>
             </div>
             <div className="bg-cyan-200/40 w-full">
-              <img src="/img/da.jpg" className="h-full object-cover" alt="" />
+              <img
+                src="/img/da-min.jpg"
+                className="h-full object-cover"
+                alt=""
+              />
             </div>
           </div>
         </div>

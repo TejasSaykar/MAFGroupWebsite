@@ -7,7 +7,7 @@ const About = () => {
       <div className="mt-[4rem] w-full">
         <div className="relative top w-full h-[90vh] sm:h-[80vh]">
           <img
-            src="/img/aboutBanner.jpg"
+            src="/img/aboutBanner-min.jpg"
             className="w-full object-cover bg-center bg-cover h-full"
             alt=""
           />
@@ -51,7 +51,7 @@ const About = () => {
               <div className=" flex-col md:flex-row gap-4 flex items-center">
                 <div className="left w-full h-auto md:my-auto">
                   <img
-                    src="/img/precision.jpg"
+                    src="/img/precision-min.jpg"
                     alt=""
                     className="object-cover aspect-video rounded-lg md:w-full"
                   />
@@ -75,7 +75,7 @@ const About = () => {
                 <div className="w-full flex-col md:flex-row gap-4 flex items-center justify-center">
                   <div className="left w-full h-auto md:my-auto">
                     <img
-                      src="/img/digitize.jpg"
+                      src="/img/digitize-min.jpg"
                       alt=""
                       className="object-cover aspect-video rounded-lg md:w-full"
                     />
@@ -112,7 +112,7 @@ const About = () => {
                   </div>
                   <div className="left w-full order-1 h-auto my-auto">
                     <img
-                      src="/img/about33.jpg"
+                      src="/img/about33-min.jpg"
                       alt=""
                       className="object-cover aspect-video rounded-lg md:w-full"
                     />
@@ -133,7 +133,7 @@ const About = () => {
             <div className="w-full flex-col flex px-5 lg:flex-row md:px-14 items-center justify-center gap-3">
               <div className="left w-full h-auto">
                 <img
-                  src="/img/about44.jpg"
+                  src="/img/about44-min.jpg"
                   alt=""
                   className="object-cover aspect-video rounded-lg md:w-2/3 mx-auto"
                 />
@@ -165,7 +165,7 @@ const About = () => {
             </div>
             <div className="w-full order-1 md:order-2">
               <img
-                src="/img/about55.jpg"
+                src="/img/about55-min.jpg"
                 className="md:w-2/3 aspect-video rounded-lg object-cover bg-cover mx-auto"
                 alt=""
               />
@@ -189,7 +189,7 @@ const About = () => {
               </div>
               <div className="left w-full order-1">
                 <img
-                  src="/img/about66.jpg"
+                  src="/img/about66-min.jpg"
                   className="object-cover aspect-video rounded-lg md:w-2/3 mx-auto"
                   alt=""
                 />
@@ -211,7 +211,7 @@ const About = () => {
             </div>
             <div className="w-full order-1 md:order-2">
               <img
-                src="/img/about77.jpg"
+                src="/img/about77-min.jpg"
                 className="object-cover aspect-video rounded-lg md:w-2/3 mx-auto"
                 alt=""
               />

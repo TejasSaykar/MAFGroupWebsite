@@ -33,7 +33,7 @@ const DigitalTrans = () => {
             </div>
             <div className="bg-cyan-200/40 w-full">
               <img
-                src="/img/digitalBanner.jpg"
+                src="/img/digitalBanner-min.jpg"
                 className="h-full object-cover"
                 alt=""
               />

@@ -47,7 +47,7 @@ const CloudSolution = () => {
             </div>
             <div className="bg-cyan-200/40 w-full">
               <img
-                src="/img/cloudBanner.jpg"
+                src="/img/cloudBanner-min.jpg"
                 className="h-full object-cover"
                 alt=""
               />

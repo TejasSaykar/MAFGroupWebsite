@@ -35,7 +35,7 @@ const Blogs = () => {
           <div className="relative grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 h-full w-full gap-8 md:w-[90vw] md:flex-row lg:w-[80vw] m-auto px-4 justify-center sm:items-start mt-8">
             <div className="h-full one m-auto sm:w-full md:mt-0">
               <img
-                src="/img/da1.jpg"
+                src="/img/da1-min.jpg"
                 className="h-auto sm:w-full bg-cover bg-center object-cover rounded-lg aspect-video sm:aspect-video"
                 alt=""
               />
@@ -54,7 +54,7 @@ const Blogs = () => {
             </div>
             <div className="h-full two m-auto md:mt-0 sm:w-full">
               <img
-                src="/img/techcloud.jpg"
+                src="/img/techcloud-min.jpg"
                 className="h-auto sm:w-full bg-cover bg-center object-cover rounded-lg aspect-video sm:aspect-video"
                 alt=""
               />
@@ -73,7 +73,7 @@ const Blogs = () => {
             </div>
             <div className="h-full three m-auto mt-8 md:mt-0 sm:w-full">
               <img
-                src="/img/marketingAuto.jpg"
+                src="/img/marketingAuto-min.jpg"
                 className="h-auto sm:w-full bg-contain object-cover rounded-lg bg-center aspect-video sm:aspect-video"
                 alt=""
               />
@@ -92,7 +92,7 @@ const Blogs = () => {
             </div>
             <div className="h-full four mt-8 md:mt-0 w-full">
               <img
-                src="/img/digitalTran.jpg"
+                src="/img/digitalTran-min.jpg"
                 className="h-auto sm:w-full bg-contain object-cover rounded-lg bg-center aspect-video sm:aspect-video"
                 alt=""
               />

@@ -8,7 +8,7 @@ const CS9 = () => {
         <div className="w-full">
           <div className="relative w-full h-[60vh] md:h-[70vh]">
             <img
-              src="/img/case9.jpg"
+              src="/img/case9-min.jpg"
               className="h-full w-full bg-cover object-cover"
               alt=""
             />
@@ -77,7 +77,7 @@ const CS9 = () => {
 
             <div className="h-[100vh] w-full">
               <img
-                src="/img/case99.jpg"
+                src="/img/case99-min.jpg"
                 className="h-full w-full object-cover"
                 alt=""
               />

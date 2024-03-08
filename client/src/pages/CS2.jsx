@@ -8,7 +8,7 @@ const CS2 = () => {
         <div className="w-full">
           <div className="relative w-full h-[60vh] md:h-[70vh]">
             <img
-              src="/img/case2.jpg"
+              src="/img/case2-min.jpg"
               className="h-full w-full bg-cover object-cover"
               alt=""
             />
@@ -81,7 +81,7 @@ const CS2 = () => {
               </p>
             </div>
             <div>
-              <img src="/img/case22.jpg" alt="" />
+              <img src="/img/case22-min.jpg" alt="" />
             </div>
 
             <div className="flex flex-col bg-gray-50 px-5 py-4 md:px-32">

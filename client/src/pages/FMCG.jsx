@@ -110,7 +110,7 @@ const FMCG = () => {
             </div>
             <div className="w-full">
               <img
-                src="/img/fmcg1.jpg"
+                src="/img/fmcg1-min.jpg"
                 className="h-full object-cover"
                 alt=""
               />

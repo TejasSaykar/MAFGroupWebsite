@@ -116,7 +116,7 @@ const Pharma = () => {
             </div>
             <div className="w-full">
               <img
-                src="/img/pharmaBanner.jpg"
+                src="/img/pharmaBanner-min.jpg"
                 className="h-full object-cover"
                 alt=""
               />

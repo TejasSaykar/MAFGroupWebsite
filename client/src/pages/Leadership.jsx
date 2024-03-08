@@ -7,7 +7,7 @@ const Leadership = () => {
       <div className="mt-[4rem] w-full">
         <div className="relative w-full h-[90vh] md:h-[70vh]">
           <img
-            src="/img/about2Banner.jpg"
+            src="/img/about2Banner-min.jpg"
             className="w-full h-full object-cover"
             alt=""
           />
@@ -56,7 +56,7 @@ const Leadership = () => {
               </div>
               <div className="w-full order-1 md:order-2">
                 <img
-                  src="/img/about31.jpg"
+                  src="/img/about31-min.jpg"
                   className="object-cover aspect-video rounded-lg md:w-full mx-auto"
                   alt=""
                 />
@@ -80,7 +80,7 @@ const Leadership = () => {
                 </div>
                 <div className="w-full order-1">
                   <img
-                    src="/img/about32.jpg"
+                    src="/img/about32-min.jpg"
                     className="object-cover aspect-video rounded-lg md:w-full"
                     alt=""
                   />
@@ -103,7 +103,7 @@ const Leadership = () => {
               </div>
               <div className="w-full order-1 md:order-2">
                 <img
-                  src="/img/leadership.jpg"
+                  src="/img/leadership-min.jpg"
                   className="object-cover aspect-video rounded-lg md:w-full mx-auto"
                   alt=""
                 />
@@ -128,7 +128,7 @@ const Leadership = () => {
               </div>
               <div className="w-full order-1">
                 <img
-                  src="/img/about34.jpg"
+                  src="/img/about34-min.jpg"
                   className="aspect-video object-cover rounded-lg md:w-full"
                   alt=""
                 />

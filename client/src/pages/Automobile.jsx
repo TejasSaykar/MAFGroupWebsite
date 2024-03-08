@@ -36,7 +36,7 @@ const Automobile = () => {
             </div>
             <div className="w-full">
               <img
-                src="/img/automobile3.jpg"
+                src="/img/automobile3-min.jpg"
                 className="h-full object-cover"
                 alt=""
               />

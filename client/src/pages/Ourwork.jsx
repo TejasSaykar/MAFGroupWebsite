@@ -237,7 +237,7 @@ const Ourwork = () => {
             <div className="w-full flex flex-col gap-4">
               <div className="relative">
                 <img
-                  src="/img/case1.jpg"
+                  src="/img/case1-min.jpg"
                   className="w-full h-full aspect-square md:aspect-auto"
                   alt=""
                 />
@@ -269,7 +269,7 @@ const Ourwork = () => {
               </div>
               <div className="relative">
                 <img
-                  src="/img/case2.jpg"
+                  src="/img/case2-min.jpg"
                   className="w-full h-full aspect-square md:aspect-auto"
                   alt=""
                 />
@@ -303,7 +303,7 @@ const Ourwork = () => {
             </div>
             <div className="w-full hidden md:block h-full relative">
               <img
-                src="/img/case8.jpg"
+                src="/img/case8-min.jpg"
                 className="h-full object-cover"
                 alt=""
               />
@@ -339,7 +339,7 @@ const Ourwork = () => {
             <div className="w-full flex flex-col gap-4">
               <div className="relative">
                 <img
-                  src="/img/case4.jpg"
+                  src="/img/case4-min.jpg"
                   className="w-full h-full aspect-square md:aspect-auto"
                   alt=""
                 />
@@ -372,7 +372,7 @@ const Ourwork = () => {
               </div>
               <div className="relative h-full">
                 <img
-                  src="/img/case5.jpg"
+                  src="/img/case5-min.jpg"
                   className="w-full h-full aspect-square md:aspect-auto"
                   alt=""
                 />
@@ -409,7 +409,7 @@ const Ourwork = () => {
             <div className="w-full flex flex-col gap-4">
               <div className="relative">
                 <img
-                  src="/img/case6.jpg"
+                  src="/img/case6-min.jpg"
                   className="w-full h-full aspect-square md:aspect-auto"
                   alt=""
                 />
@@ -434,7 +434,7 @@ const Ourwork = () => {
               </div>
               <div className="relative">
                 <img
-                  src="/img/case7.jpg"
+                  src="/img/case7-min.jpg"
                   className="w-full h-full aspect-square md:aspect-auto"
                   alt=""
                 />
@@ -479,7 +479,7 @@ const Ourwork = () => {
             <div className="w-full flex flex-col gap-4">
               <div className="relative">
                 <img
-                  src="/img/case9.jpg"
+                  src="/img/case9-min.jpg"
                   className="w-full h-full aspect-square md:aspect-auto"
                   alt=""
                 />
@@ -504,7 +504,7 @@ const Ourwork = () => {
               </div>
               <div className="relative h-full">
                 <img
-                  src="/img/case10.jpg"
+                  src="/img/case10-min.jpg"
                   className="w-full h-full aspect-square md:aspect-auto"
                   alt=""
                 />

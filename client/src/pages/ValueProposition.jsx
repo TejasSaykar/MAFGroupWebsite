@@ -7,7 +7,7 @@ const ValueProposition = () => {
       <div className="mt-[4rem] w-full">
         <div className="relative w-full h-[75vh] md:h-[67vh] top">
           <img
-            src="/img/about1Banner.jpg"
+            src="/img/about1Banner-min.jpg"
             className="w-full h-full object-cover"
             alt=""
           />
@@ -44,7 +44,7 @@ const ValueProposition = () => {
               <div className="flex-col px-5 md:px-14 md:flex-row gap-5 items-center flex w-full">
                 <div className="left w-full">
                   <img
-                    src="/img/about21.jpg"
+                    src="/img/about21-min.jpg"
                     alt=""
                     className="w-full aspect-video object-cover rounded-lg md:w-full mx-auto"
                   />
@@ -73,7 +73,7 @@ const ValueProposition = () => {
                 <div className="flex-col px-5 md:px-14 md:flex-row flex items-center gap-5 w-full">
                   <div className="left w-full order-1 md:order-2">
                     <img
-                      src="/img/about222.jpg"
+                      src="/img/about222-min.jpg"
                       alt=""
                       className="w-full my-auto aspect-video object-cover rounded-lg md:w-w-full mx-auto"
                     />
@@ -101,7 +101,7 @@ const ValueProposition = () => {
               <div className="flex-col px-5 md:px-14 md:flex-row items-center gap-5 flex w-full">
                 <div className="left w-full order-1">
                   <img
-                    src="/img/about23.jpg"
+                    src="/img/about23-min.jpg"
                     alt=""
                     className="w-full aspect-video object-cover rounded-lg md:w-full mx-auto"
                   />
@@ -129,7 +129,7 @@ const ValueProposition = () => {
                 <div className="flex-col px-5 md:px-14 md:flex-row items-center flex gap-5 w-full">
                   <div className="left w-full order-1 md:order-2">
                     <img
-                      src="/img/about24.jpg"
+                      src="/img/about24-min.jpg"
                       alt=""
                       className="w-full aspect-video object-cover rounded-lg md:w-full mx-auto"
                     />

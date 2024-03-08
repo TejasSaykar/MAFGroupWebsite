@@ -33,7 +33,7 @@ const Manufacturing = () => {
             </div>
             <div className="w-full">
               <img
-                src="/img/manufacturing.jpeg"
+                src="/img/manufacturing-min.jpeg"
                 className="h-full object-cover"
                 alt=""
               />

@@ -8,7 +8,7 @@ const CS10 = () => {
         <div className="w-full">
           <div className="relative w-full h-[60vh] md:h-[70vh]">
             <img
-              src="/img/case10.jpg"
+              src="/img/case10-min.jpg"
               className="h-full w-full bg-cover object-cover"
               alt=""
             />
@@ -88,7 +88,7 @@ const CS10 = () => {
               <div className="w-full px-5 py-4 md:px-32 bg-gray-50 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
                 <div className="flex flex-col gap-2">
                   <img
-                    src="/img/case101.jpg"
+                    src="/img/case101-min.jpg"
                     className="aspect-video rounded-lg object-cover bg-cover"
                     alt=""
                   />
@@ -105,7 +105,7 @@ const CS10 = () => {
                 </div>
                 <div className="w-full flex flex-col gap-2">
                   <img
-                    src="/img/dataImg.jpg"
+                    src="/img/dataImg-min.jpg"
                     className="aspect-video rounded-lg object-cover bg-cover"
                     alt=""
                   />
@@ -122,7 +122,7 @@ const CS10 = () => {
                 </div>
                 <div className="w-full flex flex-col gap-2">
                   <img
-                    src="/img/dash.jpg"
+                    src="/img/dash-min.jpg"
                     className="aspect-video rounded-lg object-cover bg-cover"
                     alt=""
                   />
