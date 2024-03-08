@@ -38,7 +38,7 @@ const Blog2 = () => {
                 />
               </div>
               <div className="w-full">
-                <p className="font-light">
+                <p className="font-medium">
                   You might come across many options when considering cloud
                   hosting for a business and Google Cloud is one of the most
                   appealing options. Here we have listed the top advantages of
@@ -48,7 +48,7 @@ const Blog2 = () => {
                 <h2 className="mt-3 text-xl font-semibold text-[#071b52]">
                   The Basics of Google Cloud
                 </h2>
-                <p>
+                <p className="font-medium">
                   Cloud Hosting offered by Google is called Google Cloud
                   Hosting. The tech giant provides it for free for the first 12
                   months if you opt for the free trial plan. After that, you can
@@ -68,7 +68,7 @@ const Blog2 = () => {
             </h1>
           </div>
 
-          <div className="two flex w-full flex-col md:flex-row gap-4 mt-2">
+          <div className="two flex w-full flex-col gap-4 mt-2">
             <div className="w-full flex px-2 md:px-4 pb-4 gap-4">
               <div className="hidden md:w-14 md:flex items-start">
                 <MdPriceCheck className="w-0 md:block bg-[#4f514e] text-white p-2 h-12 md:w-12 rounded-full" />
@@ -113,7 +113,7 @@ const Blog2 = () => {
             </div>
           </div>
 
-          <div className="two flex w-full flex-col md:flex-row gap-4 mt-2 md:mt-5">
+          <div className="two flex w-full flex-col gap-4 mt-2 md:mt-5">
             <div className="w-full flex px-2 md:px-4 pb-4 gap-4">
               <div className="hidden md:w-14 md:flex items-start">
                 <GiPathDistance className="w-0 md:block bg-[#4f514e] text-white p-2 h-12 md:w-12 rounded-full" />
@@ -157,7 +157,7 @@ const Blog2 = () => {
             </div>
           </div>
 
-          <div className="two flex w-full flex-col md:flex-row gap-4 mt-2 md:mt-5">
+          <div className="two flex w-full flex-col gap-4 mt-2 md:mt-5">
             <div className="w-full flex px-2 md:px-4 pb-4 gap-4">
               <div className="hidden md:w-14 md:flex items-start">
                 <SiGamedeveloper className="w-0 md:block bg-[#4f514e] text-white p-2 h-12 md:w-12 rounded-full" />
@@ -201,8 +201,8 @@ const Blog2 = () => {
             </div>
           </div>
 
-          <div className="two flex w-full flex-col md:flex-row gap-4 mt-2 md:mt-5">
-            <div className="w-full md:w-1/2 flex px-2 md:px-4 pb-4 gap-4">
+          <div className="two flex w-full flex-col gap-4 mt-2 md:mt-5">
+            <div className="w-full flex px-2 md:px-4 pb-4 gap-4">
               <div className="hidden md:w-14 md:flex items-start">
                 <MdOutlineBackup className="w-0 md:block bg-[#4f514e] text-white p-2 h-12 md:w-12 rounded-full" />
               </div>
@@ -254,8 +254,8 @@ const Blog2 = () => {
             </h2>
           </div>
 
-          <div className="md:mx-10  mx-2">
-            <h2>Reference:</h2>
+          <div className="md:mx-10 pb-10 mx-2">
+            <h2 className="font-medium">Reference:</h2>
             <p
               style={{ textAlign: "justify" }}
               onClick={() =>

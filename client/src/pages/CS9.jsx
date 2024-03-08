@@ -8,7 +8,7 @@ const CS9 = () => {
         <div className="w-full">
           <div className="relative w-full h-[60vh] md:h-[70vh]">
             <img
-              src="/img/cs9.jpg"
+              src="/img/case9.jpg"
               className="h-full w-full bg-cover object-cover"
               alt=""
             />
@@ -21,7 +21,7 @@ const CS9 = () => {
             </div>
           </div>
         </div>
-        <div className="flex flex-col gap-4 pt-4">
+        <div className="flex flex-col gap-4">
           <div className="w-full flex flex-col">
             {/* <div className="flex gap-2 items-center">
               <span className="text-2xl font-semibold text-[#071b52]">
@@ -29,29 +29,29 @@ const CS9 = () => {
                 in Retail
               </span>
             </div> */}
-            <div className="w-full px-5 py-4 md:px-32 grid grid-cols-1 md:grid-cols-3 gap-3 lg:grid-cols-4">
-              <div className="flex w-full flex-row md:flex-col gap-2">
-                <h2 className="text-lg w-2/3 font-bold text-[#071b52]">
+            <div className="w-full px-5 flex flex-col gap-4 py-10 bg-red-600 text-white md:px-[5rem] md:grid md:grid-cols-12">
+              <div className="flex w-full flex-row md:flex-col md:col-span-2 gap-2">
+                <h2 className="text-lg w-2/3 font-bold text-gray-900">
                   Industry
                 </h2>
                 <span className="w-full">Retail</span>
               </div>
-              <div className="flex w-full flex-row md:flex-col gap-2">
-                <h2 className="text-lg w-2/3 font-bold text-[#071b52]">
+              <div className="flex w-full flex-row md:flex-col md:col-span-2 gap-2">
+                <h2 className="text-lg w-2/3 font-bold text-gray-900">
                   Location
                 </h2>
                 <span className="w-full">London, UK</span>
               </div>
-              <div className="flex flex-row md:flex-col gap-2">
-                <h2 className="text-lg w-2/3 font-bold text-[#071b52]">
+              <div className="flex flex-row md:flex-col md:col-span-3 gap-2">
+                <h2 className="text-lg w-2/3 font-bold text-gray-900">
                   Solution
                 </h2>
                 <span className="w-full">
                   CRM, Azure Blob, Adobe Target, Adobe Optimize
                 </span>
               </div>
-              <div className="flex flex-col gap-2 lg:ml-7">
-                <h2 className="text-lg font-bold text-[#071b52]">Result : </h2>
+              <div className="flex flex-col gap-2 col-span-5">
+                <h2 className="text-lg font-bold text-gray-900">Result : </h2>
                 <div className="flex flex-col gap-1">
                   <h3>• 53% Uplift in Total Revenue</h3>
                   <h3>• 15% Increase in Repeat Subscriptions</h3>
@@ -62,7 +62,7 @@ const CS9 = () => {
               </div>
             </div>
 
-            <div className="flex flex-col bg-gray-50 px-5 py-4 md:px-32">
+            <div className="flex flex-col bg-gray-50 px-5 py-10 md:px-32">
               <h2 className="font-semibold text-lg text-[#071b52]">
                 Background
               </h2>
@@ -73,6 +73,14 @@ const CS9 = () => {
                 over three decades of industry experience, they boast a customer
                 base of 150 million spanning 180 markets worldwide.
               </p>
+            </div>
+
+            <div className="h-[100vh] w-full">
+              <img
+                src="/img/case99.jpg"
+                className="h-full w-full object-cover"
+                alt=""
+              />
             </div>
 
             <div className="flex bg-gray-50 px-5 py-4 md:px-32 flex-col">
@@ -102,7 +110,7 @@ const CS9 = () => {
                   integrated with Adobe Target and Adobe Optimize to execute
                   personalized campaigns tailored to each customer segment.
                 </p>
-                <p className="mt-2 md:mt-1 text-justify md:text-start">
+                <p className="mt-2 md:mt-4 text-justify md:text-start">
                   Drawing insights from previous customer interactions, we
                   categorized customers into distinct segments and devised
                   personalized campaigns spanning website banners, email
@@ -111,7 +119,7 @@ const CS9 = () => {
                   engagement, we crafted tailored experiences to drive
                   engagement and conversion.
                 </p>
-                <p className="mt-2 md:mt-1 text-justify md:text-start">
+                <p className="mt-2 md:mt-4 text-justify md:text-start">
                   Furthermore, we proposed call center and service email
                   initiatives to augment the reach of our hyper-personalization
                   program, furthering our efforts to engage customers across
@@ -167,7 +175,7 @@ const CS9 = () => {
               </div>
             </div>
 
-            <div className="mt-5 px-5 md:px-32">
+            <div className="mt-5 px-5 md:px-32 pb-8">
               <h2 className="text-xl font-semibold text-[#071b52]">
                 Conclusion
               </h2>

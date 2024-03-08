@@ -8,7 +8,7 @@ const CS5 = () => {
         <div className="w-full">
           <div className="relative w-full h-[60vh] md:h-[70vh]">
             <img
-              src="/img/cs5.jpg"
+              src="/img/case5.jpg"
               className="h-full w-full bg-cover object-cover"
               alt=""
             />
@@ -21,7 +21,7 @@ const CS5 = () => {
             </div>
           </div>
         </div>
-        <div className="flex flex-col gap-4 pt-4">
+        <div className="flex flex-col gap-4">
           <div className="w-full flex flex-col">
             {/* <div className="flex gap-2 items-center">
               <span className="text-2xl font-semibold text-[#071b52]">
@@ -29,21 +29,21 @@ const CS5 = () => {
                 IT Industry
               </span>
             </div> */}
-            <div className="grid w-full grid-cols-1 md:grid-cols-3 lg:grid-cols-4 px-5 py-6 md:px-32 gap-3">
+            <div className="grid w-full grid-cols-1 md:grid-cols-3 lg:grid-cols-4 px-5 py-10 bg-red-600 text-white md:px-32 gap-3">
               <div className="flex w-full flex-row md:flex-col gap-2">
-                <h2 className="text-lg w-2/3 font-bold text-[#071b52]">
+                <h2 className="text-lg w-2/3 font-bold text-gray-900">
                   Industry
                 </h2>
                 <span className="w-full">IT</span>
               </div>
               <div className="flex flex-row md:flex-col w-full gap-2">
-                <h2 className="text-lg w-2/3 font-bold text-[#071b52]">
+                <h2 className="text-lg w-2/3 font-bold text-gray-900">
                   Location
                 </h2>
                 <span className="w-full">Kolkata, India</span>
               </div>
               <div className="flex w-full flex-row md:flex-col gap-2">
-                <h2 className="text-lg w-2/3 font-bold text-[#071b52]">
+                <h2 className="text-lg w-2/3 font-bold text-gray-900">
                   Solution
                 </h2>
                 <span className="w-full md:ml-0">
@@ -52,7 +52,7 @@ const CS5 = () => {
                 </span>
               </div>
               <div className="flex w-full flex-row md:flex-col lg:ml-7 gap-2">
-                <h2 className="text-lg w-2/3 font-bold text-[#071b52]">
+                <h2 className="text-lg w-2/3 font-bold text-gray-900">
                   Result :{" "}
                 </h2>
                 <div className="flex w-full flex-col gap-1">
@@ -63,7 +63,7 @@ const CS5 = () => {
               </div>
             </div>
 
-            <div className="flex flex-col bg-gray-50 px-5 py-6 md:px-32">
+            <div className="flex flex-col bg-gray-50 px-5 py-10 md:px-32">
               <h2 className="font-semibold text-lg text-[#071b52]">
                 Background
               </h2>
@@ -75,6 +75,14 @@ const CS5 = () => {
                 their possibilities for success. To unlock these requirements,
                 they understood that Digital transformation was the way to go.
               </p>
+            </div>
+
+            <div className="h-[100vh] w-full">
+              <img
+                src="/img/case55.jpg"
+                className="h-full w-full object-cover"
+                alt=""
+              />
             </div>
 
             <div className="flex flex-col bg-gray-50 px-5 py-4 md:px-32">
@@ -103,14 +111,14 @@ const CS5 = () => {
                   organisation required to move with agility and responsiveness
                   to market demands.
                 </p>
-                <p className="mt-1 text-justify md:text-start">
+                <p className="mt-3 text-justify md:text-start">
                   We additionally crafted bespoke applications tailored to their
                   unique requirements and seamlessly integrated them with SFCC
                   and SFMC. All facets of their business experienced an
                   improvement in their efficiency because of streamlined
                   operations.
                 </p>
-                <p className="mt-1 text-justify md:text-start">
+                <p className="mt-3 text-justify md:text-start">
                   We further orchestrated the integration of disparate data
                   sources and consolidated them in Big Query and utilized the
                   power of AWS S3 to establish a robust data infrastructure. The
@@ -147,7 +155,7 @@ const CS5 = () => {
               </div>
             </div>
 
-            <div className="mt-5 px-5 md:px-32">
+            <div className="mt-5 px-5 pb-8 md:px-32">
               <h2 className="text-xl font-semibold text-[#071b52]">
                 Conclusion:
               </h2>

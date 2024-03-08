@@ -8,7 +8,7 @@ const CS7 = () => {
         <div className="w-full">
           <div className="relative w-full h-[60vh] md:h-[70vh]">
             <img
-              src="/img/cs7.jpg"
+              src="/img/case7.jpg"
               className="h-full w-full bg-cover object-cover"
               alt=""
             />
@@ -20,28 +20,28 @@ const CS7 = () => {
             </div>
           </div>
         </div>
-        <div className="flex flex-col gap-4 pt-4">
+        <div className="flex flex-col gap-4">
           <div className="w-full flex flex-col">
             {/* <div className="flex gap-2 items-center">
               <span className="text-2xl font-semibold text-[#071b52]">
                 Revolutionizing User Experience in the IT Sector
               </span>
             </div> */}
-            <div className="w-full px-5 py-4 md:px-32 gap-3 grid grid-cols-1 md:grid-cols-3">
+            <div className="w-full px-5 py-10 md:px-32 bg-red-600 text-white gap-3 grid grid-cols-1 md:grid-cols-3">
               <div className="flex w-full flex-row md:flex-col gap-2">
-                <h2 className="text-lg w-2/3 font-bold text-[#071b52]">
+                <h2 className="text-lg w-2/3 font-bold text-gray-900">
                   Industry
                 </h2>
                 <span className="w-full">IT</span>
               </div>
               <div className="flex w-full flex-row md:flex-col gap-2">
-                <h2 className="text-lg w-2/3 font-bold text-[#071b52]">
+                <h2 className="text-lg w-2/3 font-bold text-gray-900">
                   Location
                 </h2>
                 <span className="w-full">Bangalore, India</span>
               </div>
               <div className="flex flex-row md:flex-col gap-2">
-                <h2 className="text-lg w-2/3 font-bold text-[#071b52]">
+                <h2 className="text-lg w-2/3 font-bold text-gray-900">
                   Solution
                 </h2>
                 <span className="w-full">
@@ -50,7 +50,7 @@ const CS7 = () => {
               </div>
             </div>
 
-            <div className="flex flex-col bg-gray-50 px-5 py-4 md:px-32">
+            <div className="flex flex-col bg-gray-50 px-5 py-10 md:px-32">
               <h2 className="font-semibold text-lg text-[#071b52]">
                 Background
               </h2>
@@ -60,6 +60,14 @@ const CS7 = () => {
                 user experience and optimize functionality within their digital
                 infrastructure.
               </p>
+            </div>
+
+            <div className="h-[100vh] w-full">
+              <img
+                src="/img/case77.jpg"
+                className="h-full w-full object-cover"
+                alt=""
+              />
             </div>
 
             <div className="flex flex-col bg-gray-50 px-5 py-4 md:px-32">
@@ -87,7 +95,7 @@ const CS7 = () => {
                   and efficiency in large datasets was proposed thus laying down
                   the foundation for search functionality.
                 </p>
-                <p className="mt-2 md:mt-1 text-justify md:text-start">
+                <p className="mt-2 md:mt-3 text-justify md:text-start">
                   We concurrently worked on Attribution Modeling that unraveled
                   the intricate customer journey and how effectively they
                   communicated with each touchpoint. By leveraging Multi-Channel
@@ -97,7 +105,7 @@ const CS7 = () => {
                   utilized efficiently to enable appropriate resource
                   allocation.
                 </p>
-                <p className="mt-2 md:mt-1 text-justify md:text-start">
+                <p className="mt-2 md:mt-3 text-justify md:text-start">
                   Building upon this foundation, we established a Search Data
                   Lake tailored for Augmented Search, harnessing the power of
                   Artificial Intelligence to enhance user experiences based on
@@ -127,7 +135,7 @@ const CS7 = () => {
               </div>
             </div>
 
-            <div className="mt-5 px-5 md:px-32">
+            <div className="mt-5 px-5 md:px-32 pb-8">
               <h2 className="text-xl font-semibold text-[#071b52]">
                 Conclusion
               </h2>

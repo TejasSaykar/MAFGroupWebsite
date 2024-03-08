@@ -8,7 +8,7 @@ const CS6 = () => {
         <div className="w-full">
           <div className="relative w-full h-[60vh] md:h-[70vh]">
             <img
-              src="/img/hospitality2.jpg"
+              src="/img/case6.jpg"
               className="h-full w-full bg-cover object-cover"
               alt=""
             />
@@ -21,7 +21,7 @@ const CS6 = () => {
             </div>
           </div>
         </div>
-        <div className="flex flex-col gap-4 pt-4">
+        <div className="flex flex-col gap-4">
           <div className="w-full flex flex-col">
             {/* <div className="flex gap-2 items-center">
               <span className="text-2xl font-semibold text-[#071b52]">
@@ -29,21 +29,21 @@ const CS6 = () => {
                 Hospitality Industry
               </span>
             </div> */}
-            <div className="w-full px-5 py-4 md:px-32 grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-3">
+            <div className="w-full px-5 py-10 bg-red-600 text-white md:px-32 grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-3">
               <div className="flex w-full flex-row md:flex-col gap-2">
-                <h2 className="text-lg w-2/3 font-bold text-[#071b52]">
+                <h2 className="text-lg w-2/3 font-bold text-gray-900">
                   Industry
                 </h2>
                 <span className="w-full">Hospitality</span>
               </div>
               <div className="flex flex-row md:flex-col w-full gap-2">
-                <h2 className="text-lg w-2/3 font-bold text-[#071b52]">
+                <h2 className="text-lg w-2/3 font-bold text-gray-900">
                   Location
                 </h2>
                 <span className="w-full">London, UK</span>
               </div>
               <div className="flex flex-row md:flex-col gap-2">
-                <h2 className="text-lg w-2/3 font-bold text-[#071b52]">
+                <h2 className="text-lg w-2/3 font-bold text-gray-900">
                   Solution
                 </h2>
                 <span className="w-full">
@@ -52,7 +52,7 @@ const CS6 = () => {
                 </span>
               </div>
               <div className="flex w-full flex-row md:flex-col gap-2 lg:ml-7">
-                <h2 className="text-lg w-2/3 font-bold text-[#071b52]">
+                <h2 className="text-lg w-2/3 font-bold text-gray-900">
                   Result
                 </h2>
                 <div className="flex w-full flex-col gap-1">
@@ -75,7 +75,7 @@ const CS6 = () => {
               </p>
             </div> */}
 
-            <div className="flex flex-col bg-gray-50 px-5 py-4 md:px-32">
+            <div className="flex flex-col bg-gray-50 px-5 py-10 md:px-32">
               <h2 className="font-semibold text-lg text-[#071b52]">
                 Objective
               </h2>
@@ -87,6 +87,14 @@ const CS6 = () => {
                 marketing strategy and drive more conversions for their website
                 while also cutting down on their expenditure.
               </p>
+            </div>
+
+            <div className="h-[100vh] w-full">
+              <img
+                src="/img/case66.jpg"
+                className="h-full w-full object-cover"
+                alt=""
+              />
             </div>
 
             <div className="flex flex-col gap-2 bg-gray-50 px-5 py-4 md:px-32">
@@ -101,12 +109,12 @@ const CS6 = () => {
                   that engineered a seamless integration to optimize their
                   marketing efforts while enhancing performance.
                 </p>
-                <p className="mt-2 md:mt-1 text-justify md:text-start">
+                <p className="mt-3 md:mt-4 text-justify md:text-start">
                   On initiation of the transformation, we deployed marketing
                   automation which aimed at fine-tuning their campaign
                   strategies and maximized their engagement and conversion.
                 </p>
-                <p className="mt-2 md:mt-1 text-justify md:text-start">
+                <p className="mt-3 md:mt-4 text-justify md:text-start">
                   Concurrently, we developed a personalized product
                   recommendation engine that leveraged Cloud-AI technologies.
                   This engine leveraged previous user behavior and analytics
@@ -115,7 +123,7 @@ const CS6 = () => {
                   engagement. This further promoted conversions and increased
                   their upsell rates.
                 </p>
-                <p className="mt-2 md:mt-1 text-justify md:text-start">
+                <p className="mt-3 md:mt-4 text-justify md:text-start">
                   We also established a centralized analytics system across all
                   client sites utilizing their Google Marketing Platform thus
                   creating a standard framework for data analysis.
@@ -161,7 +169,7 @@ const CS6 = () => {
               </div>
             </div>
 
-            <div className="mt-5 px-5 md:px-32">
+            <div className="mt-5 px-5 md:px-32 pb-8">
               <h2 className="text-xl font-semibold text-[#071b52]">
                 Conclusion
               </h2>

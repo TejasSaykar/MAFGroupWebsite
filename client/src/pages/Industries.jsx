@@ -1,85 +1,149 @@
 import React from "react";
 import Layout from "../components/Layout";
+import { Link, useNavigate } from "react-router-dom";
 
 const Industries = () => {
+  const navigate = useNavigate();
   return (
-    <Layout title={"MAF | Banking"}>
-      <div className="w-full mt-[4rem]">
-        <div className="relative w-full h-[60vh] md:h-[70vh]">
-          <img
-            src="/img/bank3.jpg"
-            className="w-full h-full object-cover"
-            alt=""
-          />
-          <div className="absolute inset-0 bottom-0 bg-black opacity-60"></div>
-          <div className="absolute w-full inset-0 bottom-0 flex items-center justify-center text-white px-16">
-            <h2
-              className="text-5xl text-center font-bold"
-              style={{ textShadow: "1px 1px black" }}
-            >
-              Banking
-            </h2>
-          </div>
+    <Layout title={"MAF | Data Analytics"}>
+      <div className="w-full mt-[4rem] pb-10 bg-[#e9ebeb]">
+        <div className="text-3xl font-bold pt-4 text-center text-[#071b52]">
+          <h2>Industries</h2>
         </div>
-
-        <div className="w-full mt-10 px-8 sm:px-20 xl:px-20 flex justify-start flex-col md:flex-row gap-16">
-          <div className="w-full flex-col items-center mx-auto flex">
-            <div className="w-full my-auto mx-20 ring-1 ring-red-200 rounded-sm items-end flex">
+        <div className="w-full md:h-[screen] md:pt-8">
+          <div className="relative grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 h-full w-full gap-8 md:w-[90vw] md:flex-row lg:w-[80vw] m-auto px-4 justify-center sm:items-start mt-8">
+            <div className="h-full one m-auto sm:w-full md:mt-0">
               <img
-                src="/img/bank1.png"
-                className="aspect-video object-cover"
+                src="/img/bankingBanner.jpg"
+                className="h-auto sm:w-full bg-cover bg-center object-cover rounded-xl aspect-video sm:aspect-video"
                 alt=""
               />
+              <h2
+                onClick={() => navigate("/banking")}
+                className="px-2 text-xl cursor-pointer font-bold mt-4 hover:underline text-[#071b52] dark:text-rose-600"
+              >
+                Banking, Simplified and Smarter
+              </h2>
+              <Link to={"/banking"} className="text-gray-600 ">
+                <p className="px-2 font-normal mt-1">
+                  Financial and banking landscapes are changing what with the
+                  uprising of digital only banks and cryptocurrencies....
+                </p>
+              </Link>
             </div>
-            <div className="w-full my-auto">
-              <p className="font-light text-justify mt-5">
-                Due to the recent changes, the banking industry is witnessing
-                more disruption than ever. New, advanced, and innovative
-                technologies are changing how the market is structured. New
-                industry players are taking a bite out of the revenues of
-                existing banking organizations and challenging them at every
-                turn.
-              </p>
-            </div>
-          </div>
-
-          <div className="w-full flex-col items-start justify-start mx-auto flex">
-            <div className="w-full my-auto flex">
+            <div className="h-full two m-auto md:mt-0 sm:w-full">
               <img
-                src="/img/bank2.avif"
-                className="aspect-video object-cover w-full"
+                src="/img/pharmaBanner.jpg"
+                className="h-auto sm:w-full bg-cover bg-center object-cover rounded-xl aspect-video sm:aspect-video"
                 alt=""
               />
+              <h2
+                onClick={() => navigate("/pharmaceuticals")}
+                className="px-2 cursor-pointer text-xl font-bold mt-4 hover:underline text-[#071b52] dark:text-rose-600"
+              >
+                Shaping the modern medicine landscape
+              </h2>
+              <Link to={"/pharmaceuticals"} className="text-gray-600 ">
+                <p className="px-2 font-normal mt-1">
+                  Create a patient-centric journey for your customers by
+                  utilizing our custom applications and strategies...{" "}
+                </p>
+              </Link>
             </div>
-            <div className="w-full my-auto">
-              <p className="font-light text-justify mt-5 md:mt-0">
-                So, banking industry players who want to sustain their position
-                must act now. Being digital and offering better online service
-                is one thing. Another is constantly adapting to change and being
-                the best versions of themselves. Otherwise, they might be at the
-                risk of lagging!
-              </p>
-            </div>
-          </div>
-
-          <div className="w-full flex-col justify-start items-start mx-auto flex">
-            <div className="w-full mx-auto flex pt-4">
+            <div className="h-full three m-auto mt-8 md:mt-0 sm:w-full">
               <img
-                src="/img/bank2.png"
-                className="aspect-video object-cover"
+                src="/img/fmcg1.jpg"
+                className="h-auto sm:w-full bg-contain object-cover rounded-xl bg-center aspect-video sm:aspect-video"
                 alt=""
               />
+              <h2
+                onClick={() => navigate("/fmcg")}
+                className="px-2 text-xl font-bold mt-4 hover:underline cursor-pointer text-[#071b52] dark:text-rose-600"
+              >
+                Unveiling FMCG’s new era
+              </h2>
+              <Link to={"/fmcg"} className="text-gray-600 ">
+                <p className="px-2 font-normal mt-1">
+                  With increasing consumer demand and cross-border commerce, the
+                  retail business has grown in multiple magnitudes...
+                </p>
+              </Link>
             </div>
-            <div className="w-full my-auto mt-5">
-              <p className="font-light text-justify">
-                That is where MAF Group can help. Whether you want to migrate to
-                the cloud or hope to offer a better mobile experience, or even
-                create cool content that motivates people to connect, our
-                experts can deliver perfect solutions to you after delving
-                through data-driven insights and using the latest technological
-                tools that go with the flow and improve with time. We have
-                helped many clients in the banking sector.
-              </p>
+            <div className="h-full four mt-8 md:mt-0 w-full">
+              <img
+                src="/img/automobile3.jpg"
+                className="h-auto sm:w-full bg-contain object-cover rounded-xl bg-center aspect-video sm:aspect-video"
+                alt=""
+              />
+              <h2
+                onClick={() => navigate("/automobile")}
+                className="px-2 cursor-pointer text-xl font-bold mt-4 hover:underline text-[#071b52] dark:text-rose-600"
+              >
+                Shaping the next generation of automobiles
+              </h2>
+              <Link to={"/automobile"} className="text-gray-600 ">
+                <p className="px-2 font-normal mt-1">
+                  With automotive industry evolving at an incredible rate,
+                  businesses are pushed to change too...
+                </p>
+              </Link>
+            </div>
+            <div className="h-full four mt-8 md:mt-0 w-full">
+              <img
+                src="/img/hospitality2.jpg"
+                className="h-auto sm:w-full bg-contain object-cover rounded-xl bg-center aspect-video sm:aspect-video"
+                alt=""
+              />
+              <h2
+                onClick={() => navigate("/hospitality")}
+                className="px-2 cursor-pointer text-xl font-bold mt-4 hover:underline text-[#071b52] dark:text-rose-600"
+              >
+                Redefining memorable stays for the modern Traveller
+              </h2>
+              <Link to={"/hospitality"} className="text-gray-600 ">
+                <p className="px-2 font-normal mt-1">
+                  Build systems that redefines experience for the digital-savvy
+                  consumer...
+                </p>
+              </Link>
+            </div>
+            <div className="h-full four mt-8 md:mt-0 w-full">
+              <img
+                src="/img/manufacturing.jpeg"
+                className="h-auto sm:w-full bg-contain object-cover rounded-xl bg-center aspect-video sm:aspect-video"
+                alt=""
+              />
+              <h2
+                onClick={() => navigate("/manufacturing")}
+                className="px-2 cursor-pointer text-xl font-bold mt-4 hover:underline text-[#071b52] dark:text-rose-600"
+              >
+                Production Innovation Inspired
+              </h2>
+              <Link to={"/manufacturing"} className="text-gray-600 ">
+                <p className="px-2 font-normal mt-1">
+                  Establish an intelligent manufacturing system that connects
+                  digital technology...
+                </p>
+              </Link>
+            </div>
+            <div className="h-full four mt-8 md:mt-0 w-full">
+              <img
+                src="/img/infoService.jpg"
+                className="h-auto sm:w-full bg-contain object-cover rounded-xl bg-center aspect-video sm:aspect-video"
+                alt=""
+              />
+              <h2
+                onClick={() => navigate("/information-service")}
+                className="px-2 cursor-pointer text-xl font-bold mt-4 hover:underline text-[#071b52] dark:text-rose-600"
+              >
+                Driving Tomorrow’s IT Evolutions
+              </h2>
+              <Link to={"/information-service"} className="text-gray-600 ">
+                <p className="px-2 font-normal mt-1">
+                  Streamline and automate your business to stay ahead of the
+                  technological landscape ...
+                </p>
+              </Link>
             </div>
           </div>
         </div>

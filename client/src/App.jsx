@@ -47,6 +47,8 @@ import SingleNews from "./pages/SingleNews";
 import Da from "./pages/Da";
 import CS9 from "./pages/CS9";
 import CS10 from "./pages/CS10";
+import InformationService from "./pages/InformationService";
+import Banking from "./pages/Banking";
 
 function App() {
   return (
@@ -70,12 +72,14 @@ function App() {
         <Route path="/digital-transformation" element={<DigitalTrans />} />
 
         {/* Industries Routes */}
-        <Route path="/banking" element={<Industries />} />
+        <Route path="/industries" element={<Industries />} />
+        <Route path="/banking" element={<Banking />} />
         <Route path="/pharmaceuticals" element={<Pharma />} />
         <Route path="/fmcg" element={<FMCG />} />
         <Route path="/automobile" element={<Automobile />} />
         <Route path="/hospitality" element={<Hospitality />} />
         <Route path="/manufacturing" element={<Manufacturing />} />
+        <Route path="/information-service" element={<InformationService />} />
 
         {/* Our Work */}
         <Route path="/our-work" element={<Ourwork />} />

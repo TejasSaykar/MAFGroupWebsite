@@ -8,22 +8,25 @@ const CS2 = () => {
         <div className="w-full">
           <div className="relative w-full h-[60vh] md:h-[70vh]">
             <img
-              src="/img/bank3.jpg"
+              src="/img/case2.jpg"
               className="h-full w-full bg-cover object-cover"
               alt=""
             />
             <div className="absolute inset-0 bottom-0 bg-black opacity-60"></div>
             <div className="absolute flex w-full items-center justify-center top-32">
-              <h2 className="text-center text-3xl md:w-2/3 mx-auto text-white font-semibold">
+              <h2
+                style={{ textShadow: "1px 1px black" }}
+                className="text-center text-3xl md:w-2/3 mx-auto text-white font-semibold"
+              >
                 Strategic Transition to Enhance Marketing Efficiency in the
                 Banking Sector
               </h2>
             </div>
           </div>
         </div>
-        <div className="flex flex-col gap-4 pt-4">
+        <div className="flex flex-col gap-4">
           <div className="w-full flex flex-col">
-            <div className="grid px-5 gap-3 py-4 md:px-32 w-full grid-cols-1 md:grid-cols-3 lg:grid-cols-4">
+            <div className="grid px-5 bg-red-600 py-6 text-white gap-3 md:px-32 w-full grid-cols-1 md:grid-cols-3 lg:grid-cols-4">
               {/* <div className="flex gap-2 items-center">
                 <span className="text-2xl font-semibold text-[#071b52]">
                   Strategic Transition to Enhance Marketing Efficiency in the
@@ -31,19 +34,19 @@ const CS2 = () => {
                 </span>
               </div> */}
               <div className="flex w-full flex-row md:flex-col gap-2">
-                <h2 className="text-lg w-2/3 font-bold text-[#071b52]">
+                <h2 className="text-lg w-2/3 font-bold text-gray-900">
                   Industry
                 </h2>
                 <span className="w-full">Banking</span>
               </div>
               <div className="flex w-full flex-row md:flex-col gap-2">
-                <h2 className="text-lg w-2/3 font-bold text-[#071b52]">
+                <h2 className="text-lg w-2/3 font-bold text-gray-900">
                   Location
                 </h2>
                 <span className="w-full">London</span>
               </div>
               <div className="flex w-full flex-row md:flex-col gap-2">
-                <h2 className="text-lg w-2/3 font-bold text-[#071b52]">
+                <h2 className="text-lg w-2/3 font-bold text-gray-900">
                   Solution
                 </h2>
                 <span className="w-full">
@@ -52,7 +55,7 @@ const CS2 = () => {
               </div>
               <div className="flex w-full lg:ml-8">
                 <div className="w-full flex flex-row md:flex-col gap-2">
-                  <h2 className="text-lg w-2/3 font-bold text-[#071b52]">
+                  <h2 className="text-lg w-2/3 font-bold text-gray-900">
                     Result
                   </h2>
                   <div className="flex w-full flex-col gap-1">
@@ -63,7 +66,7 @@ const CS2 = () => {
               </div>
             </div>
 
-            <div className="flex px-5 py-4 md:px-32 bg-gray-50 flex-col">
+            <div className="flex px-5 py-10 md:px-32 bg-gray-50 flex-col">
               <h2 className="font-semibold text-lg text-[#071b52]">
                 Background
               </h2>
@@ -76,6 +79,9 @@ const CS2 = () => {
                 optimizes their marketing strategies and reduces operational
                 costs.
               </p>
+            </div>
+            <div>
+              <img src="/img/case22.jpg" alt="" />
             </div>
 
             <div className="flex flex-col bg-gray-50 px-5 py-4 md:px-32">
@@ -100,13 +106,17 @@ const CS2 = () => {
                   (GA4), a bold move aimed at improving marketing efficiency and
                   driving cost savings.
                 </p>
-                <p className="mt-1 text-justify md:text-start">
+                <p className="mt-3 text-justify md:text-start">
                   Concurrently, we spearheaded the migration of raw data from
                   Adobe to a robust data warehousing solution by implementing
                   sophisticated pipelines that facilitated real-time flow of
                   data.
                 </p>
               </div>
+            </div>
+
+            <div>
+              <img src="" alt="" />
             </div>
 
             <div className="px-5 py-4 md:px-32 bg-gray-50">

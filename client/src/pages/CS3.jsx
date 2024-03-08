@@ -8,7 +8,7 @@ const CS3 = () => {
         <div className="w-full">
           <div className="relative w-full h-[60vh] md:h-[70vh]">
             <img
-              src="/img/cs3.jpg"
+              src="/img/case3.jpg"
               className="h-full w-full bg-cover object-cover"
               alt=""
             />
@@ -21,7 +21,7 @@ const CS3 = () => {
             </div>
           </div>
         </div>
-        <div className="flex flex-col gap-4 pt-4">
+        <div className="flex flex-col gap-4">
           <div className="w-full flex flex-col">
             {/* <div className="flex gap-2 items-center">
               <span className="text-2xl font-semibold text-[#071b52]">
@@ -29,21 +29,21 @@ const CS3 = () => {
                 in the FMCG Industry
               </span>
             </div> */}
-            <div className="w-full px-5 py-4 md:px-32 grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-3">
+            <div className="w-full px-5 py-10 bg-red-600 text-white md:px-32 grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-3">
               <div className="flex w-full flex-row md:flex-col gap-2">
-                <h2 className="text-lg w-2/3 font-bold text-[#071b52]">
+                <h2 className="text-lg w-2/3 font-bold text-gray-900">
                   Industry
                 </h2>
                 <span className="w-full">FMCG</span>
               </div>
               <div className="flex w-full flex-row md:flex-col gap-2">
-                <h2 className="text-lg w-2/3 font-bold text-[#071b52]">
+                <h2 className="text-lg w-2/3 font-bold text-gray-900">
                   Location
                 </h2>
                 <span className="w-full">London</span>
               </div>
               <div className="flex w-full flex-row md:flex-col gap-2">
-                <h2 className="text-lg w-2/3 font-bold text-[#071b52]">
+                <h2 className="text-lg w-2/3 font-bold text-gray-900">
                   Solution
                 </h2>
                 <span className="w-full md:ml-0">
@@ -51,7 +51,7 @@ const CS3 = () => {
                 </span>
               </div>
               <div className="flex w-full flex-row md:flex-col gap-2">
-                <h2 className="text-lg w-2/3 font-bold text-[#071b52]">
+                <h2 className="text-lg w-2/3 font-bold text-gray-900">
                   Result
                 </h2>
                 <div className="flex w-full flex-col gap-1">
@@ -63,11 +63,11 @@ const CS3 = () => {
               </div>
             </div>
 
-            <div className="flex px-5 py-4 md:px-32 bg-gray-50 flex-col">
+            <div className="flex px-5 py-5 md:px-32 bg-gray-50 flex-col">
               <h2 className="font-semibold text-lg text-[#071b52]">
                 Background
               </h2>
-              <p className="text-justify md:text-start mt-3">
+              <p className="text-justify md:text-start mt-1">
                 Our esteemed client, a London-based multinational beverage
                 company, has 132 sites worldwide in their network. They are one
                 of the prominent players in the FMCG industry with a
@@ -75,11 +75,11 @@ const CS3 = () => {
               </p>
             </div>
 
-            <div className="flex flex-col bg-gray-50 px-5 py-4 md:px-32">
+            <div className="flex flex-col bg-gray-50 px-5 py-2 md:px-32">
               <h2 className="font-semibold text-lg text-[#071b52]">
                 Objective
               </h2>
-              <p className="text-justify md:text-start mt-3">
+              <p className="text-justify md:text-start mt-1">
                 Our client was confronted with a two-faced challenge where they
                 wanted to ensure they were GDPR compliant while also ensuring
                 that their current implementation was flawless.
@@ -91,20 +91,20 @@ const CS3 = () => {
                 <h2 className="text-lg font-semibold text-[#071b52]">
                   Solution
                 </h2>
-                <p className="text-justify md:text-start mt-3">
+                <p className="text-justify md:text-start mt-1">
                   Like every project, we started this with a comprehensive
                   assessment of our client’s digital ecosystem and did a
                   thorough groundwork. We meticulously mapped out their tools
                   and identified potential vulnerabilities.
                 </p>
-                <p className="text-justify md:text-start mt-2 md:mt-1">
+                <p className="text-justify md:text-start mt-2 md:mt-3">
                   Armed with this insights, we delved deep and curated a
                   detailed blueprint that addressed compliance issues while also
                   drawing out a thorough roadmap for their resolution. We
                   further implemented these rectification strategies and weeded
                   out and double verified their compliance status.
                 </p>
-                <p className="text-justify md:text-start mt-2 md:mt-1">
+                <p className="text-justify md:text-start mt-2 md:mt-3">
                   We additionally integrated all their disparate data sources
                   into a unified warehouse and constructed sophisticated global
                   data pipelines that ensured real-time data transfer. This

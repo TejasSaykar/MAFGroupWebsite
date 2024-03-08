@@ -31,12 +31,12 @@ const Blogs = () => {
         <div className="text-3xl font-bold pt-4 text-center text-[#071b52]">
           <h2>Blogs</h2>
         </div>
-        <div className="w-full md:h-[screen] md:pt-8">
+        <div className="w-full md:h-[screen] md:pt-4 pb-5">
           <div className="relative grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 h-full w-full gap-8 md:w-[90vw] md:flex-row lg:w-[80vw] m-auto px-4 justify-center sm:items-start mt-8">
             <div className="h-full one m-auto sm:w-full md:mt-0">
               <img
-                src="/img/science.png"
-                className="h-auto sm:w-full bg-cover bg-center object-cover aspect-video sm:aspect-video"
+                src="/img/da1.jpg"
+                className="h-auto sm:w-full bg-cover bg-center object-cover rounded-lg aspect-video sm:aspect-video"
                 alt=""
               />
               <h2
@@ -46,17 +46,16 @@ const Blogs = () => {
                 18 Intriguing Facts About Data Analytics That You Cannot Afford
                 To Miss
               </h2>
-              <p className="px-2 font-normal mt-1">
-                In this fast-paced world, data analytics has played an...{" "}
-                <Link to={"/data_analytics"} className="text-sky-600 underline">
-                  more
-                </Link>
-              </p>
+              <Link to={"/data_analytics"} className="text-gray-600 ">
+                <p className="px-2 font-normal mt-1">
+                  In this fast-paced world, data analytics has played an...{" "}
+                </p>
+              </Link>
             </div>
             <div className="h-full two m-auto md:mt-0 sm:w-full">
               <img
-                src="/img/cloud4.png"
-                className="h-auto sm:w-full bg-cover bg-center object-cover aspect-video sm:aspect-video"
+                src="/img/techcloud.jpg"
+                className="h-auto sm:w-full bg-cover bg-center object-cover rounded-lg aspect-video sm:aspect-video"
                 alt=""
               />
               <h2
@@ -65,18 +64,17 @@ const Blogs = () => {
               >
                 Advantages of Using Google Cloud Hosting
               </h2>
-              <p className="px-2 font-normal mt-1">
-                You might come across many options when considering cloud
-                hosting for a business and Google...{" "}
-                <Link to={"/cloud_solution"} className="text-sky-600 underline">
-                  more
-                </Link>
-              </p>
+              <Link to={"/cloud_solution"} className="text-gray-600">
+                <p className="px-2 font-normal mt-1">
+                  You might come across many options when considering cloud
+                  hosting for a business and Google...{" "}
+                </p>
+              </Link>
             </div>
             <div className="h-full three m-auto mt-8 md:mt-0 sm:w-full">
               <img
-                src="/img/machine.png"
-                className="h-auto sm:w-full bg-contain object-cover bg-center aspect-video sm:aspect-video"
+                src="/img/marketingAuto.jpg"
+                className="h-auto sm:w-full bg-contain object-cover rounded-lg bg-center aspect-video sm:aspect-video"
                 alt=""
               />
               <h2
@@ -86,20 +84,16 @@ const Blogs = () => {
                 Marketing Automation Trends No Forward-Thinking Organization
                 Should Ignore!
               </h2>
-              <p className="px-2 font-normal mt-1">
-                The marketing automation industry has grown in the last...
-                <Link
-                  to={"/marketing_automation"}
-                  className="text-sky-600 underline"
-                >
-                  more
-                </Link>
-              </p>
+              <Link to={"/marketing_automation"} className="text-gray-600">
+                <p className="px-2 font-normal mt-1">
+                  The marketing automation industry has grown in the last...
+                </p>
+              </Link>
             </div>
             <div className="h-full four mt-8 md:mt-0 w-full">
               <img
-                src="/img/finalWord.png"
-                className="h-auto sm:w-full bg-contain object-cover bg-center aspect-video sm:aspect-video"
+                src="/img/digitalTran.jpg"
+                className="h-auto sm:w-full bg-contain object-cover rounded-lg bg-center aspect-video sm:aspect-video"
                 alt=""
               />
               <h2
@@ -108,22 +102,18 @@ const Blogs = () => {
               >
                 Exciting Digital Transformation Trends You Can't Ignore
               </h2>
-              <p className="px-2 font-normal mt-1">
-                Digital Dransformation simply refers to how well an organization
-                has adopted new...
-                <Link
-                  to={"/digital_transformation"}
-                  className="text-sky-600 underline"
-                >
-                  more
-                </Link>
-              </p>
+              <Link to={"/digital_transformation"} className="text-gray-600">
+                <p className="px-2 font-normal mt-1">
+                  Digital Dransformation simply refers to how well an
+                  organization has adopted new...
+                </p>
+              </Link>
             </div>
             {blogs?.map((blog) => (
               <div key={blog._id}>
                 <img
                   src={PF + blog.file}
-                  className="h-auto sm:w-full bg-contain object-cover bg-center aspect-video sm:aspect-video"
+                  className="h-auto sm:w-full bg-contain object-cover rounded-lg bg-center aspect-video sm:aspect-video"
                   alt=""
                 />
                 <h2
@@ -132,77 +122,13 @@ const Blogs = () => {
                 >
                   {blog.title}
                 </h2>
-                <p className="px-2 font-normal mt-1">
-                  {blog.description.slice(0, 50)}...
-                  <Link
-                    to={`/blog/${blog._id}`}
-                    className="text-sky-600 underline"
-                  >
-                    more
-                  </Link>
-                </p>
+                <Link to={`/blog/${blog._id}`} className="text-gray-600">
+                  <p className="px-2 font-normal mt-1">
+                    {blog.description.slice(0, 50)}...
+                  </p>
+                </Link>
               </div>
             ))}
-            {/* <div>
-              <img
-                src="/img/finalWord.png"
-                className="h-auto sm:w-full bg-contain object-cover bg-center aspect-video sm:aspect-video"
-                alt=""
-              />
-              <h2 className="px-2 text-xl font-bold mt-4 hover:underline text-[#071b52] dark:text-rose-600">
-                Exciting Digital Transformation Trends You Can't Ignore
-              </h2>
-              <p className="px-2 font-normal mt-1">
-                Digital Dransformation simply refers to how well an organization
-                has adopted new...
-                <Link
-                  to={"/digital_transformation"}
-                  className="text-sky-600 underline"
-                >
-                  more
-                </Link>
-              </p>
-            </div>
-            <div>
-              <img
-                src="/img/finalWord.png"
-                className="h-auto sm:w-full bg-contain object-cover bg-center aspect-video sm:aspect-video"
-                alt=""
-              />
-              <h2 className="px-2 text-xl font-bold mt-4 hover:underline text-[#071b52] dark:text-rose-600">
-                Exciting Digital Transformation Trends You Can't Ignore
-              </h2>
-              <p className="px-2 font-normal mt-1">
-                Digital Dransformation simply refers to how well an organization
-                has adopted new...
-                <Link
-                  to={"/digital_transformation"}
-                  className="text-sky-600 underline"
-                >
-                  more
-                </Link>
-              </p>
-            </div>
-            <div>
-              <img
-                src="/img/finalWord.png"
-                className="h-auto sm:w-full bg-contain object-cover bg-center aspect-video sm:aspect-video"
-                alt=""
-              />
-              <h2 className="px-2 text-xl font-bold mt-4 hover:underline text-[#071b52] dark:text-rose-600">
-                Exciting Digital Transformation Trends You Can't Ignore
-              </h2>
-              <p className="px-2 font-normal mt-1">
-                Digital Dransformation simply refers to how well an organization
-                has adopted new...
-                <Link
-                  to={"/digital_transformation"}
-                  className="text-sky-600 underline"
-                >
-                  more
-                </Link>
-              </p>
-            </div> */}
           </div>
         </div>
       </div>

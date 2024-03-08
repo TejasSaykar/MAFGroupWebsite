@@ -71,18 +71,18 @@ const Contact = () => {
         policy: true,
       });
 
-      // const { data } = await axios.post(
-      //   `${import.meta.env.VITE_BASE_URL}/api/user/contact`,
-      //   {
-      //     firstname: input.firstname,
-      //     lastname: input.lastname,
-      //     email: input.email,
-      //     phone: input.phone,
-      //     message: input.message,
-      //     subscribe: input.subscribe,
-      //     policy: input.policy,
-      //   }
-      // );
+      const { data } = await axios.post(
+        `${import.meta.env.VITE_BASE_URL}/api/user/contact`,
+        {
+          firstname: input.firstname,
+          lastname: input.lastname,
+          email: input.email,
+          phone: input.phone,
+          message: input.message,
+          subscribe: input.subscribe,
+          policy: input.policy,
+        }
+      );
       if (data) {
         console.log("Data : ", data);
         navigate("/");
@@ -269,10 +269,6 @@ const Contact = () => {
               </div>
               <div className="relative pt-2">
                 <div className="flex flex-col">
-                  {/* <div className="flex gap-2 mx-1">
-                    <input type="checkbox" className="p-3" />
-                    <label htmlFor="">Accept</label>
-                  </div> */}
                   <div className="relative">
                     <Switch
                       className="mt-2"
@@ -286,14 +282,7 @@ const Contact = () => {
                         className="text-sky-600 underline"
                         to={"/terms_conditions"}
                       >
-                        Accept Terms and Conditions{" "}
-                      </Link>
-                      and
-                      <Link
-                        className="pl-1 text-sky-600 underline"
-                        to={"/terms_conditions"}
-                      >
-                        Privacy Policy
+                        Accept Privacy Policy
                       </Link>
                     </label>
                     <sup className="top-[3px] text-xl pl-1 text-[16px] text-red-600">

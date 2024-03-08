@@ -8,7 +8,7 @@ const CS8 = () => {
         <div className="w-full">
           <div className="relative w-full h-[60vh] md:h-[70vh]">
             <img
-              src="/img/cs8.jpg"
+              src="/img/case8.jpg"
               className="h-full w-full bg-cover object-cover"
               alt=""
             />
@@ -21,7 +21,7 @@ const CS8 = () => {
             </div>
           </div>
         </div>
-        <div className="flex flex-col gap-4 pt-4">
+        <div className="flex flex-col gap-4">
           <div className="w-full flex flex-col">
             {/* <div className="flex gap-2 items-center">
               <span className="text-2xl font-semibold text-[#071b52]">
@@ -29,29 +29,29 @@ const CS8 = () => {
                 (SCV) in Retail
               </span>
             </div> */}
-            <div className="w-full grid grid-cols-1 md:grid-cols-3 gap-3 px-5 py-4 md:px-32">
-              <div className="flex w-full flex-row md:flex-col gap-2">
-                <h2 className="text-lg w-2/3 font-bold text-[#071b52]">
+            <div className="w-full md:grid md:grid-cols-12 flex flex-col gap-4 px-5 py-10 bg-red-600 text-white md:px-32">
+              <div className="flex w-full flex-row md:flex-col md:col-span-2 gap-2">
+                <h2 className="text-lg w-2/3 font-bold text-gray-900">
                   Industry
                 </h2>
                 <span className="w-full">Retail</span>
               </div>
-              <div className="flex flex-row md:flex-col gap-2">
-                <h2 className="text-lg w-2/3 font-bold text-[#071b52]">
+              <div className="flex flex-row md:flex-col md:col-span-2 gap-2">
+                <h2 className="text-lg w-2/3 font-bold text-gray-900">
                   Location
                 </h2>
                 <span className="w-full">London, UK</span>
               </div>
-              <div className="flex flex-row md:flex-col gap-2">
-                <h2 className="text-lg w-2/3 font-bold text-[#071b52]">
+              <div className="flex flex-row md:flex-col md:col-span-2 gap-2">
+                <h2 className="text-lg w-2/3 font-bold text-gray-900">
                   Solution
                 </h2>
                 <span className="w-full">
                   Adobe Analytics, SCV, Power BI, ML
                 </span>
               </div>
-              <div className="flex md:mt-4 w-full flex-row md:flex-col gap-2">
-                <h2 className="text-lg w-2/3 font-bold text-[#071b52]">
+              <div className="flex md:ml-7 w-full flex-col md:flex-col md:col-span-6 gap-2">
+                <h2 className="text-lg w-2/3 font-bold text-gray-900">
                   Result
                 </h2>
                 <div className="flex w-full flex-col gap-1">
@@ -71,7 +71,7 @@ const CS8 = () => {
               </div>
             </div>
 
-            <div className="flex bg-gray-50 px-5 py-4 md:px-32 flex-col">
+            <div className="flex bg-gray-50 px-5 py-10 md:px-32 flex-col">
               <h2 className="font-semibold text-lg text-[#071b52]">
                 Background
               </h2>
@@ -82,6 +82,14 @@ const CS8 = () => {
                 over three decades of industry experience, they boast a customer
                 base of 150 million spanning 180 markets worldwide.
               </p>
+            </div>
+
+            <div className="h-[100vh] w-full">
+              <img
+                src="/img/case88.jpg"
+                className="h-full w-full object-cover"
+                alt=""
+              />
             </div>
 
             <div className="flex flex-col px-5 py-4 md:px-32 bg-gray-50">
@@ -114,7 +122,7 @@ const CS8 = () => {
                   algorithms, we curated enriched customer profiles encompassing
                   holistic information.
                 </p>
-                <p className="mt-2 md:mt-1 text-justify md:text-start">
+                <p className="mt-2 md:mt-3 text-justify md:text-start">
                   An SCV application was developed utilizing Power BI, offering
                   real-time updates and predictive analytics capabilities.
                   Employing advanced machine learning techniques, we segmented
@@ -171,7 +179,7 @@ const CS8 = () => {
               </div>
             </div>
 
-            <div className="mt-5 px-5 md:px-32">
+            <div className="mt-5 px-5 md:px-32 pb-8">
               <h2 className="text-xl font-semibold text-[#071b52]">
                 Conclusion
               </h2>

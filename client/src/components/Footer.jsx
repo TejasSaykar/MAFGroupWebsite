@@ -12,8 +12,8 @@ const Footer = () => {
 
   return (
     <div
-      className={`w-full font-thin text-sm bg-gray-800 text-white mt-${
-        pathname === "/about" ? "0" : "10"
+      className={`w-full font-light text-sm bg-gray-800 text-white mt-${
+        pathname === "/about" ? "0" : "0"
       }`}
     >
       <div className="flex-col w-full md:flex-row  py-8 sm:py-16 flex gap-5 md:w-[90%] mx-auto md:items-center justify-center">
@@ -45,7 +45,7 @@ const Footer = () => {
                 by emailing to{" "}
                 <a
                   href="mailto:service@mafgroup.com"
-                  className="text-sky-700 underline"
+                  className="text-sky-700 font-semibold underline"
                 >
                   service@mafgroup.com
                 </a>
@@ -100,7 +100,7 @@ const Footer = () => {
                 </div>
               </div>
               <div className="bottom text-sm font-thin">
-                <h2>© mafgroup 2023-24</h2>
+                <h2 className="font-light">mafgroup 2023-24</h2>
               </div>
             </div>
             <Link

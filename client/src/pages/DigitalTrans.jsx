@@ -1,207 +1,163 @@
 import React from "react";
 import Layout from "../components/Layout";
+import { useNavigate } from "react-router-dom";
+import { BiRightArrowAlt } from "react-icons/bi";
 
 const DigitalTrans = () => {
+  const navigate = useNavigate();
   return (
     <Layout title={"MAF | Digital Transformation"}>
       <div className="mt-[4rem] w-full">
-        <div className="relative w-full h-[80vh] md:h-[70vh] top">
-          <img
-            src="/img/dt.jpg"
-            className="w-full h-full bg-center bg-cover object-cover aspect-video"
-            alt=""
-          />
-          <div className="absolute inset-0 bottom-0 bg-black opacity-70 md:opacity-60"></div>
-          <div className="absolute w-full inset-0 bottom-0 flex items-center justify-start md:top-28 text-white px-4 md:px-16 flex-col">
-            <h3
-              className="text-3xl md:text-4xl md:text-center font-bold mt-6"
-              style={{ textShadow: "1px 1px black" }}
-            >
-              Digital Transformation
-            </h3>
-            <p
-              className="mt-3 md:my-6 text-lg text-justify"
-              style={{ textShadow: "1px 1px black" }}
-            >
-              Digital transformation is a business's way of saying bye to the
-              old and exploring the new by building, designing and scaling every
-              part of your business while seamlessly integrating it with
-              technology. From strategy to execution, you get the best partners
-              every step of the way.
-            </p>
+        <div className="top h-screen w-full">
+          <div className="relative w-full flex h-full">
+            <div className="hidden md:block bg-gray-100/90 w-full"></div>
+            <div className="absolute shadow-2xl mx-5 p-5 md:w-1/2 md:mx-auto gap-3 bg-white flex flex-col top-10 md:top-32 px-3 md:left-20">
+              <h2 className="text-3xl font-semibold">Digital Transformation</h2>
+              <h3 className="text-xl font-medium">
+                Embracing the Digital Age with Digital Transformation
+              </h3>
+              <p className="text-lg">
+                With most of the population using the Internet, business of all
+                sizes must be digitally adept and build an online presence to be
+                seen.
+              </p>
+              <button
+                onClick={() => navigate("/contact")}
+                className="flex items-center bg-gray-800 w-[max-content] px-4 py-2 rounded-lg text-white font-semibold"
+              >
+                Talk to us
+                <span>
+                  <BiRightArrowAlt className="text-xl font-semibold" />
+                </span>
+              </button>
+            </div>
+            <div className="bg-cyan-200/40 w-full">
+              <img
+                src="/img/digitalBanner.jpg"
+                className="h-full object-cover"
+                alt=""
+              />
+            </div>
           </div>
         </div>
 
-        <div className="w-full flex items-center gap-10 md:mt-3">
-          <div className="w-full mt-10">
-            <div className="w-[90vw] md:w-[80%] m-auto flex flex-col gap-8">
-              <div className="flex flex-col md:flex-row items-center gap-5">
-                <div className="w-full order-2">
-                  <h2
-                    style={{ fontFamily: "sans-serif" }}
-                    className="text-2xl font-bold text-[#071b52] dark:text-rose-600"
-                  >
-                    Why Digital Transformation is Essential and How MAF Group
-                    Helps?
-                  </h2>
-                  <p className="font-light mt-1">
-                    About 5 billion people, or 63% of the world's population,
-                    use the internet today. You need to make your business, no
-                    matter how small or big, digitally deft for which you need
-                    bold ambition and perfect execution. MAF Group can help with
-                    both. We partner up with you to develop a transformative
-                    digital business that keeps up with the trends.
-                  </p>
-                </div>
-                <div className="w-full order-1">
-                  <img
-                    src="/img/digi1.png"
-                    className="aspect-video object-cover md:w-2/3 mx-auto"
-                    alt=""
-                  />
+        <div className="aproach w-full py-12 ">
+          <div className="w-[90%] mx-auto">
+            <div>
+              <h2 className="text-2xl py-6 font-bold">Our approach </h2>
+            </div>
+            <div className="grid md:grid-cols-4 gap-12">
+              <div className="flex flex-col gap-4 text-center text-xl font-medium">
+                <img className="w-1/3 mx-auto" src="/img/maturity.png" alt="" />
+                <div>
+                  <h1>Assess digital maturity</h1>
                 </div>
               </div>
+              <div className="flex flex-col gap-4 text-center text-xl font-medium">
+                <img
+                  className="w-1/3 mx-auto"
+                  src="/img/digital-strategy.png"
+                  alt=""
+                />
+                <div>
+                  <h2>Develop digital strategy</h2>
+                </div>
+              </div>
+              <div className="flex flex-col gap-4 text-center text-xl font-medium">
+                <img className="w-1/3 mx-auto" src="/img/focus.png" alt="" />
+                <div>
+                  <h2>Focus on innovation</h2>
+                </div>
+              </div>
+              <div className="flex flex-col gap-4 text-center text-xl font-medium">
+                <img
+                  className="w-1/3 mx-auto"
+                  src="/img/business-model.png"
+                  alt=""
+                />
+                <div>
+                  <h2>Build a robust business model</h2>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
 
-              <div className="flex flex-col md:flex-row items-center gap-5">
-                <div className="w-full order-2 md:order-1">
-                  <h2
-                    style={{ fontFamily: "sans-serif" }}
-                    className="text-2xl font-bold text-[#071b52] dark:text-rose-600"
-                  >
-                    Achieve Excellence at Every Step
+        <div className="w-full py-8">
+          <div className="w-[90%] mx-auto">
+            <h2 className="text-2xl font-bold pt-4">Our Solution</h2>
+            <div className="pt-5">
+              <div className="grid md:grid-cols-3 gap-4">
+                <div className="flex flex-col shadow-lg p-5 gap-2">
+                  <img src="/img/implement.png" className="h-16 w-16" alt="" />
+                  <h2 className="text-lg font-medium">
+                    Flawless Implementation
                   </h2>
-                  <p className="font-light mt-1">
-                    With MAF Group, you can achieve excellence at every step.
-                    Whether you want to launch new digital ventures or make
-                    every aspect of your business digital-friendly, you can
-                    count on us to take care of everything from planning to
-                    execution.
+                  <p>
+                    A successful implementation of a new venture or making your
+                    business digital-friendly requires you to meticulously plan
+                    and execute it. But with MAF Group, you can let us handle
+                    the complex process so you can sit back and enjoy the
+                    results.
                   </p>
                 </div>
-                <div className="w-full order-1 md:order-2">
+                <div className="flex flex-col shadow-lg p-5 gap-2">
+                  <img src="/img/swot.png" className="h-16 w-16" alt="" />
+                  <h2 className="text-lg font-medium">SWOT Analysis</h2>
+                  <p>
+                    We understand your business requirements and concurrently
+                    analyze your digital maturity level. Equipped with a
+                    detailed assessment of your strengths and weaknesses we will
+                    create an approach that fits your needs.
+                  </p>
+                </div>
+                <div className="flex flex-col shadow-lg p-5 gap-2">
+                  <img src="/img/succession.png" className="h-16 w-16" alt="" />
+                  <h2 className="text-lg font-medium">Roadmap to success</h2>
+                  <p>
+                    We deliver tangible results by aligning your requirements
+                    and aspirations to our digital strategy, ensuring
+                    adaptability and efficiency.
+                  </p>
+                </div>
+                <div className="flex flex-col shadow-lg p-5 gap-2">
                   <img
-                    src="/img/digi2.png"
-                    className="md:w-2/3 mx-auto"
+                    src="/img/business-model.png"
+                    className="h-16 w-16"
                     alt=""
                   />
+                  <h2 className="text-lg font-medium">
+                    Creating a New Business Model
+                  </h2>
+                  <p>
+                    We utilize digital technologies and cutting-edge tools to
+                    create a robust business model that scales with your
+                    business.
+                  </p>
+                </div>
+                <div className="flex flex-col shadow-lg p-5 gap-2">
+                  <img src="/img/study.png" className="h-16 w-16" alt="" />
+                  <h2 className="text-lg font-medium">Covering all bases</h2>
+                  <p>
+                    Our strategy is formulated to be customer-centric depending
+                    on data-driven decisions that equip your organization to be
+                    agile, efficient and innovative.
+                  </p>
                 </div>
               </div>
+            </div>
+          </div>
+        </div>
 
-              <div className="flex flex-col md:flex-row gap-4 items-start">
-                <div className="w-full flex flex-col order-2">
-                  <h2
-                    style={{ fontFamily: "sans-serif" }}
-                    className="text-2xl font-bold text-[#071b52] dark:text-rose-600"
-                  >
-                    Identify the Gaps
-                  </h2>
-                  <p className="mt-1 font-light">
-                    Using our advanced tools and technologies, we gauge the
-                    current level of your organization's digital maturity and
-                    understand the strong areas and the weak points.
-                  </p>
-                </div>
-                <div className="w-full order-1">
-                  <img src="/img/dt2.png" className="md:w-2/3 mx-auto" alt="" />
-                </div>
-              </div>
-
-              <div className="flex flex-col md:flex-row items-start gap-2">
-                <div className="w-full order-2 md:order-1">
-                  <h2
-                    style={{ fontFamily: "sans-serif" }}
-                    className="text-2xl font-bold text-[#071b52] dark:text-rose-600"
-                  >
-                    Craft a Digital Strategy
-                  </h2>
-                  <p className="font-light pt-1">
-                    You can trust our team to craft a digital strategy after
-                    analysing your existing business and hope for the future.
-                    The strategies we create can produce results today and make
-                    you more flexible to adopt a truly digital future. We focus
-                    on emerging innovations that will shape your industry even
-                    twenty years from now.
-                  </p>
-                </div>
-                <div className="w-full order-1 md:order-2">
-                  <img
-                    src="/img/digi3.png"
-                    className="aspect-video object-cover md:w-2/3 mx-auto"
-                    alt=""
-                  />
-                </div>
-              </div>
-              <div className="flex flex-col md:flex-row items-center gap-5">
-                <div className="w-full order-2">
-                  <h2
-                    style={{ fontFamily: "sans-serif" }}
-                    className="text-2xl font-bold text-[#071b52] dark:text-rose-600"
-                  >
-                    A New Business Model
-                  </h2>
-                  <p className="font-light pt-1">
-                    After crafting a digital strategy, we focus on exploiting
-                    digital technologies and supporting capabilities to ensure
-                    the creation of a robust new digital business model.
-                  </p>
-                </div>
-                <div className="w-full order-1">
-                  <img
-                    src="/img/digi4.png"
-                    className="md:w-2/3 mx-auto"
-                    alt=""
-                  />
-                </div>
-              </div>
-              <div className="flex flex-col md:flex-row gap-2 items-start">
-                <div className="w-full flex flex-col order-2 md:order-1">
-                  <h2
-                    style={{ fontFamily: "sans-serif" }}
-                    className="text-2xl font-bold text-[#071b52] dark:text-rose-600"
-                  >
-                    Enablers
-                  </h2>
-                  <p className="mt-1 font-light">
-                    The focus then shifts to key enablers of digital
-                    transformation. The ABCDE includes Agile Organization,
-                    Business Model Innovation, Consumer Centricity, Data-Driven,
-                    and Exponential Bets.
-                  </p>
-                </div>
-                <div className="w-full order-1 md:order-2">
-                  <img
-                    src="/img/dt3.png"
-                    className="aspect-video object-cover md:w-2/3 mx-auto"
-                    alt=""
-                  />
-                </div>
-              </div>
-              <div className="flex flex-col md:flex-row items-start mt-5 gap-5">
-                <div className="w-full order-2">
-                  <h2
-                    style={{ fontFamily: "sans-serif" }}
-                    className="text-2xl font-bold text-[#071b52] dark:text-rose-600"
-                  >
-                    Delivery
-                  </h2>
-                  <p className="font-light pt-1">
-                    The final stage of digital transformation is delivery. We
-                    combine our expertise with tools, techniques, and
-                    third-party capabilities that will turn the digital vision
-                    into reality. Our experts, including designers, developers,
-                    engineers, data scientists, and business gurus, will use
-                    their experience to deliver exactly what you need and
-                    expect.
-                  </p>
-                </div>
-                <div className="w-full order-1">
-                  <img
-                    src="/img/digi5.png"
-                    className="aspect-video object-cover md:w-2/3 mx-auto"
-                    alt=""
-                  />
-                </div>
-              </div>
+        <div className="w-full">
+          <h1 className="text-2xl font-bold py-6 w-[90%] mx-auto">Benefits</h1>
+          <div className="md:w-1/2 mx-auto p-5 pb-10">
+            <div className="border-l-[3px] border-rose-500">
+              <ul className="list-disc pl-7">
+                <li>Future-ready business that is resilient and adaptable</li>
+                <li>Accelerated Time-to-Market</li>
+                <li>Transforms customer and employee experience</li>
+              </ul>
             </div>
           </div>
         </div>

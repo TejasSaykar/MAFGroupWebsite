@@ -12,7 +12,7 @@ const Partners = () => {
             alt=""
           />
         </div>
-        <div className="w-[90%] lg:w-[60%] m-auto flex h-[90%] flex-col justify-center items-start gap-2">
+        <div className="w-[90%] lg:w-[60%] m-auto flex h-[90%] flex-col justify-center items-start gap-2 pb-10">
           <h1 className="text-3xl text-center pt-5 font-bold text-[#071b52] dark:text-rose-600">
             Our Partners
           </h1>

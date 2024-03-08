@@ -162,7 +162,7 @@ const Navbar = () => {
 
                   <div className="flex gap-10 items-center w-full justify-between">
                     <Link
-                      to={"/banking"}
+                      to={"/industries"}
                       className="dark:text-rose-600 font-bold"
                     >
                       Industries
@@ -174,7 +174,7 @@ const Navbar = () => {
                       <DropdownMenuContent>
                         <DropdownMenuLabel>
                           <h2 className="dark:text-rose-600 font-bold">
-                            <Link to={"/banking"}>Industries</Link>
+                            <Link to={"/industries"}>Industries</Link>
                           </h2>
                         </DropdownMenuLabel>
                         <DropdownMenuSeparator />
@@ -457,7 +457,7 @@ const Navbar = () => {
             <button
               className="hover:text-sky-600 hover:border-t-4 dark:hover:border-white border-t-4 border-transparent transition-all text-[#000050] dark:text-rose-600 h-16 px-5 items-center text-center flex hover:border-black"
               onClick={() => {
-                navigate("/banking"), setActiveNavItem(0);
+                navigate("/industries"), setActiveNavItem(0);
               }}
               onMouseEnter={() => handleNavItemHover(4)}
               onMouseLeave={handleLeave}
@@ -647,6 +647,10 @@ const Navbar = () => {
             {
               item: "Manufacturing",
               link: "/manufacturing",
+            },
+            {
+              item: "Information Service",
+              link: "/information-service",
             },
           ]}
           handleNavItemHover={handleNavItemHover}

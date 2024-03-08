@@ -257,14 +257,7 @@ const Requestdemo = () => {
                       className="text-sky-600 underline"
                       to={"/terms_conditions"}
                     >
-                      Accept Terms and Conditions{" "}
-                    </Link>
-                    and
-                    <Link
-                      className="pl-1 text-sky-600 underline"
-                      to={"/terms_conditions"}
-                    >
-                      Privacy Policy
+                      Accept Privacy Policy
                     </Link>
                   </label>
                   <sup className="top-[3px] text-xl pl-1 text-[16px] text-red-600">

@@ -42,7 +42,7 @@ const Blog1 = () => {
               </div>
               <div className="w-full">
                 <p
-                  className="text-lg font-light"
+                  className="text-lg font-medium"
                   style={{ textAlign: "justify" }}
                 >
                   In this fast-paced world, data analytics has played an
@@ -59,7 +59,7 @@ const Blog1 = () => {
             </div>
           </div>
 
-          <div className="two flex w-full flex-col md:flex-row gap-4 mt-5 md:mt-5">
+          <div className="two flex w-full flex-col gap-4 mt-5 md:mt-5">
             <div className="w-full flex px-2 md:px-4 pb-4 md:gap-4">
               <div className="hidden md:w-14 md:flex items-start">
                 <RiDatabaseFill className="w-0 md:block bg-[#4f514e] text-white p-2 h-12 md:w-12 rounded-full" />
@@ -101,7 +101,7 @@ const Blog1 = () => {
             </div>
           </div>
 
-          <div className="two flex w-full flex-col md:flex-row gap-4 mt-3 md:mt-5">
+          <div className="two flex w-full flex-col gap-4 mt-3 md:mt-5">
             <div className="w-full flex px-2 md:px-4 pb-4 gap-4">
               <div className="hidden md:w-14 md:flex items-start">
                 <LuSunrise className="w-0 md:block bg-[#4f514e] text-white p-2 h-12 md:w-12 rounded-full" />
@@ -144,7 +144,7 @@ const Blog1 = () => {
             </div>
           </div>
 
-          <div className="two flex w-full flex-col md:flex-row gap-4 mt-3 md:mt-5">
+          <div className="two flex w-full flex-col gap-4 mt-3 md:mt-5">
             <div className="w-full flex px-2 md:px-4 pb-4 gap-4">
               <div className="hidden md:w-14 md:flex items-start">
                 <GiArtificialIntelligence className="w-0 md:block bg-[#4f514e] text-white p-2 h-12 md:w-12 rounded-full" />
@@ -187,7 +187,7 @@ const Blog1 = () => {
             </div>
           </div>
 
-          <div className="two flex w-full flex-col md:flex-row gap-4 mt-3 md:mt-5">
+          <div className="two flex w-full flex-col gap-4 mt-3 md:mt-5">
             <div className="w-full flex px-2 md:px-4 pb-4 gap-4">
               <div className="hidden md:w-14 md:flex items-start">
                 <MdPrivacyTip className="w-0 md:block bg-[#4f514e] text-white p-2 h-12 md:w-12 rounded-full" />
@@ -228,7 +228,7 @@ const Blog1 = () => {
             </div>
           </div>
 
-          <div className="two flex w-full flex-col md:flex-row gap-4 mt-3 md:mt-5">
+          <div className="two flex w-full flex-col gap-4 mt-3 md:mt-5">
             <div className="w-full flex px-2 md:px-4 pb-4 gap-4">
               <div className="hidden md:w-14 md:flex items-start">
                 <BsFillArrowUpRightCircleFill className="w-0 md:block bg-[#4f514e] text-white p-2 h-12 md:w-12 rounded-full" />
@@ -269,7 +269,7 @@ const Blog1 = () => {
             </div>
           </div>
 
-          <div className="two flex w-full flex-col md:flex-row gap-4 mt-3 md:mt-5">
+          <div className="two flex w-full flex-col gap-4 mt-3 md:mt-5">
             <div className="w-full flex px-2 md:px-4 pb-4 gap-4">
               <div className="hidden md:w-14 md:flex items-start">
                 <MdOutlineSettingsApplications className="w-0 md:block bg-[#4f514e] text-white p-2 h-12 md:w-12 rounded-full" />
@@ -311,7 +311,7 @@ const Blog1 = () => {
             </div>
           </div>
 
-          <div className="two flex w-full flex-col md:flex-row gap-4 mt-3 md:mt-5">
+          <div className="two flex w-full flex-col gap-4 mt-3 md:mt-5">
             <div className="w-full flex px-2 md:px-4 pb-4 gap-4">
               <div className="hidden md:w-14 md:flex items-start">
                 <GiLifeSupport className="w-0 md:block bg-[#4f514e] text-white p-2 h-12 md:w-12 rounded-full" />
@@ -353,7 +353,7 @@ const Blog1 = () => {
             </div>
           </div>
 
-          <div className="two flex w-full flex-col md:flex-row gap-4 mt-3 md:mt-5">
+          <div className="two flex w-full flex-col gap-4 mt-3 md:mt-5">
             <div className="w-full flex px-2 md:px-4 pb-4 gap-4">
               <div className="hidden md:w-14 md:flex items-start">
                 <GiShoppingCart className="w-0 md:block bg-[#4f514e] text-white p-2 h-12 md:w-12 rounded-full" />
@@ -396,7 +396,7 @@ const Blog1 = () => {
             </div>
           </div>
 
-          <div className="two flex w-full flex-col md:flex-row gap-4 mt-3 md:mt-5">
+          <div className="two flex w-full flex-col gap-4 mt-3 md:mt-5">
             <div className="w-full flex px-2 md:px-4 pb-4 gap-4">
               <div className="hidden md:w-14 md:flex items-start">
                 <FiAperture className="w-0 md:block bg-[#4f514e] text-white p-2 h-12 md:w-12 rounded-full" />
@@ -437,8 +437,8 @@ const Blog1 = () => {
             </div>
           </div>
 
-          <div className="md:mx-10 mx-2">
-            <p style={{ textAlign: "justify" }}>
+          <div className="md:mx-10 pb-10 mx-2">
+            <p style={{ textAlign: "justify" }} className="font-medium">
               Analysis of data transcends time – with applications from the
               past, the unlimited opportunities it produces in the present and
               untapped potential for the future. Understanding the nuances of

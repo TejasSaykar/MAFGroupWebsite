@@ -5,6 +5,9 @@ import Layout from "../components/Layout";
 import { FaLongArrowAltDown } from "react-icons/fa";
 import { FaTags } from "react-icons/fa";
 import { Link, useNavigate } from "react-router-dom";
+import Slider from "react-slick";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
 
 const Home = () => {
   const [scrollY, setScrollY] = useState(0);
@@ -22,15 +25,43 @@ const Home = () => {
     };
   }, []);
 
-  const imgStyle = {
-    transform: `translateY(-${scrollY}px)`,
-    transition: "transform 0.3s ease-out",
+  const settings = {
+    dots: true,
+    infinite: true,
+    speed: 400, // Adjust the speed for smooth scrolling
+    slidesToShow: 5,
+    slidesToScroll: 1,
+    autoplay: true, // Disable autoplay
+    prevArrow: null, // Hides the previous arrow
+    nextArrow: null, // Hides the next arrow
+    // autoplaySpeed: 80,
+    responsive: [
+      {
+        breakpoint: 500, // Adjust the breakpoint according to your design
+        settings: {
+          slidesToShow: 2, // Adjust the number of slides to show on tablets
+          slidesToScroll: 1,
+        },
+      },
+      {
+        breakpoint: 1024, // Adjust the breakpoint according to your design
+        settings: {
+          slidesToShow: 2, // Adjust the number of slides to show on larger screens
+          slidesToScroll: 1,
+        },
+      },
+    ],
   };
 
-  const imgStyle1 = {
-    transform: `translateY(${10}px)`,
-    transition: "transform 0.3s ease-out",
-  };
+  // const imgStyle = {
+  //   transform: `translateY(-${scrollY}px)`,
+  //   transition: "transform 0.3s ease-out",
+  // };
+
+  // const imgStyle1 = {
+  //   transform: `translateY(${10}px)`,
+  //   transition: "transform 0.3s ease-out",
+  // };
 
   const openWebsite = (url) => {
     window.open(url, "_blank");
@@ -44,51 +75,76 @@ const Home = () => {
         className="w-full h-screen"
       >
         <div className="relative top w-full">
-          <div className="relative w-full h-screen">
+          <div className="hidden md:block relative w-full h-screen">
             <img
-              src="/img/home0.jpg"
+              src="/img/home-background2.jpg"
               className="w-full object-cover h-screen"
               alt=""
             />
           </div>
-
-          <div className="absolute top-36 flex flex-col items-center justify-center w-full">
-            <div className="flex flex-col gap-0 lg:gap-3 text-4xl md:text-6xl text-white font-bold">
+          <div className="md:hidden relative w-full h-screen">
+            <img
+              src="/img/mobilebg.jpg"
+              className="w-full object-cover h-screen"
+              alt=""
+            />
+          </div>
+          <div className="absolute inset-0 bottom-"></div>
+          <div className="absolute md:bottom-10 top-[15rem] md:top-[16rem] md:right-[16rem] flex flex-col items-center justify-center w-full">
+            {/* <div className="flex flex-col gap-0 lg:gap-3 text-4xl md:text-6xl text-white font-bold">
               <h1
                 className="text-center outline"
-                style={{ fontFamily: "sans-serif" }}
+                style={{
+                  fontFamily: "sans-serif",
+                  textShadow: "1px 1px black",
+                }}
               >
-                We Are <span className="text-white">Your Transformation</span>
+                We Are{" "}
+                <span
+                  className="text-white"
+                  style={{ textShadow: "1px 1px black" }}
+                >
+                  Your Transformation
+                </span>
               </h1>
               <h1
                 className="text-center outline"
-                style={{ fontFamily: "sans-serif" }}
+                style={{
+                  fontFamily: "sans-serif",
+                  textShadow: "1px 1px black",
+                }}
               >
-                <span className="text-white">Journey</span> Partner
+                <span
+                  className="text-white"
+                  style={{ textShadow: "1px 1px black" }}
+                >
+                  Journey
+                </span>{" "}
+                Partner
               </h1>
-            </div>
-            <div className="w-full px-5 md:w-1/3 text-white text-center mt-10 text-lg lg:text-xl">
-              <h3>
+            </div> */}
+            {/* <div className="w-full px-5 md:w-1/3 text-white text-center mt-10 text-lg lg:text-xl">
+              <h3 style={{ textShadow: "1px 1px black" }}>
                 Using the power of creativity to build better futures for our
                 people, planet, clients and communities
               </h3>
-            </div>
-            <div className="flex flex-col md:flex-row items-center md:gap-4">
-              <div className="my-5 md:my-8">
-                <button
-                  onClick={() => navigate("/contact")}
-                  className="px-6 py-3 ring-2 ring-sky-600 rounded-full text-white hover:underline"
-                >
-                  Contact Us
-                </button>
-              </div>
-              <div className="text-xl flex flex-col justify-center items-center cursor-pointer font-thin text-white">
+            </div> */}
+            <div className="flex flex-row md:flex-col gap-2 items-center md:gap-2">
+              <div className="text-sm md:text-xl flex flex-col justify-center items-center cursor-pointer font-thin text-white">
                 <Link
                   to={"/request"}
-                  className="text-base text-black border-2 bg-white py-3 px-4 rounded-full hover:text-white hover:bg-transparent hover:border-2"
+                  className="text-sm md:text-xl text-white font-medium ring-1 bg-[#e91a1f] py-4 md:px-16 px-3 rounded-full hover:text-black hover:bg-transparent hover:ring-[#e91a1f] hover:ring-2"
                 >
                   Request a Demo
                 </Link>
+              </div>
+              <div className="my-5 md:my-8">
+                <button
+                  onClick={() => navigate("/contact")}
+                  className="md:px-6 px-3 text-sm md:text-lg py-3 ring-2 ring-[#e91a1f] rounded-full text-black hover:underline font-medium"
+                >
+                  Contact Us
+                </button>
               </div>
             </div>
           </div>
@@ -96,104 +152,164 @@ const Home = () => {
 
         {/* Middle One */}
 
-        <div className="w-full md:h-[60vh] mt-5 md:mt-20">
-          <div className="relative px-3 md:px-0 flex h-full w-full flex-col sm:flex-row md:w-[90vw] md:flex-row lg:w-[80vw] mx-auto gap-4 justify-start md:items-start">
-            <h2 className="hidden md:block absolute -left-12 md:-left-12 top-5 font-bold text-xl -rotate-90 text-[#071b52] dark:text-rose-600">
+        <div className="w-full md:h-[100%] sm:h-[100%] lg:h-[80vh] mt-5 py-10 md:mt-20">
+          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 px-3 md:px-0 h-full w-full md:w-[90vw] md:flex-row lg:w-[80vw] mx-auto gap-4 md:items-start">
+            {/* <h2 className="hidden md:block absolute -left-12 md:-left-12 top-5 font-bold text-xl -rotate-90 text-[#071b52] dark:text-rose-600">
               WORK
             </h2>
             <h2 className="absolute underline underline-offset-8 md:hidden top-0 left-[40%] font-bold text-xl text-[#071b52] dark:text-rose-600">
               WORK
-            </h2>
-            <div className="one h-full align-top m-auto sm:w-full mt-20 md:mt-0">
+            </h2> */}
+            <div className="one h-full align-top m-auto sm:w-full  md:mt-0">
               <img
-                src="/img/be.jpg"
-                className="h-auto sm:w-full bg-cover bg-center object-cover aspect-video sm:aspect-video rounded-sm"
+                src="/img/case1.jpg"
+                className="h-auto sm:w-full bg-cover bg-center object-cover rounded-lg aspect-video sm:aspect-square"
                 alt=""
               />
 
               <h2
                 onClick={() => navigate("/case1")}
-                className="px-2 hover:underline cursor-pointer text-xl font-bold mt-3 text-[#072b52]"
+                className="px-2 hover:underline cursor-pointer text-base font-bold mt-3 text-[#072b52]"
               >
                 Transforming Digital Landscape: A Comprehensive Case Study in
                 Retail Industry
               </h2>
-              <p className="px-2 font-normal mt-1 dark:text-rose-600">
+              {/* <p className="px-2 font-normal mt-1 dark:text-rose-600">
                 Google Marketing Platform, Adobe Marketing Platform,...
                 <Link to={"/case1"} className="text-sky-700 pl-1 underline">
                   more
                 </Link>
-              </p>
+              </p> */}
             </div>
-            <div className="two h-full align-top mt-8 md:mt-0 sm:w-full">
+            <div className="two h-full align-top md:mt-0 sm:w-full">
               <img
-                src="/img/wm.jpg"
-                className="h-auto sm:w-full bg-cover bg-center object-cover aspect-video sm:aspect-video"
+                src="/img/case2.jpg"
+                className="h-auto sm:w-full bg-cover bg-center object-cover rounded-lg aspect-video sm:aspect-square"
                 alt=""
               />
               <h3
                 onClick={() => navigate("/case2")}
-                className="px-2 text-xl font-bold mt-3 hover:underline cursor-pointer text-[#071b52] dark:text-rose-600"
+                className="px-2 text-base font-bold mt-3 hover:underline cursor-pointer text-[#071b52] dark:text-rose-600"
               >
                 Strategic Transition to Enhance Marketing Efficiency in the
                 Banking Sector
               </h3>
-              <p className="px-2 font-normal mt-1">
+              {/* <p className="px-2 font-normal mt-1">
                 {" "}
                 Keeping their goals in mind, we strategized to seamlessly
                 transfer their data ...{" "}
                 <Link className="text-sky-700 pl-1 underline" to={"/case2"}>
                   more
                 </Link>
-              </p>
+              </p> */}
             </div>
             <div className="three h-full mt-8 md:mt-0 sm:w-full">
               <img
-                src="/img/wg.jpg"
-                className="h-auto sm:w-full bg-contain object-cover bg-center aspect-video sm:aspect-video"
+                src="/img/case3.jpg"
+                className="h-auto sm:w-full bg-contain object-cover rounded-lg bg-center aspect-video sm:aspect-square"
                 alt=""
               />
               <h2
                 onClick={() => navigate("/case3")}
-                className="px-2 text-xl font-bold mt-3 hover:underline cursor-pointer text-[#071b52] dark:text-rose-600"
+                className="px-2 text-base font-bold mt-3 hover:underline cursor-pointer text-[#071b52] dark:text-rose-600"
               >
                 Ensuring GDPR compliance and a risk-free strategy implementation
               </h2>
-              <p className="px-2 font-normal mt-1">
+              {/* <p className="px-2 font-normal mt-1">
                 Like every project, we started this with a comprehensive
                 assessment of our...
                 <Link to={"/case3"} className="text-sky-700 pl-1 underline">
                   more
                 </Link>
-              </p>
+              </p> */}
             </div>
             <div className="four h-full mt-8 md:mt-0 sm:w-full">
               <img
-                src="/img/wr.jpg"
-                className="h-auto sm:w-full bg-contain object-cover bg-center aspect-video sm:aspect-video"
+                src="/img/case4.jpg"
+                className="h-auto sm:w-full bg-contain object-cover rounded-lg bg-center aspect-video sm:aspect-square"
                 alt=""
               />
               <h2
                 onClick={() => navigate("/case4")}
-                className="px-2 text-xl font-bold mt-3 hover:underline cursor-pointer text-[#071b52] dark:text-rose-600"
+                className="px-2 text-base font-bold mt-3 hover:underline cursor-pointer text-[#071b52] dark:text-rose-600"
               >
                 Driving Revenue Uplift and Real-Time Targeting in Banking
                 Industry
               </h2>
-              <p className="px-2 mt-1">
+              {/* <p className="px-2 mt-1">
                 As an initial step, we strategically deployed Tealium
                 Audience...
                 <Link className="text-sky-700 pl-1 underline" to={"/case4"}>
                   more
                 </Link>
-              </p>
+              </p> */}
             </div>
           </div>
         </div>
 
-        <div className="w-full md:h-[45vh] mt-10 md:mt-20">
+        <div className="w-[90%] h-[200px] sm:mb-20 mx-auto">
+          <h2 className="text-center text-[#071b52] pb-6 text-3xl font-semibold">
+            Our Clients
+          </h2>
+          <Slider {...settings}>
+            <div className="pl-4 w-full">
+              <img
+                src="/img/ITC.png"
+                className="aspect-video h-[100px]"
+                alt=""
+              />
+            </div>
+            <div className="pl-4 w-full">
+              <img
+                src="/img/bourne.png"
+                className="aspect-video h-[100px]"
+                alt=""
+              />
+            </div>
+            <div className="pl-4 w-full">
+              <img
+                src="/img/hsbc1.png"
+                className="aspect-video h-[100px]"
+                alt=""
+              />
+            </div>
+            <div className="pl-4 w-full">
+              <img
+                src="/img/dia.png"
+                className="aspect-video h-[100px]"
+                alt=""
+              />
+            </div>
+            <div className="pl-4 w-full">
+              <img
+                src="/img/lakeland.png"
+                className="object-cover aspect-video h-[100px]"
+                alt=""
+              />
+            </div>
+            <div className="pl-4 w-full">
+              <img
+                src="/img/mphasis.jpg"
+                className="aspect-video md:h-[150px]"
+                alt=""
+              />
+            </div>
+            <div className="pl-4 w-full">
+              <img src="/img/bat.png" className="px-4 h-1/2" alt="" />
+            </div>
+            <div className="pl-4 w-full">
+              <img
+                src="/img/levis.png"
+                className="aspect-video h-[100px]"
+                alt=""
+              />
+            </div>
+          </Slider>
+        </div>
+
+        {/* <div className="w-full md:h-[45vh] mt-10 md:mt-20">
           <div className="relative h-full w-full flex-col sm:flex-row md:w-[90vw] md:flex-row lg:w-[80vw] m-auto px-4 flex gap-4 justify-center md:items-start">
-            <h2 className="hidden md:block absolute -left-12 md:-left-13 top-16 font-bold text-xl -rotate-90 text-[#071b52] dark:text-rose-600">
+            <h2 className="hidden md:block absolute -left-12 md:-left-13 top-16 font-bold text-base -rotate-90 text-[#071b52] dark:text-rose-600">
               BLOGS
             </h2>
             <h2 className="absolute underline underline-offset-8 md:hidden top-0 left-[40%] font-bold text-xl text-[#071b52] dark:text-rose-600">
@@ -286,9 +402,9 @@ const Home = () => {
               </p>
             </div>
           </div>
-        </div>
+        </div> */}
 
-        <div className="relative middle1 mt-16 md:mt-32">
+        {/* <div className="relative middle1 mt-16 md:mt-32">
           <h2 className="hidden md:block absolute md:left-5 top-16 font-bold text-xl -rotate-90 text-[#071b52] dark:text-rose-600">
             LATEST NEWS
           </h2>
@@ -332,7 +448,7 @@ const Home = () => {
               </div>
             </div>
           </div>
-        </div>
+        </div> */}
       </Layout>
     </>
   );

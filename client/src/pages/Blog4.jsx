@@ -36,7 +36,7 @@ const Blog4 = () => {
                 />
               </div>
               <div className="w-full my-auto">
-                <p className="font-light" style={{ textAlign: "justify" }}>
+                <p className="font-medium" style={{ textAlign: "justify" }}>
                   Digital transformation has been on many companies' to-do
                   lists, especially since the onset of the COVID-19 pandemic. If
                   you own or manage a company, you need to know about the
@@ -45,7 +45,7 @@ const Blog4 = () => {
                 <h2 className="mt-5 text-xl text-[#071b52] font-semibold">
                   But first, what is Digital Transformation?
                 </h2>
-                <p style={{ textAlign: "justify" }}>
+                <p className="font-medium" style={{ textAlign: "justify" }}>
                   If you aren’t aware of it, digital transformation simply
                   refers to how well an organization has adopted new digital
                   technologies in its operations to accelerate growth, boost
@@ -64,7 +64,7 @@ const Blog4 = () => {
             </p>
           </div>
 
-          <div className="two flex w-full flex-col md:flex-row gap-4 mt-10">
+          <div className="two flex w-full flex-col gap-4 mt-10">
             <div className="w-full flex px-2 md:px-4 pb-4 gap-4">
               <div className="hidden md:w-14 md:flex items-start">
                 <SlSocialDropbox className="w-0 md:block bg-[#4f514e] text-white p-2 h-12 md:w-12 rounded-full" />
@@ -110,7 +110,7 @@ const Blog4 = () => {
             </div>
           </div>
 
-          <div className="two flex w-full flex-col md:flex-row gap-4 mt-2">
+          <div className="two flex w-full flex-col gap-4 mt-2">
             <div className="w-full flex px-2 md:px-4 pb-4 gap-4">
               <div className="hidden md:w-14 md:flex items-start">
                 <RiFocus3Line className="w-0 md:block bg-[#4f514e] text-white p-2 h-12 md:w-12 rounded-full" />
@@ -157,7 +157,7 @@ const Blog4 = () => {
           </div>
 
           <div className="two flex w-full flex-col md:flex-row gap-4 mt-2">
-            <div className="w-full md:w-1/2 flex px-2 md:px-4 pb-4 gap-4">
+            <div className="w-full flex px-2 md:px-4 pb-4 gap-4">
               <div className="hidden md:w-14 md:flex items-start">
                 <IoCloudOffline className="w-0 md:block bg-[#4f514e] text-white p-2 h-12 md:w-12 rounded-full" />
               </div>
@@ -210,13 +210,13 @@ const Blog4 = () => {
           </div>
 
           <div className="md:w-1/2 mx-auto mb-5">
-            <h2 className="text-[#071b52] font-semibold mt-1">
+            <h2 className="text-[#071b52] font-semibold mt-4">
               - Shruti Bhandari. <br />
             </h2>
           </div>
 
-          <div className="md:mx-10 mx-2">
-            <h2>Reference:</h2>
+          <div className="md:mx-10 mx-2 pb-10">
+            <h2 className="font-medium">Reference:</h2>
             <p
               style={{ textAlign: "justify" }}
               onClick={() =>

@@ -8,7 +8,7 @@ const CS4 = () => {
         <div className="w-full">
           <div className="relative w-full h-[60vh] md:h-[70vh]">
             <img
-              src="/img/dataImg.jpg"
+              src="/img/case4.jpg"
               className="h-full w-full bg-cover object-cover"
               alt=""
             />
@@ -21,7 +21,7 @@ const CS4 = () => {
             </div>
           </div>
         </div>
-        <div className="flex flex-col gap-4 pt-4">
+        <div className="flex flex-col gap-4">
           <div className="w-full flex flex-col">
             {/* <div className="flex gap-2 items-center">
               <span className="text-2xl font-semibold text-[#071b52]">
@@ -29,21 +29,21 @@ const CS4 = () => {
                 Industry
               </span>
             </div> */}
-            <div className="px-5 py-4 md:px-32 grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4">
+            <div className="px-5 md:px-32 text-white bg-red-600 py-10 grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-4">
               <div className="flex w-full flex-row md:flex-col gap-2">
-                <h2 className="text-lg w-2/3 font-bold text-[#071b52]">
+                <h2 className="text-lg w-2/3 font-bold text-gray-900">
                   Industry
                 </h2>
                 <span className="w-full">Banking</span>
               </div>
               <div className="flex w-full flex-row md:flex-col gap-2">
-                <h2 className="text-lg w-2/3 font-bold text-[#071b52]">
+                <h2 className="text-lg w-2/3 font-bold text-gray-900">
                   Location
                 </h2>
                 <span className="w-full">United Kingdom</span>
               </div>
               <div className="flex w-full flex-row md:flex-col gap-2">
-                <h2 className="text-lg w-2/3 font-bold text-[#071b52]">
+                <h2 className="text-lg w-2/3 font-bold text-gray-900">
                   Solution
                 </h2>
                 <span className="w-full md:ml-0 text-justify md:text-start">
@@ -52,7 +52,7 @@ const CS4 = () => {
                 </span>
               </div>
               <div className="flex lg:ml-7 w-full flex-row md:flex-col gap-2">
-                <h2 className="text-lg w-2/3 font-bold text-[#071b52]">
+                <h2 className="text-lg w-2/3 font-bold text-gray-900">
                   Result
                 </h2>
                 <div className="flex w-full flex-col gap-1">
@@ -61,7 +61,7 @@ const CS4 = () => {
               </div>
             </div>
 
-            <div className="flex flex-col bg-gray-50 px-5 pt-4 md:px-32">
+            <div className="flex flex-col py-10 bg-gray-50 px-5 pt-4 md:px-32">
               <h2 className="font-semibold text-lg text-[#071b52]">
                 Background
               </h2>
@@ -77,6 +77,10 @@ const CS4 = () => {
               </p>
             </div>
 
+            <div>
+              <img src="/img/case44.jpg" alt="" />
+            </div>
+
             <div className="flex flex-col px-5 py-6 md:px-32 bg-gray-50">
               <h2 className="font-semibold text-lg text-[#071b52]">
                 Objective
@@ -89,7 +93,7 @@ const CS4 = () => {
               </p>
             </div>
 
-            <div className="flex flex-col px-5 py-6 md:px-32 bg-gray-50 gap-2">
+            <div className="flex flex-col px-5 py-2 md:px-32 bg-gray-50 gap-2">
               <div className="w-full">
                 <h2 className="text-lg font-semibold text-[#071b52]">
                   Solution :{" "}
@@ -101,7 +105,7 @@ const CS4 = () => {
                   their channels for dynamic, real-time engagement that
                   resonated with their users across various touchpoints.
                 </p>
-                <p className="text-justify md:text-start mt-2 md:mt-1">
+                <p className="text-justify md:text-start mt-2 md:mt-3">
                   Upon this strong foundation, we built a strong combination of
                   Tealium Event Stream and AWS Redshift. Tealium Event Stream
                   facilitated real-time customer interactions, while AWS
@@ -144,7 +148,7 @@ const CS4 = () => {
               </div>
             </div>
 
-            <div className="mt-5 px-5 md:px-32">
+            <div className="mt-5 px-5 md:px-32 pb-8">
               <h2 className="text-xl font-semibold text-[#071b52]">
                 Conclusion
               </h2>

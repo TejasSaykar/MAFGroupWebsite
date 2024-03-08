@@ -8,7 +8,7 @@ const CS10 = () => {
         <div className="w-full">
           <div className="relative w-full h-[60vh] md:h-[70vh]">
             <img
-              src="/img/cs10.jpg"
+              src="/img/case10.jpg"
               className="h-full w-full bg-cover object-cover"
               alt=""
             />
@@ -21,7 +21,7 @@ const CS10 = () => {
             </div>
           </div>
         </div>
-        <div className="flex flex-col gap-4 pt-4">
+        <div className="flex flex-col gap-4">
           <div className="w-full flex flex-col">
             {/* <div className="flex gap-2 items-center">
               <span className="text-2xl font-semibold text-[#071b52]">
@@ -29,27 +29,27 @@ const CS10 = () => {
                 Retail
               </span>
             </div> */}
-            <div className="w-full px-5 py-4 md:px-32 grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-3">
+            <div className="w-full px-5 py-10 bg-red-600 text-white md:px-32 grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-3">
               <div className="flex w-full flex-row md:flex-col gap-2">
-                <h2 className="text-lg w-2/3 font-bold text-[#071b52]">
+                <h2 className="text-lg w-2/3 font-bold text-gray-900">
                   Industry
                 </h2>
                 <span className="w-full">Retail</span>
               </div>
               <div className="flex w-full flex-row md:flex-col gap-2">
-                <h2 className="text-lg w-2/3 font-bold text-[#071b52]">
+                <h2 className="text-lg w-2/3 font-bold text-gray-900">
                   Location
                 </h2>
                 <span className="w-full">UK</span>
               </div>
               <div className="flex flex-row md:flex-col gap-2">
-                <h2 className="text-lg w-2/3 font-bold text-[#071b52]">
+                <h2 className="text-lg w-2/3 font-bold text-gray-900">
                   Solution
                 </h2>
                 <span className="w-full">Adobe, GA4, AWS S3</span>
               </div>
-              <div className="flex w-full flex-row md:flex-col gap-2 lg:ml-7">
-                <h2 className="text-lg w-2/3 font-bold text-[#071b52]">
+              <div className="flex w-full flex-col md:flex-col gap-2 lg:ml-7">
+                <h2 className="text-lg w-2/3 font-bold text-gray-900">
                   Result
                 </h2>
                 <div className="flex w-full flex-col gap-1">
@@ -88,8 +88,8 @@ const CS10 = () => {
               <div className="w-full px-5 py-4 md:px-32 bg-gray-50 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
                 <div className="flex flex-col gap-2">
                   <img
-                    src="/img/mAct.jpg"
-                    className="aspect-video object-cover bg-cover"
+                    src="/img/case101.jpg"
+                    className="aspect-video rounded-lg object-cover bg-cover"
                     alt=""
                   />
                   <div className="w-full">
@@ -106,7 +106,7 @@ const CS10 = () => {
                 <div className="w-full flex flex-col gap-2">
                   <img
                     src="/img/dataImg.jpg"
-                    className="aspect-video object-cover bg-cover"
+                    className="aspect-video rounded-lg object-cover bg-cover"
                     alt=""
                   />
                   <div className="w-full">
@@ -123,7 +123,7 @@ const CS10 = () => {
                 <div className="w-full flex flex-col gap-2">
                   <img
                     src="/img/dash.jpg"
-                    className="aspect-video object-cover bg-cover"
+                    className="aspect-video rounded-lg object-cover bg-cover"
                     alt=""
                   />
                   <div className="w-full">
@@ -188,7 +188,7 @@ const CS10 = () => {
               </div>
             </div>
 
-            <div className="mt-5 px-5 md:px-32">
+            <div className="mt-5 px-5 md:px-32 pb-8">
               <h2 className="text-xl font-semibold text-[#071b52]">
                 Conclusion
               </h2>

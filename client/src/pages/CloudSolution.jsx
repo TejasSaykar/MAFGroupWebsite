@@ -14,186 +14,255 @@ import { RiDatabaseFill } from "react-icons/ri";
 import { BsFileWord } from "react-icons/bs";
 import { TargetIcon } from "@radix-ui/react-icons";
 
-/*
-
-*/
+import { BiRightArrowAlt } from "react-icons/bi";
+import { useNavigate } from "react-router-dom";
 
 const CloudSolution = () => {
+  const navigate = useNavigate();
+
   return (
     <Layout title={"MAF | Cloud Solution"}>
       <div className="mt-[4rem]">
-        <div className="relative w-full h-[100vh] md:h-[70vh]">
-          <img
-            src="/img/cloud-solution.jpeg"
-            className="w-full h-full object-cover"
-            alt=""
-          />
-          <div className="absolute inset-0 bottom-0 bg-black opacity-65"></div>
-          <div className="absolute w-full inset-0 mt-8 md:top-20">
-            <div className="w-full my-auto flex md:justify-center items-center">
-              <h3
-                className="text-3xl md:text-4xl md:my-3 font-bold pl-4 md:text-center text-white dark:text-rose-600"
-                style={{
-                  fontFamily: "sans-serif",
-                  textShadow: "1px 1px black",
-                }}
-              >
-                Cloud Solutions
+        <div className="top h-screen w-full">
+          <div className="relative w-full flex h-full">
+            <div className="hidden md:block bg-gray-100/90 w-full"></div>
+            <div className="absolute shadow-2xl p-5 md:w-1/2 md:mx-auto gap-3 bg-white flex flex-col top-10 md:top-32 mx-5 md:left-20">
+              <h2 className="text-3xl font-semibold">Cloud solutions</h2>
+              <h3 className="text-xl font-medium">
+                Unlock Unlimited Possibilities with Cloud Solutions!
               </h3>
-            </div>
-            <div className="text-white mx-4 text-justify md:mx-8">
-              <h3
-                className="text-xl mt-5 md:my-5"
-                style={{ textShadow: "1px 1px black" }}
+              <p className="text-lg">
+                Optimize your business process and achieve greater productivity
+                by utilizing cloud solutions to transform your IT environment.
+              </p>
+              <button
+                onClick={() => navigate("/contact")}
+                className="flex items-center bg-gray-800 w-[max-content] px-4 py-2 rounded-lg text-white font-semibold"
               >
-                Organizations need to transform their IT environment with cloud
-                solutions to improve productivity, lower costs, cut down on
-                resources and reduce time to market.{" "}
-                <span className="md:block">
-                  Partner with us to get access to computing services, tools and
-                  applications your organization requires to be more agile and
-                  responsive to changing market dynamics. We cater to your
-                  end-to-end requirements from assessment to planning to
-                  deployment and optimization seamlessly.
+                Talk to us
+                <span>
+                  <BiRightArrowAlt className="text-xl font-semibold" />
                 </span>
-              </h3>
+              </button>
             </div>
-          </div>
-        </div>
-        <div className="one flex w-full flex-col md:flex-row gap-4 mt-4">
-          <div className="w-full flex flex-col md:flex-row gap-2 md:px-4 pb-4">
-            <div className="w-full">
+            <div className="bg-cyan-200/40 w-full">
               <img
-                src="/img/cloud2.png"
-                className="aspect-video bg-cover object-cover md:w-1/2 mx-auto"
+                src="/img/cloudBanner.jpg"
+                className="h-full object-cover"
                 alt=""
               />
             </div>
           </div>
         </div>
 
-        <div className="md:w-[70%] mx-3 md:mx-auto gap-9 mt-2 md:mt-5">
-          <div className="w-full">
-            <div className="flex gap-2 items-center mb-3">
-              <TargetIcon className="hidden md:block h-12 w-12 text-white p-3 bg-[#071b52] rounded-full" />
-              <h2 className="text-2xl font-semibold text-[#071b52]">
-                Cloud Solutions for Every Organization
-              </h2>
+        <div className="aproach w-full py-12 ">
+          <div className="w-[90%] mx-auto">
+            <div>
+              <h2 className="text-2xl py-6 font-bold">Our approach </h2>
             </div>
-            <div className="ml-4">
-              <p className="text-justify">
-                MAF Group helps organizations transform their IT environment by
-                using top-notch cloud solutions. Our team of experts will
-                deliver reliable and affordable solutions that help your
-                organization get a competitive edge, boost productivity and
-                lower costs.{" "}
-              </p>
+            <div className="grid md:grid-cols-4 gap-12">
+              <div className="flex flex-col gap-4 text-center text-xl font-medium">
+                <img className="w-1/3 mx-auto" src="/img/cloud.png" alt="" />
+                <div>
+                  <h1>Conduct comprehensive cloud readiness assessment</h1>
+                </div>
+              </div>
+              <div className="flex flex-col gap-4 text-center text-xl font-medium">
+                <img
+                  className="w-1/3 mx-auto"
+                  src="/img/application.png"
+                  alt=""
+                />
+                <div>
+                  <h2>Custom application implementation</h2>
+                </div>
+              </div>
+              <div className="flex flex-col gap-4 text-center text-xl font-medium">
+                <img className="w-1/3 mx-auto" src="/img/growth.png" alt="" />
+                <div>
+                  <h2>Performance optimization</h2>
+                </div>
+              </div>
+              <div className="flex flex-col gap-4 text-center text-xl font-medium">
+                <img className="w-1/3 mx-auto" src="/img/risk.png" alt="" />
+                <div>
+                  <h2>Risk assessment and knowledge transfer</h2>
+                </div>
+              </div>
             </div>
           </div>
-          <div className="mt-7">
-            <div className="flex gap-2 items-center mb-3">
-              <BsFileWord className="hidden md:block h-12 w-12 text-white p-3 bg-[#071b52] rounded-full" />
-              <h2 className="text-2xl font-semibold text-[#071b52]">
-                Become More Agile and Resourceful
-              </h2>
-            </div>
-            <div className="ml-4">
-              <p className="text-justify">
-                We offer a wide array of on-demand computing solutions like
-                servers, databases, storage, networking, apps, software, and
-                more. It makes your organization more agile, enhances
-                decision-making, and allows you to get the best ROI (Return On
-                Investment).
-              </p>
-            </div>
-          </div>
-          <div className="mt-7">
-            <div className="flex gap-2 items-center mb-3">
-              <RiDatabaseFill className="hidden md:block h-12 w-12 text-white p-3 bg-[#071b52] rounded-full" />
-              <h2 className="text-2xl font-semibold text-[#071b52]">
-                The Methodology
-              </h2>
-            </div>
-            <div className="ml-4">
-              <p className="text-justify">
-                Strategy is essential to implementing cloud solutions. We follow
-                a four-step process for the same- Assessment, Planning,
-                Deployment, and Optimization.
-              </p>
-            </div>
+        </div>
 
-            <div className="px-5 md:px-16 mt-3">
-              <div className="text-xl font-semibold text-[#071b52]">
-                <h2>- Cloud Strategy Services</h2>
-              </div>
-              <div>
-                <p className="text-justify">
-                  With us, you get access to a wide array of cloud strategy
-                  services like cloud readiness assessment, architecture audit,
-                  fitment analysis, strategy formation (including multi-cloud
-                  strategy if required), and cloud roadmap.
-                </p>
+        <div className="w-full py-8">
+          <div className="w-[90%] mx-auto">
+            <h2 className="text-2xl font-bold pt-4">Our Solution</h2>
+            <p className="py-3">
+              We strategically implement cloud solutions by implementing a
+              four-step deployment process. Here’s how we do it:
+            </p>
+            <div className="pt-5">
+              <div className="grid md:grid-cols-3 gap-4">
+                <div className="flex flex-col shadow-lg p-5 gap-2">
+                  <img src="/img/cloud.png" className="h-16 w-16" alt="" />
+                  <h2 className="text-lg font-semibold">Cloud Strategy</h2>
+                  <p>
+                    We do various assessments including cloud readiness,
+                    architecture audit, fitment analysis to frame a cloud
+                    strategy and cloud adoption roadmap.
+                  </p>
+                </div>
+                <div className="flex flex-col shadow-lg p-5 gap-2">
+                  <img
+                    src="/img/application.png"
+                    className="h-16 w-16"
+                    alt=""
+                  />
+                  <h2 className="text-lg font-semibold">
+                    Application Development
+                  </h2>
+                  <p>
+                    We analyze, develop and migrate custom applications thus
+                    creating a detailed infrastructure management plan.
+                  </p>
+                </div>
+                <div className="flex flex-col shadow-lg p-5 gap-2">
+                  <img
+                    src="/img/data-security.png"
+                    className="h-16 w-16"
+                    alt=""
+                  />
+                  <h2 className="text-lg font-semibold">
+                    Maintenance and Security
+                  </h2>
+                  <p>
+                    Post-deployment, we continuously monitor its performance and
+                    optimize their security while also ensuring their
+                    efficiency.
+                  </p>
+                </div>
+                <div className="flex flex-col shadow-lg p-5 gap-2">
+                  <img src="/img/cloud-data.png" className="h-16 w-16" alt="" />
+                  <h2 className="text-lg font-semibold">Cloud Migration</h2>
+                  <p>
+                    We conduct end-to-end cloud migration services that include
+                    SWOT Analysis, readiness assessment, cloud-to-cloud
+                    movement, workload migration, validation, performance
+                    testing, and disaster recovery management
+                  </p>
+                </div>
+                <div className="flex flex-col shadow-lg p-5 gap-2">
+                  <img
+                    src="/img/technical-support.png"
+                    className="h-16 w-16"
+                    alt=""
+                  />
+                  <h2 className="text-lg font-medium">Managed Services</h2>
+                  <p>
+                    We strategically plan and implement governance measures for
+                    cloud infrastructure and modernization services.
+                  </p>
+                </div>
+                <div className="flex flex-col shadow-lg p-5 gap-2">
+                  <img
+                    src="/img/experience-transfer.png"
+                    className="h-16 w-16"
+                    alt=""
+                  />
+                  <h2 className="text-lg font-medium">Knowledge Transfer</h2>
+                  <p>
+                    We ensure seamless change management by offering guidance
+                    and knowledge transfer to your IT team thus facilitating
+                    smooth operations.
+                  </p>
+                </div>
               </div>
             </div>
-            <div className="px-5 md:px-16 mt-3">
-              <div className="text-xl font-semibold text-[#071b52]">
-                <h2>- Application Development Services</h2>
-              </div>
-              <div>
-                <p className="text-justify">
-                  We excel at developing, customizing, and migrating
-                  applications. This service can also include a roadmap for
-                  infrastructure management.
-                </p>
-              </div>
+          </div>
+        </div>
+
+        <div className="w-full">
+          <h1 className="text-2xl w-[90%] mx-auto font-bold py-6">Benefits</h1>
+          <div className="md:w-1/2 mx-auto p-5">
+            <div className="border-l-[3px] border-rose-500">
+              <ul className="list-disc pl-7">
+                <li>
+                  Accelerate growth potential by discovering new possibilities
+                </li>
+                <li>Embrace solutions that scale with your business</li>
+                <li>Adapt to new technologies swiftly</li>
+              </ul>
             </div>
-            <div className="px-5 md:px-16 mt-3">
-              <div className="text-xl font-semibold text-[#071b52]">
-                <h2>- Maintenance and Security Services</h2>
-              </div>
-              <div>
-                <p className="text-justify">
-                  Implementing cloud solutions is not enough in most cases. So,
-                  we also help with continuous monitoring, performance
-                  optimization, security and risk assessment, and data
-                  protection.
-                </p>
-              </div>
+          </div>
+
+          <div className="w-full bg-[#eb1c26] py-10">
+            <div className="w-[90%] flex flex-col gap-3 items-center mx-auto">
+              <h2 className="text-center text-xl text-white">
+                Embark on your business transformation journey!
+              </h2>
+              <button
+                onClick={() => navigate("/contact")}
+                className="text-center text-lg font-semibold text-white ring-2 ring-gray-200 hover:underline px-3 py-2 rounded-lg"
+              >
+                Contact Us
+              </button>
             </div>
-            <div className="px-5 md:px-16 mt-3">
-              <div className="text-xl font-semibold text-[#071b52]">
-                <h2>- Cloud Migration Services</h2>
+          </div>
+        </div>
+
+        <div className="w-full mt-5">
+          <div className="w-[90%] mx-auto">
+            <h2 className="text-2xl font-bold py-6">Tool Landscape </h2>
+            <div className="grid md:grid-cols-3 gap-4 my-6 w-full">
+              {/* <div className="w-full shadow-lg p-5 items-center flex justify-center flex-col">
+                <img
+                  src="/img/Snowflake.svg"
+                  className="w-[200px] object-cover"
+                  alt=""
+                />
+                <h2 className="text-xl italic">snowflake</h2>
+              </div> */}
+              {/* <div className="w-full shadow-lg p-5 items-center flex justify-center flex-col">
+                <img
+                  src="/img/redshift.png"
+                  className="w-[100px] object-cover"
+                  alt=""
+                />
+                <h2 className="text-xl italic mt-4">AWS Redshift</h2>
+              </div> */}
+
+              <div className="w-full shadow-lg p-5  items-center flex justify-center">
+                <img
+                  src="/img/s3.png"
+                  className="w-[200px] object-cover  bg-cover"
+                  alt=""
+                />
               </div>
-              <div>
-                <p className="text-justify">
-                  Our cloud migration services include SWOT Analysis, readiness
-                  assessment, Cloud-to-cloud movement, migration of workloads,
-                  and validation, performance testing and disaster recovery
-                  management services.
-                </p>
+              <div className="w-full shadow-lg p-5 items-center flex justify-center flex-col">
+                <img
+                  src="/img/redshift.png"
+                  className="w-[200px] object-cover aspect-video bg-cover"
+                  alt=""
+                />
+                <h2 className="text-xl italic">AWS Redshift </h2>
               </div>
-            </div>
-            <div className="px-5 md:px-16 mt-3">
-              <div className="text-xl font-semibold text-[#071b52]">
-                <h2>- Managed Services</h2>
+              <div className="w-full shadow-lg p-5  items-center flex justify-center flex-col">
+                <img
+                  src="/img/gcp.webp"
+                  className="w-[200px] object-cover aspect-video bg-cover"
+                  alt=""
+                />
+                <h2 className="text-xl italic">GCP NLP</h2>
               </div>
-              <div>
-                <p className="text-justify">
-                  We meticulously plan, strategize and implement a governance
-                  plan for cloud infrastructure and modernization services.
-                </p>
-              </div>
-            </div>
-            <div className="px-5 md:px-16 mt-3">
-              <div className="text-xl font-semibold text-[#071b52]">
-                <h2>- Knowledge Transfer</h2>
-              </div>
-              <div>
-                <p className="text-justify">
-                  After delivering the right cloud solutions, MAF Group can
-                  offer your IT team guidance on cloud transformation and
-                  knowledge transfer.
-                </p>
+              <div className="w-full shadow-lg p-5  items-center flex justify-center flex-col">
+                <img
+                  src="/img/elastic.png"
+                  className="object-cover bg-cover pt-10"
+                  alt=""
+                />
+                <h2 className="text-xl italic aspect-video pt-3">
+                  Elastic Search
+                </h2>
+                {/* <h2 className="text-xl italic">Power BI</h2> */}
               </div>
             </div>
           </div>

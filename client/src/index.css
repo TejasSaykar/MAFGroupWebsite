@@ -94,5 +94,13 @@
 }
 
 body {
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Poppins", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+}
+
+.cloudBg {
+  background-image: url("/img/cloudBg.png");
+  background-position: right;
+  object-position: right;
 }

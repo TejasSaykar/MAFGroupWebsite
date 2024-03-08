@@ -37,7 +37,7 @@ const Blog3 = () => {
                 />
               </div>
               <div className="w-full my-auto mx-auto">
-                <p className="font-light text-justify">
+                <p className="font-medium text-justify">
                   The marketing automation industry has grown in the last few
                   years despite the COVID-19 pandemic because businesses were
                   eager to automate the marketing workflows and retain
@@ -49,7 +49,7 @@ const Blog3 = () => {
             </div>
           </div>
 
-          <div className="two flex w-full flex-col md:flex-row gap-4 mt-5">
+          <div className="two flex w-full flex-col gap-4 mt-5">
             <div className="w-full flex px-2 md:px-4 pb-4 gap-4">
               <div className="hidden md:w-14 md:flex items-start">
                 <MdContentPaste className="w-0 md:block bg-[#4f514e] text-white p-2 h-12 md:w-12 rounded-full" />
@@ -98,7 +98,7 @@ const Blog3 = () => {
             </div>
           </div>
 
-          <div className="two flex w-full flex-col md:flex-row gap-4 mt-5">
+          <div className="two flex w-full flex-col gap-4 mt-5">
             <div className="w-full flex px-2 md:px-4 pb-4 gap-4">
               <div className="hidden md:w-14 md:flex items-start">
                 <SiChatbot className="w-0 md:block bg-[#4f514e] text-white p-2 h-12 md:w-12 rounded-full" />
@@ -149,7 +149,7 @@ const Blog3 = () => {
           </div>
 
           <div className="two flex w-full flex-col md:flex-row gap-4 mt-5">
-            <div className="w-full md:w-1/2 flex px-2 md:px-4 pb-4 gap-4">
+            <div className="w-full flex px-2 md:px-4 pb-4 gap-4">
               <div className="hidden md:w-14 md:flex items-start">
                 <MdOutlinePolicy className="w-0 md:block bg-[#4f514e] text-white p-2 h-12 md:w-12 rounded-full" />
               </div>
@@ -197,18 +197,18 @@ const Blog3 = () => {
           </div>
 
           <div className="md:w-1/2 mx-auto mb-5">
-            <h2 className="text-[#071b52] font-semibold mt-1">
+            <h2 className="text-[#071b52] font-semibold mt-4">
               - Shruti Bhandari. <br />
             </h2>
           </div>
 
-          <p className="pt-6 px-2 md:w-1/2 mx-auto">
+          <p className="pt-3 font-medium px-2 md:w-1/2 mx-auto">
             {" "}
             Looking for help with Marketing Automation? Contact MAF Group.
           </p>
 
-          <div className="mt-5 px-2 md:w-1/2 mx-auto">
-            <h2>Reference:</h2>
+          <div className="mt-5 px-2 pb-10">
+            <h2 className="font-medium">Reference:</h2>
             <p
               style={{ textAlign: "justify" }}
               onClick={() =>

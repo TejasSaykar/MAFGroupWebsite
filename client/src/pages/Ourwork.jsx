@@ -1,6 +1,7 @@
 import React from "react";
 import Layout from "../components/Layout";
 import { Link, useNavigate } from "react-router-dom";
+import { BiRightArrowAlt } from "react-icons/bi";
 
 const Ourwork = () => {
   const openwebsite = (url) => {
@@ -11,14 +12,14 @@ const Ourwork = () => {
 
   return (
     <Layout title={"MAF | Our Work"}>
-      <div className="w-full mt-[4rem]">
+      {/* <div className="w-full mt-[4rem]">
         <div className="text-center text-3xl text-[#071b52] font-bold pt-4">
           <h2>Our Work</h2>
         </div>
         <div className="w-full flex flex-col md:flex-row px-4 gap-5 h-full pt-6 md:w-[90vw] mx-auto">
           <div className="one h-full mt-5 sm:w-full">
             <img
-              src="/img/w1.png"
+              src="/img/case1.jpg"
               className="h-auto sm:w-full bg-cover bg-center object-cover aspect-video sm:aspect-video"
               alt=""
             />
@@ -29,7 +30,7 @@ const Ourwork = () => {
             >
               Transforming Digital Landscape
             </h2>
-            <p className="px-2 font-normal mt-1 dark:text-rose-600">
+            <p className="px-2 font-normal mt-1 dark:text-rose-700">
               Once our plan was laid out, we underwent a comprehensive digital
               transformation is a necessity for sustainable growth. This case
               study...
@@ -40,7 +41,7 @@ const Ourwork = () => {
           </div>
           <div className="two h-full mt-5 sm:w-full">
             <img
-              src="/img/w2.png"
+              src="/img/case2.jpg"
               className="h-auto sm:w-full bg-cover bg-center object-cover aspect-video sm:aspect-video"
               alt=""
             />
@@ -62,7 +63,7 @@ const Ourwork = () => {
           </div>
           <div className="three h-full mt-5 sm:w-full">
             <img
-              src="/img/w3.png"
+              src="/img/case3.jpg"
               className="h-auto sm:w-full bg-contain object-cover bg-center aspect-video sm:aspect-video"
               alt=""
             />
@@ -83,7 +84,7 @@ const Ourwork = () => {
           </div>
           <div className="four h-full mt-5 sm:w-full">
             <img
-              src="/img/revenue.png"
+              src="/img/case4.jpg"
               className="h-auto sm:w-full bg-contain object-cover bg-center aspect-video sm:aspect-video"
               alt=""
             />
@@ -106,7 +107,7 @@ const Ourwork = () => {
         <div className="mt-5 md:mt-16 w-full grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 px-2 gap-8 h-full pt-6 md:w-[90vw] mx-auto">
           <div className="one w-full h-full mt-5 sm:w-full">
             <img
-              src="/img/success.png"
+              src="/img/case5.jpg"
               className="h-auto sm:w-full bg-cover bg-center object-cover aspect-video sm:aspect-video"
               alt=""
             />
@@ -128,7 +129,7 @@ const Ourwork = () => {
           </div>
           <div className="two h-full sm:w-full mt-5">
             <img
-              src="/img/strategy.png"
+              src="/img/case6.jpg"
               className="h-auto sm:w-full bg-cover bg-center object-cover aspect-video sm:aspect-video"
               alt=""
             />
@@ -149,7 +150,7 @@ const Ourwork = () => {
           </div>
           <div className="three h-full mt-5 sm:w-full">
             <img
-              src="/img/robust.png"
+              src="/img/case7.jpg"
               className="h-auto sm:w-full bg-contain object-cover bg-center aspect-video sm:aspect-video"
               alt=""
             />
@@ -168,7 +169,7 @@ const Ourwork = () => {
           </div>
           <div className="three h-full mt-5 sm:w-full">
             <img
-              src="/img/career.png"
+              src="/img/case8.jpg"
               className="h-auto sm:w-full bg-contain object-cover bg-center aspect-video sm:aspect-video"
               alt=""
             />
@@ -188,7 +189,7 @@ const Ourwork = () => {
           </div>
           <div className="three h-full mt-5 sm:w-full">
             <img
-              src="/img/ma2.png"
+              src="/img/case9.jpg"
               className="h-auto sm:w-full bg-contain object-cover bg-center aspect-video sm:aspect-video"
               alt=""
             />
@@ -208,7 +209,7 @@ const Ourwork = () => {
           </div>
           <div className="three h-full mt-5 sm:w-full">
             <img
-              src="/img/ma3.png"
+              src="/img/case10.jpg"
               className="h-auto sm:w-full bg-contain object-cover bg-center aspect-video sm:aspect-video"
               alt=""
             />
@@ -226,6 +227,307 @@ const Ourwork = () => {
                 more
               </Link>
             </p>
+          </div>
+        </div>
+      </div> */}
+
+      <div className="wfull mt-[4rem]">
+        <div className="w-[90vw] mx-auto py-9 flex flex-col gap-8">
+          <div className="grid w-full md:grid-cols-3 gap-4">
+            <div className="w-full flex flex-col gap-4">
+              <div className="relative">
+                <img
+                  src="/img/case1.jpg"
+                  className="w-full h-full aspect-square md:aspect-auto"
+                  alt=""
+                />
+                <div className="absolute inset-0 bottom-0 bg-black opacity-65"></div>
+                <div className="text-white absolute top-0">
+                  <h2
+                    className="text-base p-5 font-semibold"
+                    style={{ textShadow: "1px 1px black" }}
+                  >
+                    CASE STUDY
+                  </h2>
+                  <p
+                    className="p-5 font-semibold"
+                    style={{ textShadow: "1px 1px black" }}
+                  >
+                    A Comprehensive Case Study in Retail Industry
+                  </p>
+                  <button
+                    onClick={() => navigate("/case1")}
+                    className="text-lg flex gap-1 items-center font-semibold p-5"
+                    style={{ textShadow: "1px 1px black" }}
+                  >
+                    Read More
+                    <span className="text-xl font-bold">
+                      <BiRightArrowAlt className="text-xl font-bold" />
+                    </span>
+                  </button>
+                </div>
+              </div>
+              <div className="relative">
+                <img
+                  src="/img/case2.jpg"
+                  className="w-full h-full aspect-square md:aspect-auto"
+                  alt=""
+                />
+                <div className="absolute inset-0 bottom-0 bg-black opacity-65"></div>
+                <div className="text-white absolute top-0">
+                  <h2
+                    className="text-lg p-5 font-semibold"
+                    style={{ textShadow: "1px 1px black" }}
+                  >
+                    CASE STUDY
+                  </h2>
+                  <p
+                    className="p-5 font-semibold"
+                    style={{ textShadow: "1px 1px black" }}
+                  >
+                    Strategic Transition to Enhance Marketing Efficiency in the
+                    Banking Sector
+                  </p>
+                  <button
+                    onClick={() => navigate("/case2")}
+                    className="text-lg flex gap-1 items-center font-semibold p-5"
+                    style={{ textShadow: "1px 1px black" }}
+                  >
+                    Read More
+                    <span className="text-xl font-bold">
+                      <BiRightArrowAlt className="text-xl font-bold" />
+                    </span>
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div className="w-full hidden md:block h-full relative">
+              <img
+                src="/img/case8.jpg"
+                className="h-full object-cover"
+                alt=""
+              />
+              <div className="bg-green-300"></div>
+              {/*  */}
+              <div className="absolute h-full inset-0 bg-black opacity-65 bottom-0"></div>
+              <div className="absolute text-white bottom-0">
+                <h2
+                  className="text-base p-5 font-semibold"
+                  // style={{ textShadow: "1px 1px black" }}
+                >
+                  CASE STUDY
+                </h2>
+                <p
+                  className="p-5 text-base font-semibold"
+                  // style={{ textShadow: "1px 1px black" }}
+                >
+                  Ensuring GDPR Compliance and Risk-Free Strategy Implementation
+                  in the FMCG Industry
+                </p>
+                <button
+                  onClick={() => navigate("/case3")}
+                  className="text-lg flex gap-1 items-center font-semibold p-5"
+                  style={{ textShadow: "1px 1px black" }}
+                >
+                  Read More
+                  <span className="text-xl font-bold">
+                    <BiRightArrowAlt className="text-xl font-bold" />
+                  </span>
+                </button>
+              </div>
+            </div>
+            <div className="w-full flex flex-col gap-4">
+              <div className="relative">
+                <img
+                  src="/img/case4.jpg"
+                  className="w-full h-full aspect-square md:aspect-auto"
+                  alt=""
+                />
+                <div className="absolute inset-0 bottom-0 bg-black opacity-65"></div>
+                <div className="text-white absolute top-0">
+                  <h2
+                    className="text-lg p-5 font-semibold"
+                    style={{ textShadow: "1px 1px black" }}
+                  >
+                    CASE STUDY
+                  </h2>
+                  <p
+                    className="p-5 font-semibold"
+                    style={{ textShadow: "1px 1px black" }}
+                  >
+                    Driving Revenue Uplift and Real-Time Targeting in Banking
+                    Industry
+                  </p>
+                  <button
+                    onClick={() => navigate("/case4")}
+                    className="text-lg flex gap-1 items-center font-semibold p-5"
+                    style={{ textShadow: "1px 1px black" }}
+                  >
+                    Read More
+                    <span className="text-xl font-bold">
+                      <BiRightArrowAlt className="text-xl font-bold" />
+                    </span>
+                  </button>
+                </div>
+              </div>
+              <div className="relative h-full">
+                <img
+                  src="/img/case5.jpg"
+                  className="w-full h-full aspect-square md:aspect-auto"
+                  alt=""
+                />
+                <div className="absolute inset-0 bottom-0 bg-black opacity-65"></div>
+                <div className="text-white absolute top-0">
+                  <h2
+                    className="text-lg p-5 font-semibold"
+                    style={{ textShadow: "1px 1px black" }}
+                  >
+                    CASE STUDY
+                  </h2>
+                  <p
+                    className="p-5 font-semibold"
+                    style={{ textShadow: "1px 1px black" }}
+                  >
+                    Seamless Migration for Successful Digital Transformation in
+                    the IT Industry
+                  </p>
+                  <button
+                    onClick={() => navigate("/case5")}
+                    className="text-lg flex gap-1 items-center font-semibold p-5"
+                    style={{ textShadow: "1px 1px black" }}
+                  >
+                    Read More
+                    <span className="text-xl font-bold">
+                      <BiRightArrowAlt className="text-xl font-bold" />
+                    </span>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div className="grid w-full grid-cols-1 md:grid-cols-3 gap-4">
+            <div className="w-full flex flex-col gap-4">
+              <div className="relative">
+                <img
+                  src="/img/case6.jpg"
+                  className="w-full h-full aspect-square md:aspect-auto"
+                  alt=""
+                />
+                <div className="absolute inset-0 bottom-0 bg-black opacity-65"></div>
+                <div className="text-white absolute top-0">
+                  <h2 className="text-lg p-5 font-semibold">CASE STUDY</h2>
+                  <p className="p-5 font-semibold">
+                    Streamlining Marketing Strategy for Enhanced Performance in
+                    the Hospitality Industry
+                  </p>
+                  <button
+                    onClick={() => navigate("/case6")}
+                    className="text-lg flex gap-1 items-center font-semibold p-5"
+                    style={{ textShadow: "1px 1px black" }}
+                  >
+                    Read More
+                    <span className="text-xl font-bold">
+                      <BiRightArrowAlt className="text-xl font-bold" />
+                    </span>
+                  </button>
+                </div>
+              </div>
+              <div className="relative">
+                <img
+                  src="/img/case7.jpg"
+                  className="w-full h-full aspect-square md:aspect-auto"
+                  alt=""
+                />
+                <div className="absolute inset-0 bottom-0 bg-black opacity-65"></div>
+                <div className="text-white absolute top-0">
+                  <h2 className="text-lg p-5 font-semibold">CASE STUDY</h2>
+                  <p className="p-5 font-semibold">
+                    Revolutionizing User Experience in the IT Sector
+                  </p>
+                  <button
+                    onClick={() => navigate("/case7")}
+                    className="text-lg flex gap-1 items-center font-semibold p-5"
+                    style={{ textShadow: "1px 1px black" }}
+                  >
+                    Read More
+                    <span className="text-xl font-bold">
+                      <BiRightArrowAlt className="text-xl font-bold" />
+                    </span>
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div className="w-full h-full relative">
+              <div className="absolute h-full inset-0 bottom-0 bg-[#a5cb94]"></div>
+              <div className="absolute h-full text-black md:top-[8rem]">
+                <h2 className="text-base p-5 font-semibold">CASE STUDY</h2>
+                <p className="p-5 font-semibold">
+                  Elevating Customer Satisfaction Through Single Customer View
+                  (SCV) in Retail
+                </p>
+                <button
+                  onClick={() => navigate("/case8")}
+                  className="text-lg flex gap-1 items-center font-semibold p-5"
+                >
+                  Read More
+                  <span className="text-xl font-bold">
+                    <BiRightArrowAlt className="text-xl font-bold" />
+                  </span>
+                </button>
+              </div>
+            </div>
+            <div className="w-full flex flex-col gap-4">
+              <div className="relative">
+                <img
+                  src="/img/case9.jpg"
+                  className="w-full h-full aspect-square md:aspect-auto"
+                  alt=""
+                />
+                <div className="absolute inset-0 bottom-0 bg-black opacity-65"></div>
+                <div className="text-white absolute top-0">
+                  <h2 className="text-lg p-5 font-semibold">CASE STUDY</h2>
+                  <p className="p-5 font-semibold">
+                    Driving Hyper-Personalization for Enhanced Customer
+                    Engagement in Retail
+                  </p>
+                  <button
+                    onClick={() => navigate("/case9")}
+                    className="text-lg flex gap-1 items-center font-semibold p-5"
+                    style={{ textShadow: "1px 1px black" }}
+                  >
+                    Read More
+                    <span className="text-xl font-bold">
+                      <BiRightArrowAlt className="text-xl font-bold" />
+                    </span>
+                  </button>
+                </div>
+              </div>
+              <div className="relative h-full">
+                <img
+                  src="/img/case10.jpg"
+                  className="w-full h-full aspect-square md:aspect-auto"
+                  alt=""
+                />
+                <div className="absolute inset-0 bottom-0 bg-black opacity-65"></div>
+                <div className="text-white absolute top-0">
+                  <h2 className="text-lg p-5 font-semibold">CASE STUDY</h2>
+                  <p className="p-5 font-semibold">
+                    Enhancing Marketing Efficiency through Digital
+                    Transformation in Retail
+                  </p>
+                  <button
+                    onClick={() => navigate("/case10")}
+                    className="text-lg flex gap-1 items-center font-semibold p-5"
+                    style={{ textShadow: "1px 1px black" }}
+                  >
+                    Read More
+                    <span className="text-xl font-bold">
+                      <BiRightArrowAlt className="text-xl font-bold" />
+                    </span>
+                  </button>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>

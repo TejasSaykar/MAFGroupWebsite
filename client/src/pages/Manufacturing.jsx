@@ -1,87 +1,122 @@
 import React from "react";
 import Layout from "../components/Layout";
+import { BiRightArrowAlt } from "react-icons/bi";
+import { useNavigate } from "react-router-dom";
 
 const Manufacturing = () => {
+  const navigate = useNavigate();
   return (
     <Layout title={"MAF | Manufacturing"}>
       <div className="w-full mt-[4rem]">
-        <div className="relative w-full h-[70vh]">
-          <img
-            src="/img/manufacturing.jpeg"
-            className="w-full h-full bg-cover object-cover"
-            alt=""
-          />
-          <div className="absolute w-full inset-0 bottom-0 bg-black opacity-20"></div>
-          <div className="absolute inset-0 w-full flex justify-center items-center">
-            <h1 className="text-4xl sm:text-6xl font-bold text-white">
-              Manufacturing
-            </h1>
+        <div className="top h-[90vh] w-full">
+          <div className="relative w-full flex h-full">
+            <div className="md:block bg-gray-100/90 w-full"></div>
+            <div className="absolute shadow-2xl p-5 md:w-1/2 md:mx-auto gap-3 bg-white flex flex-col top-28 md:top-32 mx-5 md:left-20">
+              <h2 className="md:text-3xl text-xl font-semibold">
+                Production Innovation Inspired
+              </h2>
+              <h3 className="md:text-lg text-base font-light">
+                Establish an intelligent manufacturing system that connects
+                digital technology with complex devices while maintaining
+                sustainable operations.
+              </h3>
+
+              <button
+                onClick={() => navigate("/contact")}
+                className="flex items-center gap-0 bg-gray-800 w-[max-content] px-4 py-2 rounded-lg text-white font-semibold"
+              >
+                Talk to us
+                <span>
+                  <BiRightArrowAlt className="text-2xl" />
+                </span>
+              </button>
+            </div>
+            <div className="w-full">
+              <img
+                src="/img/manufacturing.jpeg"
+                className="h-full object-cover"
+                alt=""
+              />
+            </div>
           </div>
         </div>
 
-        <div className="w-full mt-10">
-          <div
-            className="w-[90%] lg:w-[80%] m-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3
-           gap-5"
-          >
-            <div className="flex w-full flex-col items-center gap-4">
-              <div className="w-full">
+        <div className="aproach w-full">
+          <div className="w-[90%] mx-auto py-10">
+            <p className="text-base font-medium">
+              By integrating the latest technologies, streamlining workflows,
+              digitizing your business and automating your systems. we help you
+              stay ahead of competition and redefine the future of consumerism
+              in the manufacturing industry.
+            </p>
+            <div>
+              <h2 className="text-2xl py-6 font-bold">Our Solution</h2>
+            </div>
+            <div className="grid md:grid-cols-4 gap-8">
+              <div className="flex p-5 shadow-xl flex-col gap-4 text-start text-xl font-medium">
                 <img
-                  src="/img/man.jpg"
-                  className="aspect-video md:aspect-square object-cover bg-cover shadow-lg"
+                  className="w-16 h-16"
+                  src="/img/machine-learning.png"
                   alt=""
                 />
+                <div>
+                  <h1 className="text-base">
+                    Maximized conversion by implementing marketing automation
+                  </h1>
+                </div>
               </div>
-              <div
-                className="w-full order-2 md:order-1"
-                style={{ textAlign: "justify" }}
+              <div className="flex flex-col gap-4 p-5 shadow-xl text-start text-xl font-medium">
+                <img className="w-16 h-16" src="/img/cloud.png" alt="" />
+                <div>
+                  <h2 className="text-base">
+                    Leveraging Cloud-AI to build personalized product
+                    recommendation engine
+                  </h2>
+                </div>
+              </div>
+              <div className="flex flex-col gap-4 p-5 shadow-xl text-start text-xl font-medium">
+                <img className="w-16 h-16" src="/img/market.png" alt="" />
+                <div>
+                  <h2 className="text-base">
+                    Targeted, unique messaging for customers
+                  </h2>
+                </div>
+              </div>
+              <div className="flex flex-col gap-4 p-5 shadow-xl text-start text-xl font-medium">
+                <img className="w-16 h-16" src="/img/analytics.png" alt="" />
+                <div>
+                  <h2 className="text-base">
+                    Creating a comprehensive data hub that acts as a centralized
+                    analytics platform
+                  </h2>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div className="w-full bg-[#eb1c26] py-10">
+            <div className="w-[90%] flex flex-col gap-3 items-center mx-auto">
+              <h2 className="text-center text-xl text-white">
+                Embark on your business transformation journey!
+              </h2>
+              <button
+                onClick={() => navigate("/contact")}
+                className="text-center text-lg font-semibold text-white ring-2 ring-gray-200 hover:underline px-3 py-2 rounded-lg"
               >
-                <p>
-                  MAF Group has been a seasoned ally for one too many companies
-                  guiding them through the intricacies of this digital era and
-                  the manufacturing industry has been one of them as well. We
-                  have been a reliable partner in this ever-evolving domain by
-                  bringing to the table our knowledge of problems unique to this
-                  industry and our need to deeply understand our client’s
-                  problems.
-                </p>
-              </div>
+                Contact Us
+              </button>
             </div>
+          </div>
 
-            <div className="w-full flex flex-col gap-4">
-              <div className="w-full">
-                <img
-                  src="/img/manufacture.png"
-                  className="aspect-video md:aspect-square object-cover bg-cover shadow-lg"
-                  alt=""
-                />
-              </div>
-              <div>
-                <p>
-                  With tailored solutions that have the most impact for business,
-                  crafted by analyzing your stand and objectives, we promise to
-                  empower you with everything you need to build a thriving
-                  business.
-                </p>
-              </div>
-            </div>
-
-            <div className="w-full flex flex-col gap-4">
-              <div>
-                <img
-                  src="/img/man1.jpg"
-                  className="aspect-video md:aspect-square object-cover bg-cover shadow-lg"
-                  alt=""
-                />
-              </div>
-              <div>
-                <p>
-                  By integrating the latest technologies, streamlining
-                  workflows, digitizing your business and automating your
-                  systems, we help you stay ahead of competition and redefine
-                  the future of consumerism in the manufacturing industry.
-                </p>
-              </div>
+          <div className="w-full my-10">
+            <div className="w-[90%] mx-auto">
+              <p>
+                With a proven track record of assisting numerous clients in this
+                domain, we are aware of the obstacles in your journey and come
+                prepared with a strategic roadmap. We understand your unique
+                requirements and assist you with a solution that not only
+                empowers you to keep up with the pace, but also puts you in the
+                forefront of your industry.
+              </p>
             </div>
           </div>
         </div>
