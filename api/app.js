@@ -52,7 +52,7 @@ app.use("/api/blog", blogRoute);
 app.use("/api/news", newsRoute);
 
 const PORT = 8585;
-const appInProduction = true;
+const appInProduction = false;
 if (!appInProduction) {
   app.listen(PORT, () => {
     console.log(`Server running on http://localhost:${PORT} ✅`);
